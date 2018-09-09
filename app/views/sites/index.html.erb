@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!--include meta data -->
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<title>Gridometry</title>
+  	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+
+</head>
+<body>
+
+<style>
+
+
+
+/*--- body section ---*/ 
+	
+	
+ 	h1, h2, h3, h4, h5, h6 {
+ 		margin: 0;
+ 	}
+
+	body {
+		margin: 0;
+		padding:0;
+	}
+
+	.alert-success {
+		position: absolute;
+		left: 0;
+		width: 100%;
+	    color: #155724;
+	    font-size: 20px;
+	    background-color: #D4EDDA;
+ 	}
+
+/*-- bar0 section --*/
+
+	.bar_overlay0 {
+		width: 100%;
+		height: auto;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+	
+	.bar0 {
+		background-color: #eaeaea;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-attachment: fixed;
+		height: auto;
+		text-align: center;
+	}
+
+	.bar0 .box {
+		display: inline-block;
+		width: 40%;
+		height: auto;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.bar0 h1 {
+
+		font-family: 'Oswald', sans-serif;
+		text-shadow: 2px 2px #3333;
+		font-size: 4em;
+		color: white;
+		text-transform: uppercase;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.gridometry-logo2 {
+		padding-top: 9em;
+		width: 300px;
+		height: auto;
+	}
+
+
+	@media screen and (max-width: 750px){
+		.gridometry-logo2 {
+			display: none;
+		}
+
+		.bar0 .box {
+			width: auto;
+			height: auto;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.bar0 h1 {
+			font-size: 3em;
+
+		}
+	}
+
+
+
+	
+
+/*-- bar1 section --*/
+
+	.bar_overlay1 {
+		width: 100%;
+		height: auto;
+
+		background-image: url("/assets/bkgd-gradient3.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+	
+	.bar1 {
+		background-image: url("/assets/building_clouds.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		width: auto;
+		height: auto;
+		
+	}
+
+	.bar1 h1 {
+
+		font-size: 2.5em;
+		color: white;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	}
+
+
+/*-- bar2 section --*/
+
+	.bar_overlay2 {
+		width: 100%;
+		height: auto;
+
+		background-image: url("/assets/bkgd-gradient3.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+	
+	.bar2 {
+	
+		background-image: url("/assets/iphone_6_macbook.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-attachment: fixed;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.bar2 h1 {
+
+		font-size: 2.5em;
+		color: white;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	}
+
+
+
+/*-- bar3 section --*/
+
+	.bar_overlay3 {
+		width: 100%;
+		height: auto;
+
+		background-image: url("/assets/bkgd-gradient5.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+	.bar3 {
+		background-image: url("/assets/orange_room.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-attachment: fixed;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.bar3 h1 {
+		font-size: 2.5em;
+		color: white;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	}
+
+	
+
+	
+/*-- bar4 section --*/
+
+
+	.bar_overlay4 {
+		width: 100%;
+		height: auto;
+
+		background-image: url("/assets/bkgd-gradient3.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+	.bar4 {
+		background-image: url("/assets/colored_pencils.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;		
+		width: auto;
+		height: 20em;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.bar4 h1 {
+		font-size: 1.5em;
+		color: white;
+		padding-top: 4em;
+		padding-bottom: 2em;
+		width: 16em;
+	}
+
+/*-- project bar section --*/
+
+
+	.view-button {
+		position: relative;
+		top: 0em;
+		margin-top: 8em;
+		margin-bottom: 2em;
+		height: auto;
+		padding: 5px 10px;
+
+		border: solid 1px #0f2a51;
+		background-color: transparent;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #0f2a51;
+		transition: all .2s linear 0s;
+	}
+
+	.view-button:hover {
+		background-color: #0f2a51;
+		color: white;
+		transition: all .2s linear 0s;
+
+	}
+
+
+
+	.bodyblitz {
+		text-align: center;
+	}
+
+	.bodyblitz h1 {
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		text-align: center;
+		font-size: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: .5em;
+	}
+	
+	.mac-pic17 {
+		width: 750px;
+		height: auto;
+	}
+
+	.project-bar {
+		margin-bottom: 20em;
+		margin-top: 4em;
+	}
+
+	@media screen and (max-width: 1040px){
+		.project-bar {
+			margin-bottom: 22em;
+		}
+	}
+
+	@media screen and (max-width: 650px){
+		.project-bar {
+			margin-bottom: 26em;
+		}
+	}
+
+	.project-bar {
+		width: auto;
+		height: 25em;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.project-bar h1 {
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		text-align: center;
+		font-size: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: .3em;
+		margin-bottom: 1em;
+	}
+
+
+
+	.projects {
+		width: 30em;
+		height: 100%;
+	}
+
+	.project-bar-carousel {
+		background-color: transparent;
+		width: 30em;
+		height: auto;
+		overflow:hidden;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.project-bar-carousel ul {
+		width: 1500px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.project-bar-carousel ul li {
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+		background-color: transparent;
+		width: 30em;
+		height: 20em;
+		text-align: center;
+		list-style: none;
+		float: left;
+	}
+
+	
+
+
+	.mySlides {
+		display: none;
+	}
+
+	.project-test {
+		width: 30em;
+		height: auto;
+		vertical-align: middle;
+	}
+
+	@media screen and (max-width: 630px){
+		
+		.project-bar {
+			height: 8em;
+		}
+
+		.project-test {
+			width: 19em;
+			height: auto;
+			vertical-align: middle;
+		}
+
+		.project-bar h1 {
+			color: #0f2a51;
+			text-shadow: 2px 0px #aba7a74d;
+			text-align: center;
+			font-size: 31px;
+			margin-left: 1em;
+			margin-right: 1em;
+			margin-top: .3em;
+		}
+	}
+
+	/* Slideshow container */
+	.slideshow-container {
+		text-align: center;
+	  	max-width: 1000px;
+	  	position: relative;
+	  	margin: auto;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  background-color: #0f2a51;
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.3s ease;
+	  border: solid 1px #0f2a51;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	}
+
+	.prev {
+		left: 0;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: white;
+	  border: solid 1px #0f2a51;
+	  color: #0f2a51;
+	}
+
+
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0px 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active-dot, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .prev, .next, .text {font-size: 11px}
+	}
+
+
+
+
+	@media screen and (max-width: 425px){
+		.bar4 {
+			display: none;
+		}
+	}
+
+
+/*-- all bar section --*/
+
+	.bar1 .box {
+		width: 50%;
+		height: auto;
+		text-align: center;
+		padding: 4em;
+		margin-left: auto;
+	}
+
+	.bar1 button {
+		margin-bottom: 4em;
+	}
+
+
+
+
+	.bar2 .box {
+		width: 50%;
+		height: auto;
+		text-align: center;
+		padding: 4em;
+		margin-left: auto;
+	}
+
+	.bar2 button {
+		margin-bottom: 4em;
+	}
+
+
+	.bar3 .box {
+		width: 50%;
+		height: auto;
+		text-align: center;
+		padding: 4em;
+	}
+
+	.bar3 button {
+		margin-bottom: 4em;
+	}
+
+
+	@media screen and (max-width: 630px){
+		
+		.bar4 {
+			display: none;				
+		}
+
+		.bar3 {
+			width: auto;
+		}
+
+		.bar2 {
+			width: auto;
+		}
+
+		.bar1 {
+			width: auto;
+			text-align: center;
+		}
+
+		.bar_overlay3 {
+			width: auto;
+		}
+
+		.bar_overlay2 {
+			width: auto;
+		}
+
+		.bar_overlay1 {
+			width: auto;
+		}
+
+
+		.bar3 h1 {
+			font-size: 1.5em;
+		}
+
+		.bar2 h1 {
+			font-size: 1.5em;
+		}
+
+		.bar1 h1 {
+			font-size: 1.5em;
+		}
+
+		.bar1 .box {
+			width: auto;
+			height: auto;
+			text-align: center;
+			padding: 4em;
+		}
+
+		.bar2 .box {
+			width: auto;
+			height: auto;
+			text-align: center;
+			padding: 4em;
+		}
+
+		.bar3 .box {
+			width: auto;
+			height: auto;
+			text-align: center;
+			padding: 4em;
+		}
+	}
+
+
+	
+	
+
+/*--- carousel section ----*/	
+
+	.carousel {
+		background-color: transparent;
+		width: 25em;
+		height: auto;
+		overflow:hidden;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.carousel ul {
+		width: 1500px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.carousel ul li {
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+		background-color: transparent;
+		width: 30em;
+		height: 20em;
+		text-align: center;
+		list-style: none;
+		float: left;
+	}
+
+	@media screen and (max-width: 630px){
+		
+		.carousel ul li{
+			display: none;
+		}
+}
+
+
+/*---- nav section ----*/
+	
+	.menu {
+		padding-bottom: 0;
+	}
+
+	.menu ul {
+		margin: 0px;
+    	margin-bottom: 5px;
+    	font-size: 13px;
+	}
+
+	.menu h1 {
+		font-size: 3.5em;
+	    color: orange;
+		transition: all .4s linear 0s;
+	}
+
+	.menu h3 {
+		text-transform: uppercase;
+		margin-top: -1.3em;
+		font-size: .8em;
+		color: white;
+
+	}
+
+	 .fixed_nav {
+	    position: absolute;
+	    top: 0;
+		background-color: transparent;
+	    height: auto;
+	    width: 100%;
+	    z-index: 3;
+	    transition: all .4s linear 0s;
+    }
+
+    .scroll_nav {
+    	display: inline-block;
+	    position: fixed;
+	    top: 0;
+		background-color: white;
+	    width: 100%;
+	    height: auto;
+	    z-index: 3;
+		box-shadow: 0 3px 25px black;	    
+	    transition: all .4s linear 0s;
+    }
+
+
+
+    .fixed_nav_links a {
+    	color: white;
+    }
+
+    .scroll_nav_links a {
+    	color: white;
+    }
+
+
+
+    .fixed_nav_links a:hover {
+    	color: orange;
+    }
+
+    .scroll_nav_links a:hover {
+    	color: orange;
+    }
+
+
+    .menu .gridometry-logo3 {
+    	width: 250px;
+		height: auto;
+		position: relative;
+		top: .3em;
+    }
+
+
+	.gridometry-logo {
+		width: 20px;
+		height: auto;
+		position: relative;
+		top: .1em;
+	}
+
+	
+	
+	/* toggle button */
+	svg.svg-inline--fa.fa-bars{
+		display: none;
+	}
+
+	svg.svg-inline--fa.fa-caret-up{
+		display: none;
+	}
+
+
+/*----- screen width > -----*/
+
+@media screen and (min-width: 741px) {
+
+    .menu {
+        width: auto;
+        height: auto;
+        background: transparent;
+        text-align: center;
+    }
+
+    .first a {
+    	margin-top: 4px;
+    	margin-right: 4px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+		font-size: 12px;
+		background-color: transparent;
+		border: solid 1px #0f2a51;
+		color: #0f2a51;
+		padding: 7px 8px;
+		text-decoration: none;
+	}
+
+	.first a:hover {
+		background-color: #0f2a51;
+		color: white;
+
+	}
+
+    .fixed_nav {
+	    position: absolute;
+	    top: 0;
+		background-color: transparent;
+	    height: auto;
+	    width: 100%;
+	    z-index: 3;
+	    transition: all .4s linear 0s;
+    }
+
+    .scroll_nav {
+    	display: inline-block;
+	    position: fixed;
+	    top: 0;
+		background-color: white;
+	    width: 100%;
+	    height: auto;
+	    z-index: 3;
+		box-shadow: 0 3px 25px black;	    
+	    transition: all .4s linear 0s;
+    }
+
+
+    .fixed_nav_links a {
+    	color: #0f2a51;
+    }
+
+    .scroll_nav_links a {
+    	color: #0f2a51;
+    }
+
+
+    .fixed_nav_links a:hover {
+    	color: orange;
+    }
+
+    .scroll_nav_links a:hover {
+    	color: orange;
+    }
+
+   
+    .menu ul {
+        display:inline-block;
+        padding-left: 0px;
+    }
+
+    .menu li {
+        margin: 0px 15px 0px 0px;
+        display: inline-block;
+        list-style: none;
+        font-size: 1.5em;
+
+    }
+
+    .menu li:last-child {
+        margin-right:0px;
+    }
+
+    .menu a {
+    	text-decoration: none;
+        font-size: .8em;
+        transition: color linear 0.15s;
+        padding-bottom: .2em;
+        padding: 0px;
+    }
+
+    
+}
+
+
+/*----- Screen width <  -----*/
+
+@media screen and (max-width: 740px) {
+
+	.fixed_nav {
+	    position: absolute;
+	    top: 0;
+		background-color: transparent;
+	    height: auto;
+	    width: 100%;
+	    z-index: 3;
+	    transition: all .4s linear 0s;
+
+    }
+
+    .first a {
+    	visibility: hidden;
+	}
+
+    .scroll_nav {
+    	display: inline-block;
+	    position: fixed;
+	    top: 0;
+		background-color: white;
+	    width: 100%;
+	    height: auto;
+	    z-index: 3;
+		box-shadow: 0 3px 25px black;	    
+	    transition: all .4s linear 0s;
+    }
+
+    .toggle-nav {
+    	background-color: transparent;
+		width: 25px;
+		position: absolute;
+		right: 8px;
+    	top: 55px;
+	}
+
+	.toggle-nav:hover {
+		cursor: pointer;
+	}
+
+	.toggle-bar-fixed {
+		margin-bottom: 5px;
+	    width: 25px;
+	    height: 3px;
+	    background-color: #f9a71a;  
+	}
+
+
+    .menu {
+        width: auto;
+        padding-bottom: 3em;
+        padding: 10px 18px;
+        background: transparent;
+        text-align: center;
+    }
+
+    .menu ul {
+        width: 7em;
+        position: absolute;
+        top: 7.5em;
+        right: .5em;
+        padding: 10px 18px;
+        background-color: #eaeaea;
+        box-shadow: 4px 15px 24px #525252b3;
+        z-index: 3;
+        text-align: left;
+    }
+
+    .menu ul li:hover {
+    	color: orange;
+    }
+
+
+    .menu li {
+        font-size: 1.6em;
+        margin: 5px 0px 5px 0px;
+        display: block;
+        z-index: 2;
+    }
+
+   
+    .menu a {
+    	text-decoration: none;
+        display: block;
+        font-size: .7em;
+    }
+
+   
+   
+}
+
+
+
+
+@media screen and (max-width: 509px){
+	
+	.menu h1 {
+		font-size: 2.5em;
+	    color: #ff9a26;
+	    text-shadow: 3px 4px 5px rgba(103, 103, 103, 0.81);
+		transition: all .4s linear 0s;
+	}
+
+	.gridometry-logo {
+		width: 35px;
+		height: auto;
+		
+	}
+
+	.menu h3 {
+		text-transform: uppercase;
+		margin-top: -1.3em;
+		font-size: .6em;
+		color: white;
+	}
+
+	.menu ul {
+		width: 7em;
+        position: absolute;
+        top: 8.4em;
+    	right: .5em;
+        padding: 10px 18px;
+        background-color: #eaeaea;
+        box-shadow: 4px 15px 24px #525252b3;
+        z-index: 3;
+        text-align: left;
+    }
+
+		
+}
+
+
+
+
+/*---- jumbotron section ----*/
+	
+	
+
+	.jumbotron {
+	
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		background-color: transparent;
+	}
+
+  .jumbo_slideshow .glyphicon {
+      border: solid red;
+      font-size: 5em;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+
+
+/*----- Slideshow Section --------*/
+  
+    
+  .cb-slideshow, .cb-slideshow:after { 
+    list-style-type: none;
+    position: static;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .cb-slideshow li span { 
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+  }
+
+
+  .cb-slideshow li:nth-child(1) span { 
+      background-image: url("/assets/mac-pic16.png"); 
+
+  }
+  .cb-slideshow li:nth-child(2) span { 
+      background-image: url("/assets/mac-pic9.png"); 
+      animation-delay: 6s; 
+  }
+  .cb-slideshow li:nth-child(3) span { 
+  	  background-image: url("/assets/mac-pic11.png"); 
+      animation-delay: 12s; 
+  }
+  .cb-slideshow li:nth-child(4) span { 
+  	  background-image: url("/assets/mac-pic13.png"); 
+      animation-delay: 18s; 
+  }
+  .cb-slideshow li:nth-child(5) span { 
+  	  background-image: url("/assets/mac-pic14.png"); 
+      animation-delay: 24s; 
+  }
+  .cb-slideshow li:nth-child(6) span { 
+  	 background-image: url("/assets/mac-design15.png"); 
+     animation-delay: 30s; 
+  }
+
+
+ 
+  .cb-slideshow li:nth-child(2) div { 
+      animation-delay: 6s; 
+  }
+  .cb-slideshow li:nth-child(3) div { 
+      animation-delay: 12s; 
+  }
+  .cb-slideshow li:nth-child(4) div { 
+      animation-delay: 18s; 
+  }
+  .cb-slideshow li:nth-child(5) div { 
+      animation-delay: 24s; 
+  }
+  .cb-slideshow li:nth-child(6) div { 
+      animation-delay: 30s; 
+  }
+
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: .30; animation-timing-function: ease-out; }
+      17% { opacity: .30 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+
+ 
+
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+
+
+
+	
+
+/*--- overview section ---*/
+	
+
+	.overview {
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		height: auto;
+		text-align: center;
+		background-color: white;
+		padding-bottom: 5em;
+		padding-top: 1em;
+
+	}
+
+	.overview p {
+		font-size: 18px;
+		
+	}
+
+	.overview h1 {
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		text-align: center;
+		font-size: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: .3em;
+
+	}
+	
+	.overview .box {
+		text-align: center;
+		width: 60%;
+		height: auto;
+		vertical-align: top;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+
+
+@media screen and (max-width: 900px){
+
+	.overview .box {
+		width: 50%;
+		height: auto;
+		
+	}
+
+}
+
+
+@media screen and (max-width: 630px){
+	
+	
+
+	.overview h1 {
+		font-size: 35px;
+		margin-top: .5em;
+    	padding-bottom: 0.5em;
+
+	}
+
+	.overview h3 {
+		font-size: 25px;
+	}
+}
+	
+/*---- services section ----*/
+
+	.services {
+		background-attachment: initial;
+		background-repeat: repeat;						
+		width: auto;
+		height: auto;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		border: solid red;
+		width: 50%;
+
+	} 
+
+	.services h1 {
+		color: #0f2a51;
+		text-align: center;
+		font-size: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		margin-top: .3em;
+		width: auto;
+
+	}
+
+	
+	.services h2 {
+		font-size: 1.5em;
+		padding-bottom: .5em;
+		height: 1em;
+
+	}
+
+	.services h3 {
+		font-size: 1em;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	
+
+
+	
+
+	.webpic12 {
+		width: 475px;
+		height: auto;
+	}
+
+	.webpic15 {
+		width: 525px;
+		height: auto;
+	}
+
+	.dynamic-pics {
+		width: 550px;
+		height: auto;
+	}
+
+
+@media screen and (max-width: 1070px){
+	
+	.webpic12 {
+		width: 300px;
+		height: auto;
+	}
+
+	.webpic15 {
+		width: 300px;
+		height: auto;
+	}
+
+	.dynamic-pics {
+		width: 300px;
+		height: auto;
+	}
+
+	
+}
+
+@media screen and (max-width: 910px){
+	
+	.webpic12 {
+		position: relative;
+		top: 0;
+		width: 500px;
+		height: auto;
+	}
+
+	.webpic15 {
+		position: relative; 
+		top: 0;
+		width: 500px;
+		height: auto;
+	}
+
+	.dynamic-pics {
+		position: relative;
+		top: 0;
+		width: 500px;
+		height: auto;
+	}
+
+	.services #development-content {
+		position: relative;
+		top: 0;
+		width: 300px;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+	}
+
+	.services #security-content {
+		position: relative;
+		top: 0em;
+		width: 300px;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+	}
+
+	.services #design-content {
+		position: relative;
+		top: 0;
+		width: 300px;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+	}
+
+
+}
+
+@media screen and (max-width: 825px){
+	.webpic12 {
+		position: relative;
+		top: 0;
+		width: 500px;
+		height: auto;
+	}
+
+	.webpic15 {
+		position: relative; 
+		top: -9em;
+		width: 500px;
+		height: auto;
+	}
+
+	.dynamic-pics {
+		position: relative;
+		top: 6em;
+		width: 500px;
+		height: auto;
+	}
+
+	.services #development-content {
+		position: relative;
+		top: 0;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+	}
+
+	.services #security-content {
+		position: relative;
+		top: 18em;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+
+	}
+
+	.services #design-content {
+		position: relative;
+		top: 4em;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+		padding-bottom: 5em;
+	}
+
+}
+
+@media screen and (max-width: 580px){
+
+	.services {
+		padding-bottom: 0;
+	}
+
+	.webpic12 {
+		position: relative;
+		top: 0;
+		width: 630px;
+		height: auto;
+	}
+
+	.webpic15 {
+		position: relative; 
+		top: -12em;
+		width: 630px;
+		height: auto;
+	}
+
+	.dynamic-pics {
+		position: relative;
+		top: -1em;
+		width: 630px;
+		height: auto;
+		padding-top: 2em;
+	}	
+
+	.services #development-content {
+		position: relative;
+		top: 0;
+		width: auto;
+		height: auto;
+		padding-left: 3px;
+		padding-right: 3px;
+		font-size: auto;
+	}
+
+	.services #security-content {
+		position: relative;
+		top: 13.1em;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+
+	}
+
+	.services #design-content {
+		position: relative;
+		top: -1em;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		font-size: auto;
+	}
+
+
+}
+
+
+@media screen and (max-width: 630px){
+	.services h1 {
+		font-size: 35px;
+	}
+
+	.content1 {
+		width: auto;
+		height: auto;
+	}
+
+	.webpic12 {
+		width: 280px;
+		height: auto;
+		position: relative;
+		top: -1em;
+	}
+
+	.webpic15 {
+		width: 300px;
+		height: auto;
+		position: relative;
+		top: -16.6em;
+	}
+
+	.dynamic-pics {
+		width: 300px;
+		height: auto;
+		position: relative;
+		top: -2em;
+	}
+
+	.services #development-content {
+		width: auto;
+		height: auto;
+		font-size: 25px;
+		text-align: center;
+		padding: 0;
+		position: relative;
+		top: -1em;
+	}
+
+	.services #security-content {
+		width: auto;
+		height: auto;
+		font-size: 25px;
+		text-align: center;
+		padding: 0;
+		position: relative;
+		top: 9em;
+	}
+
+	.services #design-content {
+		height: auto;
+		width: auto;
+		padding: 0;
+		font-size: 25px;
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		top: -1em;
+	}
+
+	.services #design-content p {
+		margin-bottom: 0;
+	}
+
+}
+	
+
+/*---- features section ----*/
+	
+	.features {
+		background-attachment: initial;
+		background-repeat: repeat;		
+		text-align: center;
+		width: auto;
+		height: auto;
+
+		padding-top: 2em;
+		padding-bottom: 7em;
+	}
+
+
+
+	.features .box {
+		width: 6.5em;
+		height: auto;
+		margin-right: -1px;
+		margin-left: -1px;
+	}
+
+	.features h1 {
+		text-align: center;
+		font-size: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: .3em;
+
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		font-size: 3em;
+	}
+
+
+	.features h2 {
+		font-size: 25px;
+		padding-bottom: .5em;
+	}
+
+	.features h3 {
+		margin-bottom: 3em;
+	}
+
+	.features h4 {
+		color: black;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: 1em;
+
+	}
+
+
+	.features .container {
+		padding-top: 2em;
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 1em;
+		width: 20em;
+		height: auto;
+		vertical-align: top;
+		text-align: center;
+	}
+
+
+	.toggle {
+		height: auto;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.lightbulb {
+		width: 2.5em;
+		height: auto;
+	}
+
+	.paint-brush {
+		width: 3em;
+		height: auto;
+	}
+
+	.small-smart-phone {
+		width: 1.3em;
+		height: auto;
+	}
+
+
+	.screwdriver {
+		width: 2.5em;
+		height: auto;
+	}
+
+	.responsive {
+		width: 3em;
+		height: auto;
+	}
+
+	.phone-support {
+		width: 3.3em;
+		height: auto;
+
+	}
+
+@media screen and (max-width: 670px){
+	.features .header {
+		font-size: 1.2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+}
+
+@media screen and (max-width: 650px){
+	.features .container {
+		width: 247px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 515px){
+	.features .container {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 630px){
+	
+	.features h1 {
+		font-size: 31px;
+		margin-top: .5em;
+    	padding-bottom: 0.5em;	
+	}
+
+	.features h2 {
+		font-size: 25px;
+	}
+
+	.features h4 {
+		display: none;
+		margin-left: 3em;
+    	margin-right: 3em;
+	}
+
+	.features {
+		padding-bottom: 2em;
+	}
+
+	.features .container {
+		padding-top: 2em;
+		width: 15em;
+	}
+}
+
+
+/*--- pricing section --*/
+
+
+	.pricing {
+		background-color: white;
+		width: auto;
+		height: auto;
+		padding-top: 5em;
+		padding-bottom: 5em;
+		text-align: center;
+
+	}
+
+	.pricing p {
+		margin: 0;
+	}
+
+	.pricing .price-button {
+		color: #0f2a51;
+		padding: 13px 2em;
+		border: 1px solid #0f2a51;
+		margin-top: 3em;
+		margin-bottom: 1em;
+		background-color: white;
+		transition: all .2s linear 0s;
+		text-decoration: none;
+
+	}
+
+
+	.pricing .price-button:hover {
+		color: white;
+		background-color: #0f2a51;
+		transition: all .2s linear 0s;
+
+	}
+
+	.price-box {
+		background-color: white;
+		border: 1px solid #0f2a514d;
+		width: 30%;
+		max-width: 350px;
+		min-width: 300px;
+		height: 32em;
+		vertical-align: top;
+		display: inline-block;
+		margin-left: .5em;
+		margin-right: .5em;
+		margin-top: 1em;
+		transition: all .4s linear 0s;
+
+
+	}
+
+	.pricing h1 {
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		font-size: 3em;
+
+	}
+
+	.price-box h1 {
+		color: white;
+		font-size: 2em;
+	}
+
+
+	.price-box:hover {
+		box-shadow: 0px 10px 16px #686868;
+		transition: all .4s linear 0s;
+
+	}
+	
+	.pricing h2 {
+		color: white;
+		padding-top: .3em;
+	}
+
+	.pricing h3 {
+		margin-bottom: 3em;
+	}
+
+	.pricing h4 {
+		color: black;
+		margin-top: .5em;
+		margin-bottom: .5em;
+		font-size: 12px;
+	}
+
+
+	.price-heading {
+		width: auto;
+		height: 100px;
+		text-align: left;
+		padding: 20px;
+	}
+
+
+	#essential {
+		background-image: url('/assets/bkgd-gradient11.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+	}
+
+	#standard {
+		background-image: url('/assets/bkgd-gradient8.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#professional {
+		background-image: url('/assets/bkgd-gradient10.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.price-body-top {
+		width: auto;
+		height: 210px;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: left;
+	}
+
+	.price-body-bottom {
+		text-align: center;
+	}
+
+	#price-body-essential {
+		margin-top: 6em;
+	}
+
+	#price-body-standard {
+		margin-top: 3.7em;
+	}
+
+	#price-body-professional {
+		margin-top: 3.7em;
+	}
+
+	.price-footer {
+		text-align: center;
+		margin-bottom: 2em;
+		margin-top: 4em;
+
+	}
+
+	.svg-inline--fa.fa-w-16 {
+		width: .6em;
+	}
+
+	.price-footer .box {
+		display: inline-block;
+		width: 122px;
+		height: auto;
+	}
+
+	.price-footer .box b, .box i {
+		font-size: 12px;
+	}
+
+	.pricing .svg-inline--fa {
+		color: orange;
+		padding-right: 5px;
+	}
+
+	@media screen and (max-width: 900px) {
+
+		.price-box {
+			background-color: white;
+			border: 1px solid #0f2a51;
+			width: 300px;
+			height: auto;
+			display: inline-block;
+			margin-top: 1.5em;
+		}
+	}
+
+
+
+	@media screen and (max-width: 630px) {
+
+		.pricing h1 {
+			font-size: 31px;
+			height: auto;
+			display: inline-block;
+		}
+	}
+
+/*--- clients section ---*/
+
+
+	.clients {
+		display: none;
+		text-align: center;
+		padding-bottom: 5em;
+	}
+
+	.clients h1 {
+		color: #0f2a51;
+		text-shadow: 2px 0px #aba7a74d;
+		text-align: center;
+		font-size: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: .5em;
+	}
+
+
+	.client h2 {
+		position: relative;
+		top: 5.5em;
+		font-size: 2em;
+	}
+
+	.clients h3 {
+		margin-bottom: 3em;
+	}
+
+
+	.client {
+		width: 432px;
+		height: 373px;
+	  	overflow: hidden;
+	  	text-align: center;
+		display: inline-block;
+		margin-left: .5em;
+		margin-right: .5em; 
+		margin-top: 1em;	
+		padding-left: 0;
+		color: white;
+		border-radius: .5em;
+
+	}
+
+
+	.image-overlay:hover {
+		background-color: transparent;
+		color: transparent;
+		transition: all .4s linear 0s;
+
+	}
+
+	.image-overlay {
+		background-color: rgba(128, 128, 128, 0.78);
+	  	width: 27em;
+		height: 23.4em;
+		transition: all .4s linear 0s;
+		border-radius: .5em;
+	}
+
+
+	.image-overlay .view-button {
+		visibility: hidden;
+		margin-top: 5em;
+		position: relative;
+		top: 3em;
+		margin-top: 8em;
+		height: auto;
+		padding: 5px 10px;
+		border: solid 1px #cbcbcb;
+		border-radius: 2em;
+		background-color: #cbcbcb;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: white;
+		box-shadow: 6px 2px 6px 2px #c6c6c666;
+
+	}
+
+	.image-overlay:hover .view-button {
+		position: relative;
+		top: 6em;
+		visibility: visible;
+		margin-top: 8em;
+		height: auto;
+		padding: 5px 10px;
+
+		border: solid 1px #cbcbcb;
+		border-radius: 2em;
+		background-color: #cbcbcb;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: white;
+		box-shadow: 6px 2px 6px 2px #c6c6c666;
+		transition: all .3s linear 0s;
+	}
+
+	.image-overlay:hover .view-button:hover {
+		background-color: white;
+		border: solid 1px white;			
+		color: #cbcbcb;
+		box-shadow: 6px 2px 6px 2px #c6c6c666;
+	}
+
+	.webpic1 {
+		background-image: url('/assets/flockfowl_template.png');
+		width: 27em;
+		height: 162em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.webpic2 {
+		background-image: url('/assets/dropturn_template.png');
+		width: 27em;
+		height: 35em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.webpic3 {
+		background-image: url('/assets/webpic-landing.png');
+		width: 29em;
+		height: 24em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.webpic4 {
+		background-image: url('/assets/photography_template.png');
+		width: 28em;
+		height: 143.5em;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.webpic5 {
+		background-image: url('/assets/promotemplate2.png');
+		width: 29em;
+		height: 29em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.webpic6 {
+		background-image: url('/assets/blog_template.png');
+		width: 27em;
+		height: 83em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.webpic7 {
+		background-image: url('/assets/restaurant_template.png');
+		width: 27em;
+		height: 120em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.lashes_site {
+		background-image: url('/assets/lashes_site_screengrab.png');
+		width: 27em;
+		height: 164em;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+
+	@media screen and (max-width: 1000px){
+
+		.clients {
+			text-align: center;
+		}
+
+		.client {
+			width: 15em;
+			height: 15em;
+		  	overflow: hidden;
+		  	text-align: center;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto; 
+			margin-top: 1em;	
+			padding-left: 0;
+			color: white;
+			border-radius: .5em;
+
+		}
+
+		.webpic2 {
+			width: 15em;
+			height: 19em;
+		}
+
+		.webpic3 {
+			width: 18em;
+		height: 15em;
+		}
+
+		.webpic4 {
+			width: 15em;
+			height: 77em;
+		}
+
+		.webpic5 {
+			width: 15em;
+			height: 45em;
+		}
+
+		.webpic6 {
+			width: 16em;
+			height: 20em;
+		}
+
+		.webpic7 {
+			width: 15em;
+			height: 67em;
+		}
+
+		.lashes_site {
+			width: 15em;
+			height: 100em;
+		}
+
+		.client h2 {
+			position: relative;
+			top: 3em;
+			right: 3em;
+		}
+
+		.image-overlay .view-button {
+			position: relative;
+			top: -3em;
+			right: 3em;
+			margin-top: 3em;
+			height: auto;
+			padding: 5px 10px;
+			font-size: 1.5em;
+
+		}
+
+		.image-overlay:hover .view-button {
+			position: relative;
+			top: 2.7em;
+			left: -3.9em;
+			visibility: visible;
+			height: auto;
+			padding: 5px 10px;
+
+		}
+
+		.image-overlay:hover .view-button:hover {
+			background-color: white;
+			border: solid 1px white;			
+			color: #cbcbcb;
+			box-shadow: 6px 2px 6px 2px #c6c6c666;
+		}
+}
+
+
+		@media screen and (max-width: 630px){
+
+		.clients {
+			text-align: center;
+			padding-bottom: 0;
+
+		}
+
+		.client {
+			width: 15em;
+			height: 15em;
+		  	overflow: hidden;
+		  	text-align: center;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto; 
+			margin-top: 1em;	
+			padding-left: 0;
+			color: white;
+			border-radius: .5em;
+
+		}
+
+		.clients h1 {
+			text-align: center;
+			font-size: 35px;
+			margin: 0;
+			padding: 1em;
+		}
+
+		.webpic2 {
+			width: 15em;
+			height: 19em;
+		}
+
+		.webpic3 {
+			width: 18em;
+			height: 15em;
+		}
+
+		.webpic4 {
+			width: 15em;
+			height: 77em;
+		}
+
+		.webpic5 {
+			width: 15em;
+			height: 45em;
+		}
+
+		.webpic6 {
+			width: 16em;
+			height: 20em;
+		}
+
+		.webpic7 {
+			width: 15em;
+			height: 67em;
+		}
+
+		.lashes_site {
+			width: 15em;
+			height: 76em;
+		}
+
+		.image-overlay {
+			background-color: transparent;
+		}
+
+	}
+
+
+	
+	
+	
+
+
+/*---- contact section ----*/
+
+	
+
+	.contact-button {
+		width: auto;
+		height: auto;
+		color: #0f2a51;
+		padding: 20px 20px;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		background-color: transparent;
+		transition: all .2s linear 0s;
+		text-decoration: none;
+	}
+
+
+	.contact-button:hover {
+		color: orange;
+		transition: all .1s linear 0s;
+
+	}
+
+	
+	.contact-button-bar {
+		background-color: white;
+		text-align: center;
+	}	
+
+
+	.contact-form {
+		width: auto;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: .8em;
+		padding-top: .8em;
+		padding-bottom: .8em;
+		padding-right: .3em;
+		border-radius: .5em;
+		text-align: center;
+	}
+
+	.contact-form h3 {
+		color: white;
+		text-align: left;
+	}
+
+	.contact-form .form_button:hover {
+		background-color: #505991;
+	}
+
+	.contact-form .form_button {
+		border: solid 1px black;
+		border-radius: .3em;
+		height: 3.5em;
+		width: 10em;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: 12.7em;
+		background-color: #e1e1e1;
+		transition-property: background-color;
+	    transition-duration: .2s;
+	    transition-timing-function: ease;
+	}
+
+	@media screen and (max-width: 425px){
+
+		.contact h3 {
+			display: none;
+		}
+
+		.contact h1 {
+			margin-bottom: 2em;
+		}
+
+		.form_text_field {
+			width: 80%;
+			height: 3.5em;
+		}
+
+		.form_text_area {
+			width: 80%;
+			height: 3.5em;
+		}
+
+		.form-button {
+
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			left: 0;
+		
+		}
+	}
+
+/*---- contact bar section ----*/
+
+	.contact-bar {
+		background-color: #0f2a51;
+		width: auto;
+		height: auto;
+		text-align: center;
+		color: rgb(181, 181, 181);
+	}
+
+
+	.contact-bar a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.contact-bar .svg-inline--fa {
+		color: white;
+		font-size: 1.5em;
+		padding-left: .5em;
+	}
+
+	.contact-bar .box {
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: .3em;
+		padding-top: .2em;
+		padding-bottom: .2em;
+	}
+	
+	.contact-bar h2 {
+		color: white;
+		font-size: 12px;
+	}
+
+	
+
+
+/*---- sitemap section ----*/
+
+	.sitemap {
+		background-color: gray;
+		width: auto;
+		height: auto;
+		text-align: center;
+		color: rgb(181, 181, 181);
+	}
+
+
+	.sitemap h3 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: white;
+		display: inline-block;
+		font-size: 10px;
+	}
+
+	.sitemap a {
+		text-decoration: none;
+		color: white;
+	}
+
+	
+
+	
+/*------- footer section ------*/
+
+footer {
+	text-align: center;
+	height: auto;
+	background-color: gray;
+	color: rgb(181, 181, 181);
+}
+
+footer .svg-inline--fa {
+	margin-right: .5em;
+}
+
+
+footer .box {
+	display: inline-block;
+	width: 16em;
+	height: auto;
+	margin-right: .5em;
+	margin-left: .5em;
+}
+
+.powered-by-gridometry {
+	margin: 0;
+	padding: 10px;
+}
+
+
+
+</style>
+
+<!-- Nav Bar Section -->
+<div id="nav-bar" class="fixed_nav">
+	<% flash.each do |name, msg| %>
+		<%= content_tag :div, msg, :class => "alert-success" %>
+	<% end %>
+
+	<nav class="menu" id="menu">
+		<%= image_tag "gridometry-logo3.png", :class => "gridometry-logo3" %>
+			<div class="fixed_nav_links">
+				<ul class="active">
+					<div class="fas fa-caret-up"></div>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#overview">OVERVIEW</a></li>
+					<li><a href="#services">SOLUTIONS</a></li>
+					<li><a href="#features">FEATURES</a></li>
+					<li><a href="#clients">TEMPLATES</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>	
+			</div>
+		<div id="toggle-nav" class="toggle-nav">
+			<div class="toggle-bar-fixed"></div>
+			<div class="toggle-bar-fixed"></div>
+			<div class="toggle-bar-fixed"></div>
+		</div>
+	</nav>
+</div>
+
+<style>
+
+	
+
+	
+
+</style>
+						
+<!-- jumbotron section -->
+<div class="jumbotron" id="home">
+	<div class="jumbotron-box">
+
+	  <!-- Slideshow Section -->
+	  <ul class="cb-slideshow">
+	    <li>
+	      <span></span>
+	    </li>
+	    <li>
+	      <span></span>
+	    </li>
+	    <li>
+	      <span></span>
+	    </li>
+	    <li>
+	      <span></span>
+	    </li>
+	    <li>
+	      <span></span>
+	    </li>
+	    <li>
+	      <span></span>
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+
+
+<!-- overview section -->
+<div class="overview" id="overview">
+
+	<div class="header">
+			<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
+
+		<h1>Fantastic Designs For Every Industry</h1>
+	</div>
+	<div class="box">
+		<p>We create unique websites and applications! We help maximize your business to the next level! We provide solutions that drive business growth</p>
+	</div>
+		
+</div>
+
+<!-- bar0 section -->
+
+<div class="bar0">
+	<div class="bar_overlay0">
+	<div class="box">
+			<%= image_tag "gridometry-logo2.png", :class => "gridometry-logo2" %>
+		</div>
+		<div class="box">
+			<h1>ENDLESS POSSIBILITIES FOR YOUR BUSINESS!</h1>
+		</div>
+	</div>
+</div>
+
+
+<!-- overview section -->
+
+<div class="overview" id="overview">
+	<div class="header">
+			<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
+		<h1>Strategic designs for a total enhancement</h1>
+	</div>
+	<div class="box">
+		<p>A fully functional app across many platforms including <b style="color:black">Android</b> and <b style="color:black">Mac OS</b>. Mobile friendly, Web Responsive and custom development templates with the latest software and app building tools!</p>
+	</div>
+</div>
+
+<!-- bar1 section -->
+
+<div class="bar2">
+	<div class="bar_overlay2">
+		<div class="box">
+			<h1>Scale your business with the right design that attracts more customers!</h1>
+		</div>
+	</div>
+</div>
+
+<!-- projects carousel bar -->
+
+<div class="project-bar">
+	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
+	<h1>Take a look at our some our previous projects</h1>
+	
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <%= image_tag "mac-pic17.png", :class => "project-test" %><br>
+		</div>
+
+		<div class="mySlides fade">
+		  <%= image_tag "mac-pic18.png", :class => "project-test" %><br>
+
+		</div>
+
+		<div class="mySlides fade">
+		  <%= image_tag "mac-pic19.png", :class => "project-test" %><br>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+</div>
+
+<!-- bar3 section -->
+
+<div class="bar3">
+	<div class="bar_overlay3">
+		<div class="box">
+			<h1>We'll do the designing, while you do the reclining!</h1>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- overview section -->
+
+<div class="overview" id="overview">
+	<div class="header">
+		<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
+		<h1>Quality that's sure to leave a lasting impression</h1>
+	</div>
+	<div class="box">
+		<p>Dynamic detail with intense texturing, <b style="color:black">Magnificent Coloring and High Resolution imaging</b>! As well as custom designs for each layout providing both visual and functional enhancements.</p>	
+	</div>
+</div>
+
+
+<div class="bar1">
+	<div class="bar_overlay1">
+		<div class="box">
+			<h1>Grow your business to the point of overflow!</h1>
+		</div>
+	</div>
+</div>
+
+
+<!-- features section -->
+
+<div class="features" id="features">
+	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
+	<h1>All the tools your website wants and needs</h1>
+
+	<div class="container">
+		<h2>Custom Designs</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_pb.png", :class => "paint-brush" %>
+		</div>
+		<h4>Unique and trendy web designs for all types of businesses in any industry.</h4>
+	</div>
+
+
+	<div class="container">
+		<h2>Mobility</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_i.png", :class => "small-smart-phone" %>
+		</div>
+    	<h4>Scale any project to work on mulitple platforms and mobile screens. </h4>
+	</div>
+
+
+	<div class="container">
+		<h2>Creative Ideas</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_b.png", :class => "lightbulb" %>
+		</div>
+    	<h4>Synergistic creatives fused with creative processes is a sure recipe for magical ideas.</h4>
+	</div>
+
+	<div class="container">
+		<h2>Maintenance</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icons_t.png", :class => "screwdriver" %>
+		</div>
+    	<h4>Feel free to reach out to us for any technical issue or any site malfunctions.</h4>
+	</div>
+
+	<div class="container">
+		<h2>Responsiveness</h2>	
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_r.png", :class => "responsive" %>
+		</div>
+    	<h4>Fully functional site that your visitors will find simple and user friendly.</h4>
+	</div>
+
+	<div class="container" >
+		<h2>Customer Assistance</h2>
+		<div class="sm-art-box">	
+			<%= image_tag "grid_icon_p.png", :class => "phone-support" %>
+		</div>
+    	<h4>If you need assistance with orders, refunds, or adjustments, no problem.</h4>
+	</div>
+
+</div>
+
+<div class="bar4">
+	<div class="bar_overlay4">
+		<div class="carousel">
+			<ul>
+				<li><h1>"Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals."<br><br>Flat Design Co.</h1></li>
+				<li><h1>"The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!"<br><br>Zen Space</h1></li>
+				<li><h1>"Absolutely Fantastic!"<br><br>Macaroo</h1></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Container (Pricing Section) -->
+<div class="pricing">
+	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %><br>
+    <h1>Packages for every kind of business</h1>
+    <h3>Choose a package that works for you</h4>
+
+  	<div class="price-box">
+        <div class="price-heading" id="essential">
+          <h1>Essential <br> Package</h1>
+          <h2>$89.99</h2>
+        </div>
+
+        <div class="price-body-top">
+          <h4>Suitable for potential startups, creatives, small businesses</h4>
+          <p><i class="fas fa-check-circle"></i>UNLIMITED Design Concepts</p>
+          <p><i class="fas fa-check-circle"></i>5 Stock Images</p>
+          <p><i class="fas fa-check-circle"></i>1 Page of Content</p>
+          <p><i class="fas fa-check-circle"></i>5 day Project Window</p>
+          <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
+          <div class="price-body-bottom" id="price-body-essential">
+
+          </div>
+        </div>
+
+        <div class="price-footer">
+            <h4>Add On: $25 for 24Hr Rush Delivery</h4>
+        	<div class="box">
+        		<b>Share your idea?</b><br>
+        	</div>
+        	<div class="box">
+        		<b>Want to discuss?</b><br>
+        	</div>
+        </div>
+    </div>
+
+    <div class="price-box">
+        <div class="price-heading" id="standard">
+         	<h1>Standard <br> Package</h1>
+          	<h2>$109.99</h2>
+        </div>
+        <div class="price-body-top">
+          <h4>Suitable for potential startups, creatives, small businesses</h4>
+          <p><i class="fas fa-check-circle"></i>UNLIMITED Design Concepts</p>
+          <p><i class="fas fa-check-circle"></i>10 Stock Images</p>
+          <p><i class="fas fa-check-circle"></i>5 Pages of Content</p>
+          <p><i class="fas fa-check-circle"></i>5 Animations</p>
+          <p><i class="fas fa-check-circle"></i>Contact Form</p>
+          <p><i class="fas fa-check-circle"></i>72hr Project Window</p>
+          <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
+
+          <div class="price-body-bottom" id="price-body-standard">
+          </div>
+        </div>
+        <div class="price-footer">
+            <h4>Add On: $25 for 24Hr Rush Delivery</h4>
+        	<div class="box">
+        		<b>Share your idea?</b><br>
+        	</div>
+        	<div class="box">
+        		<b>Want to discuss?</b><br>
+        	</div>
+        </div>
+    </div> 
+
+    <div class="price-box">
+        <div class="price-heading" id="professional">
+          <h1>Professional <br> Package</h1>
+          <h2>$149.99</h2>
+        </div>
+        <div class="price-body-top">
+          <h4>Suitable for potential startups, creatives, small businesses</h4>
+          <p><i class="fas fa-check-circle"></i>Unlimited Design Concepts</p>
+          <p><i class="fas fa-check-circle"></i>Unlimited Stock Images</p>
+          <p><i class="fas fa-check-circle"></i>Unlimited Pages of Content</p>
+          <p><i class="fas fa-check-circle"></i>Unlimited Animations</p>
+          <p><i class="fas fa-check-circle"></i>Contact Form</p>
+          <p><i class="fas fa-check-circle"></i>Custom Mobile Design</p>
+          <p><i class="fas fa-check-circle"></i>48hr Project Window</p>
+          <div class="price-body-bottom" id="price-body-professional">
+          </div>
+        </div>
+        <div class="price-footer">
+        	<div class="box">
+        		<b>Share your idea?</b><br>
+        	</div>
+        	<div class="box">
+        		<b>Want to discuss?</b><br>
+        	</div>
+        </div>
+    </div> 
+
+</div>    
+
+
+
+<div class="contact-bar">
+	<div class="box">
+		<i class="fas fa-envelope"></i>
+	</div>
+	<div class="box">
+		<h2>sales@gridometry.com</h2>
+	</div>
+	<div class="box">
+		<i class="fas fa-phone"></i>
+	</div>
+	<div class="box">
+		<h2>+1-702-376-6710</h2>
+	</div>
+</div>
+
+<div class="contact-button-bar">
+</div>
+
+<div class="sitemap">
+	<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
+	<h3>| Privacy Policy</h3>
+	<h3>| Terms of Service</h3>
+
+</div>
+
+
+
+<script>
+
+$(".alert-success").show();
+	setTimeout(function(){ 
+	$(".alert-success").fadeOut(); }, 8000);
+ 
+	
+//Show window dimensions
+var MEASUREMENTS_ID = 'measurements'; // abstracted-out for convenience in renaming
+$("body").append('<div id="'+MEASUREMENTS_ID+'"></div>');
+$("#"+MEASUREMENTS_ID).css({
+    'position': 'fixed',
+    'bottom': '0',
+    'left': '0',
+    'background-color': 'black',
+    'color': 'white',
+    'padding': '5px',
+    'font-size': '10px',
+    'opacity': '0.4'
+});
+    
+getDimensions = function(){
+    return $(window).width() + ' (' + $(document).width() + ') x ' + $(window).height() + ' (' + $(document).height() + ')';
+}
+
+$("#"+MEASUREMENTS_ID).text(getDimensions());
+$(window).on("resize", function(){
+    $("#"+MEASUREMENTS_ID).text(getDimensions());
+});
+
+
+//Scroll from the top calculator
+/*
+var $window = $(window);
+ 
+$(window).on('scroll', function() {
+    $topOffset = $(this).scrollTop();
+ 
+    console.log($topOffset);
+});
+*/
+
+// customer review carousel section
+$(document).ready(function(){
+// Set the interval to be 5 seconds
+	var t = setInterval(function(){
+	$(".carousel ul").animate({marginLeft:-480},2000,function(){
+		$(this).find("li:last").after($(this).find("li:first"));
+		$(this).css({marginLeft:0});
+	})
+},9900);
+});
+
+// scroll nav section 
+// When the user scrolls down 700px from the top of the document, slide down the navbar
+
+$(document).ready(function(){
+
+	window.onscroll = function(){
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1){
+	    	$('#nav-bar').addClass('scroll_nav');
+	    	$('#nav-bar').removeClass('fixed_nav');
+	    	$('#menu').addClass('scroll_nav_links');	
+	    	$('#menu').removeClass('fixed_nav_links');	
+
+	    }
+
+	    else {
+	    	$('#nav-bar').addClass('fixed_nav');	    
+	    	$('#nav-bar').removeClass('scroll_nav');  
+	    	$('#menu').addClass('fixed_nav_links');	
+	    	$('#menu').removeClass('scroll_nav_links');	
+
+	    }
+
+	}
+});
+
+
+
+
+
+
+
+//Scroll page to nav links 
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".menu a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+});
+
+
+
+
+//Toggle nav on-click when screen width is < 
+
+$(document).ready(function() {
+    $('.toggle-nav').click(function(event) {
+        event.stopPropagation();
+        $('.toggle-nav').toggleClass('active');
+        $('.menu ul').toggleClass('active');
+    });  
+});
+
+
+
+// project bar carousel section
+$(document).ready(function(){
+// Set the interval to be 5 seconds
+	var t = setInterval(function(){
+	$(".project-bar-carousel ul").animate({marginLeft:-480},2000,function(){
+		$(this).find("li:last").after($(this).find("li:first"));
+		$(this).css({marginLeft:0});
+	})
+},9900);
+});
+
+//project bar carousel buttons 
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active-dot";
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
