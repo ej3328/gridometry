@@ -33,9 +33,9 @@
 		position: absolute;
 		left: 0;
 		width: 100%;
-	    color: #155724;
+	    color: #0f2a51;
 	    font-size: 20px;
-	    background-color: #D4EDDA;
+	    background-color: transparent;
  	}
 
 /*-- bar0 section --*/
@@ -2376,6 +2376,7 @@ footer .box {
 	<% flash.each do |name, msg| %>
 		<%= content_tag :div, msg, :class => "alert-success" %>
 	<% end %>
+	<div class="first"><%= link_to "Contact us?", new_site_path %></div>
 
 
 	<nav class="menu" id="menu">
@@ -2731,6 +2732,7 @@ footer .box {
 </div>
 
 <div class="contact-button-bar">
+	<%= link_to 'Got a question?', new_site_path, :class => "contact-button" %>
 </div>
 
 <div class="sitemap">
