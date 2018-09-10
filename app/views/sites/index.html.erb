@@ -750,7 +750,7 @@
     	position: absolute;
     	top: 0;
     	right: 0;
-		font-size: 12px;
+		font-size: 19px;
 		background-color: transparent;
 		border: solid 1px #0f2a51;
 		color: #0f2a51;
@@ -2376,6 +2376,8 @@ footer .box {
 	<% flash.each do |name, msg| %>
 		<%= content_tag :div, msg, :class => "alert-success" %>
 	<% end %>
+	<div class="first"><%= link_to "Contact us?", new_site_path %></div>
+
 
 	<nav class="menu" id="menu">
 		<%= image_tag "gridometry-logo3.png", :class => "gridometry-logo3" %>
@@ -2490,7 +2492,7 @@ footer .box {
 
 <div class="project-bar">
 	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
-	<h1>Take a look at our some our previous projects</h1>
+	<h1>Take a look at some of our previous projects</h1>
 	
 	<div class="slideshow-container">
 		<div class="mySlides fade">
@@ -2730,6 +2732,7 @@ footer .box {
 </div>
 
 <div class="contact-button-bar">
+	<%= link_to 'Got a question?', new_site_path, :class => "contact-button" %>
 </div>
 
 <div class="sitemap">
@@ -2743,6 +2746,7 @@ footer .box {
 
 <script>
 
+/*
 $(".alert-success").show();
 	setTimeout(function(){ 
 	$(".alert-success").fadeOut(); }, 8000);
@@ -2771,6 +2775,7 @@ $(window).on("resize", function(){
     $("#"+MEASUREMENTS_ID).text(getDimensions());
 });
 
+*/
 
 //Scroll from the top calculator
 /*
