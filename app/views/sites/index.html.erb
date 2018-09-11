@@ -132,7 +132,7 @@
 
 	.bar1 h1 {
 
-		font-size: 2.5em;
+		font-size: 2em;
 		color: white;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -167,7 +167,7 @@
 
 	.bar2 h1 {
 
-		font-size: 2.5em;
+		font-size: 2em;
 		color: white;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -200,7 +200,7 @@
 	}
 
 	.bar3 h1 {
-		font-size: 2.5em;
+		font-size: 2em;
 		color: white;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -247,7 +247,8 @@
 /*-- project bar section --*/
 
 
-	.view-button {
+	.view-button-bodyblitz {
+		visibility: hidden;
 		position: relative;
 		top: 0em;
 		margin-top: 8em;
@@ -263,7 +264,40 @@
 		transition: all .2s linear 0s;
 	}
 
-	.view-button:hover {
+	.view-button-lashdolls {
+		position: relative;
+		top: 0em;
+		margin-top: 8em;
+		margin-bottom: 2em;
+		height: auto;
+		padding: 5px 10px;
+
+		border: solid 1px #0f2a51;
+		background-color: transparent;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #0f2a51;
+		transition: all .2s linear 0s;
+	}
+
+	.view-button-gbht {
+		visibility: hidden;
+		position: relative;
+		top: 0em;
+		margin-top: 8em;
+		margin-bottom: 2em;
+		height: auto;
+		padding: 5px 10px;
+
+		border: solid 1px #0f2a51;
+		background-color: transparent;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #0f2a51;
+		transition: all .2s linear 0s;
+	}
+
+	.view-button-lashdolls:hover {
 		background-color: #0f2a51;
 		color: white;
 		transition: all .2s linear 0s;
@@ -292,8 +326,14 @@
 	}
 
 	.project-bar {
-		margin-bottom: 20em;
-		margin-top: 4em;
+		margin-bottom: 18em;
+		margin-top: 7em;
+
+		width: auto;
+		height: 25em;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	@media screen and (max-width: 1040px){
@@ -309,11 +349,7 @@
 	}
 
 	.project-bar {
-		width: auto;
-		height: 25em;
-		text-align: center;
-		margin-right: auto;
-		margin-left: auto;
+		
 	}
 
 	.project-bar h1 {
@@ -1094,6 +1130,8 @@
 		background-color: white;
 		padding-bottom: 5em;
 		padding-top: 1em;
+		margin-top: 4em;
+		margin-bottom: 3em;
 
 	}
 
@@ -1491,6 +1529,11 @@
 
 		padding-top: 2em;
 		padding-bottom: 7em;
+		margin-left: 5em;
+		margin-right: 5em;
+
+		margin-top: 6em;
+		margin-bottom: 2em;
 	}
 
 
@@ -1524,11 +1567,10 @@
 		margin-bottom: 3em;
 	}
 
-	.features h4 {
-		color: black;
+	.features p {
 		margin-left: 1em;
 		margin-right: 1em;
-		margin-top: 1em;
+		margin-top: 0;
 
 	}
 
@@ -1601,13 +1643,6 @@
 	}
 }
 
-@media screen and (max-width: 515px){
-	.features .container {
-		width: auto;
-		height: auto;
-	}
-}
-
 @media screen and (max-width: 630px){
 	
 	.features h1 {
@@ -1628,6 +1663,7 @@
 
 	.features {
 		padding-bottom: 2em;
+
 	}
 
 	.features .container {
@@ -1635,6 +1671,15 @@
 		width: 15em;
 	}
 }
+
+@media screen and (max-width: 515px){
+	.features .container {
+		width: auto;
+		height: auto;
+	}
+}
+
+
 
 
 /*--- pricing section --*/
@@ -1647,6 +1692,9 @@
 		padding-top: 5em;
 		padding-bottom: 5em;
 		text-align: center;
+
+		margin-top: 4em;
+		margin-bottom: 4em;
 
 	}
 
@@ -2497,17 +2545,21 @@ footer .box {
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic17.png", :class => "project-test" %><br>
+		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-bodyblitz' %>	
+
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic18.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button' %>	
+		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-lashdolls' %>	
 
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic19.png", :class => "project-test" %><br>
+		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-gbht' %>	
+
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -2559,52 +2611,52 @@ footer .box {
 
 	<div class="container">
 		<h2>Custom Designs</h2>
+		<p>Unique and trendy web designs for all types of businesses in any industry.</p>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_pb.png", :class => "paint-brush" %>
 		</div>
-		<h4>Unique and trendy web designs for all types of businesses in any industry.</h4>
 	</div>
 
 
 	<div class="container">
 		<h2>Mobility</h2>
+		<p>Scale any project to work on mulitple platforms and mobile screens. </p>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_i.png", :class => "small-smart-phone" %>
 		</div>
-    	<h4>Scale any project to work on mulitple platforms and mobile screens. </h4>
 	</div>
 
 
 	<div class="container">
 		<h2>Creative Ideas</h2>
+		<p>Synergistic creatives fused with creative processes is a sure recipe for magical ideas.</p>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_b.png", :class => "lightbulb" %>
 		</div>
-    	<h4>Synergistic creatives fused with creative processes is a sure recipe for magical ideas.</h4>
 	</div>
 
 	<div class="container">
 		<h2>Maintenance</h2>
+		<p>Feel free to reach out to us for any technical issue or any site malfunctions.</p>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icons_t.png", :class => "screwdriver" %>
 		</div>
-    	<h4>Feel free to reach out to us for any technical issue or any site malfunctions.</h4>
 	</div>
 
 	<div class="container">
 		<h2>Responsiveness</h2>	
+		<p>Fully functional site that your visitors will find simple and user friendly.</p>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_r.png", :class => "responsive" %>
 		</div>
-    	<h4>Fully functional site that your visitors will find simple and user friendly.</h4>
 	</div>
 
 	<div class="container" >
 		<h2>Customer Assistance</h2>
+		<p>If you need assistance with orders, refunds, or adjustments, no problem.</p>
 		<div class="sm-art-box">	
 			<%= image_tag "grid_icon_p.png", :class => "phone-support" %>
 		</div>
-    	<h4>If you need assistance with orders, refunds, or adjustments, no problem.</h4>
 	</div>
 
 </div>
