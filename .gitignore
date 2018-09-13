@@ -31,4 +31,4 @@
 /config/master.key
 
 #Ignore secrets.yml file
-secrets.yml
+secrets_backup.yml
