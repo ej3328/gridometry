@@ -31,4 +31,4 @@
 /config/master.key
 
 #secrets backup
-secrets_backup.yml
+secrets.yml
