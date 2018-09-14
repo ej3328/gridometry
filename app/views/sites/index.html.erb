@@ -898,7 +898,7 @@
     }
 
     .menu {
-    	text-align: center;
+    	text-align: right;
     	display: inline-block;
 	    position: fixed;
 	    top: 0;
@@ -916,6 +916,14 @@
     	transition: all .4s linear 0s;
 
     }
+
+    .menu .gridometry-logo3 {
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: 1.1em;
+    left: 10px;
+}
 
 	nav .dropdown {
 		display: block;
@@ -2401,7 +2409,7 @@ footer .box {
 			</div>
 
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Explore</button>
+			<button onclick="myFunction()" id="dropbtn" class="fas fa-bars"></button>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="#home">HOME</a>
 			    <a href="#overview">OVERVIEW</a>
@@ -2416,22 +2424,25 @@ footer .box {
 
 <style>
 
-.dropbtn {
+#dropbtn {
     background-color: transparent;
-    color: #0f2a51;
+    color: orange;
     padding: 16px;
-    font-size: 16px;
-    border: 2px solid #0f2a51;
+    font-size: 22px;
+    border: none;
     cursor: pointer;
     margin-bottom: 1em;
+    position: relative;
+    top: 0.5em;
+    right: 29px;
 }
 
-.dropbtn:hover {
-    background-color: #0f2a51;
-    color: white;
+#dropbtn:hover {
+    background-color: none;
+    color: #0f2a51;
 }
 
-.dropbtn:focus {
+#dropbtn:focus {
 	display: none;
 }
 
@@ -2472,7 +2483,7 @@ function myFunction() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('#dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
