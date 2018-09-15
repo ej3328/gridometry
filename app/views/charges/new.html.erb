@@ -1,0 +1,245 @@
+<style>
+
+  body {
+    height: auto;
+    margin: 0;
+  }
+
+  .payment-container {
+    text-align: center;
+    background-color: white;
+    width: auto;
+    height: 90vh;
+  }
+
+  .payment-container h1 {
+    margin: 0;
+  }
+
+
+
+  
+  
+ 
+
+  
+  
+ 
+
+/*---- contact bar section ----*/
+
+  .contact-bar {
+    background-color: #0f2a51;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(181, 181, 181);
+  }
+
+
+  .contact-bar a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-bar .svg-inline--fa {
+    color: white;
+    font-size: 1.5em;
+    padding-left: .5em;
+  }
+
+  .contact-bar .box {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: .3em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+  }
+  
+  .contact-bar h2 {
+    color: white;
+    font-size: 12px;
+  }
+
+  
+
+
+/*---- sitemap section ----*/
+
+  .sitemap {
+    background-color: gray;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(181, 181, 181);
+  }
+
+
+  .sitemap h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .sitemap a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .payment-box {
+    width: 
+  }
+
+
+
+
+
+  .price-heading {
+    width: auto;
+    height: 100px;
+    padding: 20px;
+  }
+
+
+  .price-box {
+    background-color: white;
+    color: #0f2a51;
+    border: 1px solid #0f2a514d;
+    width: 30%;
+    max-width: 350px;
+    min-width: 300px;
+    height: 32em;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 1em;
+    transition: all .4s linear 0s;
+  }
+
+
+
+
+  .price-heading {
+    width: auto;
+    height: 100px;
+    padding: 20px;
+  }
+
+
+  .price-box {
+    background-color: white;
+    color: #0f2a51;
+    border: 1px solid #0f2a514d;
+    width: 30%;
+    max-width: 350px;
+    min-width: 300px;
+    height: 32em;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 1em;
+    transition: all .4s linear 0s;
+  }
+
+  .price-body-top {
+    width: auto;
+    height: 210px;
+    padding-left: 55px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .price-body-top p {
+    margin-top: -9px;
+  }
+
+</style>
+
+
+
+<head>
+ <!--include meta data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Gridometry</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+<div class="payment-container">
+
+  
+  <div class="price-box">
+        <div class="price-heading" id="essential">
+          <h1>Essential <br> Package</h1>
+        </div>
+
+        <div class="price-body-top">
+          <p><i class="fas fa-check-circle"></i>UNLIMITED Design Concepts</p>
+          <p><i class="fas fa-check-circle"></i>5 Stock Images</p>
+          <p><i class="fas fa-check-circle"></i>1 Page of Content</p>
+          <p><i class="fas fa-check-circle"></i>5 day Project Window</p>
+          <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
+          <div class="price-body-bottom" id="price-body-essential">
+
+          </div>
+        </div>
+
+        <div class="price-bottom">
+          <%= form_tag charges_path do %>
+            <article>
+              <% if flash[:error].present? %>
+                <div id="error_explanation">
+                  <p><%= flash[:error] %></p>
+                </div>
+              <% end %>
+              <label class="amount">
+                <h2>$1.00</h2>
+              </label>
+            </article>
+
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                    data-description="Purchase Web Package"
+                    data-amount="0100"
+                    data-locale="auto">
+            </script>
+          <% end %>
+        </div>
+
+    </div>
+</div>
+
+  <div class="contact-bar">
+    <div class="box">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <div class="box">
+      <h2>sales@gridometry.com</h2>
+    </div>
+    <div class="box">
+      <i class="fas fa-phone"></i>
+    </div>
+    <div class="box">
+      <h2>+1-702-376-6710</h2>
+    </div>
+  </div>
+
+
+  <div class="sitemap">
+    <h3><i class="far fa-copyright"></i>2018 Gridometry | All Rights Reserved</h3>
+    <h3>| Privacy Policy</h3>
+    <h3>| Terms of Service</h3>
+  </div>
+  
+</body>

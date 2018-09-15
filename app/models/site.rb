@@ -1,5 +1,5 @@
 class Site < ApplicationRecord
-	validates_format_of :firstName, :with => /\A[a-zA-Z]+\z/i,
+  validates_format_of :firstName, :with => /\A[a-zA-Z]+\z/i,
     :message => "can only have letters"
   validates_format_of :lastName, :with => /\A[a-zA-Z]+\z/i,
     :message => "can only have letters"
