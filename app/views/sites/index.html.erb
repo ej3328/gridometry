@@ -1694,9 +1694,11 @@
 	}
 
 	.pricing .price-button {
+		display: none;
 		color: #0f2a51;
 		padding: 13px 2em;
 		border: 1px solid #0f2a51;
+		border-radius: 30px;
 		margin-top: 3em;
 		margin-bottom: 1em;
 		background-color: white;
@@ -2768,7 +2770,6 @@ window.onclick = function(event) {
           <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
           <div class="price-body-bottom" id="price-body-essential">
            	<%= link_to 'Check Out', new_charge_path, :class => 'price-button' %>	
-
           </div>
         </div>
 
@@ -2799,6 +2800,7 @@ window.onclick = function(event) {
           <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
 
           <div class="price-body-bottom" id="price-body-standard">
+          	<%= link_to 'Check Out', charges_standard_path, :class => 'price-button' %>
           </div>
         </div>
         <div class="price-footer">
@@ -2827,6 +2829,7 @@ window.onclick = function(event) {
           <p><i class="fas fa-check-circle"></i>Custom Mobile Design</p>
           <p><i class="fas fa-check-circle"></i>48hr Project Window</p>
           <div class="price-body-bottom" id="price-body-professional">
+          	<%= link_to 'Check Out', charges_premium_path, :class => 'price-button' %>	
           </div>
         </div>
         <div class="price-footer">

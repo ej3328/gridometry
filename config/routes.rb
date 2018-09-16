@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
   resources :sites
 
+  get 'charges/standard'
+  get 'charges/premium'
+
   resources :charges, only: [:new, :create]
 end
