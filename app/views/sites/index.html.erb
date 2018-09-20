@@ -735,6 +735,58 @@
     }
 
 
+    #dropbtn {
+	    background-color: transparent;
+	    color: orange;
+	    padding: 2px;
+	    font-size: 22px;
+	    border: none;
+	    cursor: pointer;
+	    margin-bottom: .5em;
+	    position: relative;
+	    top: 0.5em;
+	}
+
+	#dropbtn:hover {
+	    background-color: none;
+	    color: #0f2a51;
+	}
+
+	#dropbtn:focus {
+		display: none;
+	}
+
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: relative;
+	    background-color: white;
+	    min-width: 160px;
+	    overflow: auto;
+		box-shadow: 0 29px -1px black;	    
+	    z-index: 5;
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.dropdown a:hover {
+		background-color: #ddd;
+	}
+
+	.show {
+		display: block;
+	}
+
+
 
     .fixed_nav_links a {
     	color: white;
@@ -2448,7 +2500,7 @@ footer .box {
 	right: .5em;
 	font-size: 20px;
 	padding-right: 0px;
-	padding-left: 34px;
+	padding-left: 0px;
 }
 
 .box #ig.svg-inline--fa.fa-w-14 {
@@ -2459,6 +2511,84 @@ footer .box {
 	padding-left: 0px;
 }
 
+
+
+
+/*-- seal section --*/
+
+.seal-section {
+	text-align: center;
+	width: auto;
+	height: auto;
+	padding: 15px;
+	background-color: gray;
+}
+
+.visa-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.google-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.master-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.discover-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.american-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.jcb-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.android-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.apple-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.diners-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+#comodo-seal-box  {
+	width: 50px;
+	max-width: 60px;
+	height: auto;
+	border: solid red;
+}
+
+.comodo-seal {
+	width: auto;
+	height: auto;
+}
 
 
 
@@ -2499,80 +2629,6 @@ footer .box {
 
 	</nav>
 </div>
-
-<style>
-
-#dropbtn {
-    background-color: transparent;
-    color: orange;
-    padding: 2px;
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: .5em;
-    position: relative;
-    top: 0.5em;
-}
-
-#dropbtn:hover {
-    background-color: none;
-    color: #0f2a51;
-}
-
-#dropbtn:focus {
-	display: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: white;
-    min-width: 160px;
-    overflow: auto;
-	box-shadow: 0 29px -1px black;	    
-    z-index: 5;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-	
-</style>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('#dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 						
 <!-- jumbotron section -->
 <div class="jumbotron" id="home">
@@ -2900,95 +2956,15 @@ window.onclick = function(event) {
 	<div class="box">
 		<h2>+1-702-826-9617</h2>
 	</div>
-	<div class="box">
-		<div id="fb" class="fab fa-facebook-square"></div>
-	</div>
-	<div class="box">
-		<div id="ig" class="fab fa-instagram"></div>
+	<div class="social-link-bottom">
+		<div class="box">
+			<div id="fb" class="fab fa-facebook-square"></div>
+		</div>
+		<div class="box">
+			<div id="ig" class="fab fa-instagram"></div>
+		</div>
 	</div>
 </div>
-
-<style>
-
-.seal-section {
-	text-align: center;
-	width: auto;
-	height: auto;
-	padding: 15px;
-	background-color: gray;
-}
-
-.visa-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.google-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.master-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.discover-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.american-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.jcb-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.android-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.apple-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-.diners-card {
-	width: 40px;
-	max-width: 50px;
-	height: auto;
-}
-
-#comodo-seal-box  {
-	width: 50px;
-	max-width: 60px;
-	height: auto;
-	border: solid red;
-}
-
-.comodo-seal {
-	width: auto;
-	height: auto;
-}
-
-
-
-
-
-</style>
 
 <div class="seal-section">
 	<%= image_tag "visa-card.png", :class => "visa-card" %>
@@ -3179,6 +3155,26 @@ function showSlides(n) {
 
 
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 
 
