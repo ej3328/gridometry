@@ -27,6 +27,13 @@
 	body {
 		margin: 0;
 		padding:0;
+		max-zoom: 100%;
+	}
+
+	@media screen and (max-width: 290px){
+		body {
+			display: none;
+		}
 	}
 
 	.alert-success {
@@ -723,8 +730,8 @@
 	    width: 100%;
 	    height: auto;
 	    z-index: 3;
-		box-shadow: 0 3px 25px black;	    
-	    transition: all .4s linear 0s;
+		box-shadow: 0 3px 5px #9b9b9bcc;
+		transition: all .4s linear 0s;	   
     }
 
 
@@ -778,7 +785,7 @@
         height: auto;
         background: transparent;
         text-align: center;
-        transition: all .4s linear 0s;
+		transition: all .4s linear 0s;
 
     }
 
@@ -820,8 +827,8 @@
 	    width: 100%;
 	    height: auto;
 	    z-index: 3;
-		box-shadow: 0 3px 25px black;	    
-	    transition: all .4s linear 0s;
+		box-shadow: 0 3px 5px #9b9b9bcc;
+		transition: all .4s linear 0s;
     }
 
 
@@ -899,7 +906,7 @@
 	    width: 100%;
 	    height: auto;
 	    z-index: 3;
-		box-shadow: 0 3px 25px black;	    
+		box-shadow: 0 3px 5px #9b9b9bcc;
 	    transition: all .4s linear 0s;
     }
 
@@ -912,8 +919,8 @@
 	    width: 100%;
 	    height: auto;
 	    z-index: 3;
-		box-shadow: 0 3px 25px black;	    
-	    transition: all .4s linear 0s;
+		box-shadow: 0 3px 5px #9b9b9bcc;
+		transition: all .4s linear 0s;
     }
 
 
@@ -1675,6 +1682,13 @@
 
 /*--- pricing section --*/
 
+.price-heading h2 b {
+	text-decoration: line-through;
+	text-decoration-color: red;
+	font-size: 20px;
+}
+
+
 
 	.pricing {
 		background-color: white;
@@ -1802,6 +1816,7 @@
 		height: 210px;
 		padding-left: 20px;
 		padding-right: 20px;
+		font-weight: normal;
 		text-align: left;
 	}
 
@@ -1829,7 +1844,7 @@
 	}
 
 	.svg-inline--fa.fa-w-16 {
-		width: .6em;
+		width: 20px;
 	}
 
 	.price-footer .box {
@@ -2377,6 +2392,11 @@
 		color: white;
 	}
 
+	.sitemap .box {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
 	
 
 	
@@ -2407,6 +2427,39 @@ footer .box {
 	padding: 10px;
 }
 
+#fb.svg-inline--fa.fa-w-14 {
+	color: #00327a;
+	position: absolute;
+	right: 1.7em;
+	padding-right: 0px;
+	font-size: 22px;
+}
+
+#ig.svg-inline--fa.fa-w-14 {
+	color: #00327a;
+	position: absolute;
+	right: .3em;
+	font-size: 22px;
+}
+
+.box #fb.svg-inline--fa.fa-w-14 {
+	color: white;
+	position: relative;
+	right: .5em;
+	font-size: 20px;
+	padding-right: 0px;
+	padding-left: 34px;
+}
+
+.box #ig.svg-inline--fa.fa-w-14 {
+	color: white;
+	position: relative;
+	right: .1em;
+	font-size: 20px;
+	padding-left: 0px;
+}
+
+
 
 
 </style>
@@ -2420,6 +2473,9 @@ footer .box {
 
 	<nav class="menu" id="menu">
 		<%= image_tag "gridometry-logo3.png", :class => "gridometry-logo3" %>
+		<div id="fb" class="fab fa-facebook-square"></div>
+		<div id="ig" class="fab fa-instagram"></div>
+
 			<div class="fixed_nav_links">
 				<ul class="active">
 					<li><a href="#home">HOME</a></li>
@@ -2733,20 +2789,6 @@ window.onclick = function(event) {
 	</div>
 </div>
 
-<style>
-.price-heading h2 b {
-	text-decoration: line-through;
-	text-decoration-color: red;
-	font-size: 20px;
-}
-
-.price-body-top {
-	font-weight: normal;
-}
-
-
-</style>
-
 
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="pricing">
@@ -2856,17 +2898,121 @@ window.onclick = function(event) {
 		<i class="fas fa-phone"></i>
 	</div>
 	<div class="box">
-		<h2>+1-702-376-6710</h2>
+		<h2>+1-702-826-9617</h2>
+	</div>
+	<div class="box">
+		<div id="fb" class="fab fa-facebook-square"></div>
+	</div>
+	<div class="box">
+		<div id="ig" class="fab fa-instagram"></div>
 	</div>
 </div>
 
+<style>
+
+.seal-section {
+	text-align: center;
+	width: auto;
+	height: auto;
+	padding: 15px;
+	background-color: gray;
+}
+
+.visa-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.google-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.master-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.discover-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.american-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.jcb-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.android-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.apple-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+.diners-card {
+	width: 40px;
+	max-width: 50px;
+	height: auto;
+}
+
+#comodo-seal-box  {
+	width: 50px;
+	max-width: 60px;
+	height: auto;
+	border: solid red;
+}
+
+.comodo-seal {
+	width: auto;
+	height: auto;
+}
+
+
+
+
+
+</style>
+
+<div class="seal-section">
+	<%= image_tag "visa-card.png", :class => "visa-card" %>
+	<%= image_tag "google-card.png", :class => "google-card" %>
+	<%= image_tag "master-card.png", :class => "master-card" %>
+	<%= image_tag "discover-card.png", :class => "discover-card" %>
+	<%= image_tag "american-card.png", :class => "american-card" %>
+	<%= image_tag "jcb-card.png", :class => "jcb-card" %>
+	<%= image_tag "android-card.png", :class => "android-card" %>
+	<%= image_tag "apple-card.png", :class => "apple-card" %>
+	<%= image_tag "diners-card.png", :class => "diners-card" %>
+
+</div>
 
 
 <div class="sitemap">
-	<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
-	<h3>| Privacy Policy</h3>
-	<h3>| Terms of Service</h3>
-
+	<div class="box">
+		<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
+		<h3>| Privacy Policy</h3>
+		<h3>| Terms of Service</h3>
+	</div>
+	<div class="box">
+		<%= image_tag "comodo_secure_seal_113x59_transp.png", :class => "comodo-seal" %>
+	</div>
 </div>
 
 
