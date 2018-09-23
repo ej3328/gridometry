@@ -156,7 +156,8 @@
 		width: 100%;
 		height: auto;
 		background-color: #0f2a51e6;
-
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
 
 		
 	}
@@ -178,8 +179,6 @@
 
 		font-size: 2em;
 		color: white;
-		padding-top: 2em;
-		padding-bottom: 2em;
 
 	}
 
@@ -188,9 +187,10 @@
 /*-- bar3 section --*/
 
 	.bar_overlay3 {
-		width: 100%;
+		width: auto;
 		height: auto;
-
+		padding-top: 4em;
+		padding-bottom: 4em;
 		background-image: url("/assets/bkgd-gradient5.png");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -209,12 +209,10 @@
 	}
 
 	.bar3 h1 {
-		font-size: 2em;
 		color: white;
-		padding-top: 2em;
-		padding-bottom: 2em;
-
+		font-size: 40px;
 	}
+	
 
 	
 
@@ -553,13 +551,7 @@
 
 
 
-	.bar2 .box {
-		width: 50%;
-		height: auto;
-		text-align: center;
-		padding: 4em;
-		margin-left: auto;
-	}
+	
 
 	.bar2 button {
 		margin-bottom: 4em;
@@ -762,7 +754,6 @@
 	}
 
 	.dropdown-content {
-	    display: none;
 	    position: relative;
 	    background-color: white;
 	    min-width: 160px;
@@ -780,6 +771,7 @@
 
 	.dropdown a:hover {
 		background-color: #ddd;
+		color: orange;
 	}
 
 	.show {
@@ -787,13 +779,8 @@
 	}
 
 
-
-    .fixed_nav_links a {
-    	color: white;
-    }
-
     .scroll_nav_links a {
-    	color: white;
+    	color: #0f2a51;
     }
 
 
@@ -985,8 +972,6 @@
     .menu .gridometry-logo3 {
     width: 175px;
     height: auto;
-    position: relative;
-    top: 1.1em;
 }
 
 	nav .dropdown {
@@ -2610,23 +2595,11 @@ footer .box {
 				<ul class="active">
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#overview">OVERVIEW</a></li>
-					<li><a href="#solutions">SOLUTIONS</a></li>
+					<li><a href="#solutions">WEB SOLUTIONS</a></li>
 					<li><a href="#projects">PROJECTS</a></li>
 					<li><a href="#pricing">PRICING</a></li>
 				</ul>	
 			</div>
-
-		<div class="dropdown">
-			<button onclick="myFunction()" id="dropbtn" class="fas fa-bars"></button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="#home">HOME</a>
-			    <a href="#overview">OVERVIEW</a>
-			    <a href="#solutions">SOLUTIONS</a>
-				<a href="#projects">PROJECTS</a>
-			    <a href="#pricing">PRICING</a>
-			</div>
-		</div>
-
 	</nav>
 </div>
 						
@@ -2663,7 +2636,6 @@ footer .box {
 <!-- overview section -->
 <div class="overview" id="overview">
 	<div class="header">
-			<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
 		<h1>Fantastic Designs For Every Industry</h1>
 	</div>
 	<div class="box">
@@ -2672,15 +2644,16 @@ footer .box {
 		
 </div>
 
-<!-- bar0 section -->
 
-<div class="bar0">
-	<div class="bar_overlay0">
-	<div class="box">
-			<%= image_tag "gridometry-logo2.png", :class => "gridometry-logo2" %>
-		</div>
+
+<div class="bar2">
+	<div class="bar_overlay2">
 		<div class="box">
-			<h1>ENDLESS POSSIBILITIES FOR YOUR BUSINESS!</h1>
+			<%= image_tag "doggy_phone.png", :class => "doggy_phone" %>
+		</div>
+		<div id="text-box" class="box">
+			<h1>Mobile Ready</h1><br>
+			<h2>Scale your business with a mobile design that's user friendly for your customers!</h2>
 		</div>
 	</div>
 </div>
@@ -2690,7 +2663,6 @@ footer .box {
 
 <div class="overview" id="overview">
 	<div class="header">
-			<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
 		<h1>Strategic designs for a total enhancement</h1>
 	</div>
 	<div class="box">
@@ -2698,20 +2670,149 @@ footer .box {
 	</div>
 </div>
 
-<!-- bar1 section -->
-
-<div class="bar2">
-	<div class="bar_overlay2">
+<div class="bar5">
+	<div class="bar_overlay5">
 		<div class="box">
-			<h1>Scale your business with the right design that attracts more customers!</h1>
+			<%= image_tag "smoothie_shop.png", :class => "smoothie_shop" %>
+		</div>
+		<div class="box">
+			<h1>Website Security</h1>
+			<h2>Encryption that's sure to protect what matters most to your business!</h2>
 		</div>
 	</div>
 </div>
 
+
+<style>
+
+/*-- bar3 section ---*/
+
+.bar_overlay5 {
+	background-color: #eb871fe6;
+	width: auto;
+	height: auto;
+	text-align: center;
+	padding-top: 4.5em;
+	padding-bottom: 4.5em;
+}
+
+
+.bar5 {
+	background-image: url("/assets/security_mac.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;		
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.bar5 .box {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+
+	text-align: center;
+	margin-left: auto;
+	padding: 0;
+}
+
+.smoothie_shop {
+	width: 400px;
+	height: auto;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.bar5 h1 {
+	color: white;
+	text-shadow: 2px 2px gray;
+	font-size: 70px;
+	width: 350px;
+}
+
+.bar5 h2 {
+	width: 350px;
+	color: white;
+
+}
+
+.bar3 #text-box {
+}
+
+@media screen and (max-width: 500px){
+	.smoothie_shop {
+		width: 80%;
+	}
+
+	.bar5 h2 {
+		width: auto;
+	}
+
+	.bar5 h1 {
+		width: auto;
+	}
+}
+
+
+
+/*-- bar2 section ---*/
+
+.bar2 .box {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+
+	text-align: center;
+	margin-left: auto;
+}
+
+.doggy_phone {
+	width: 55%;
+	height: auto;
+}
+
+.bar2 h1 {
+	color: white;
+	text-shadow: 2px 2px #d87b10;
+
+	font-size: 70px;
+	width: 400px;
+}
+
+.bar2 h2 {
+	width: 400px;
+	color: white;
+
+}
+
+.bar2 #text-box {
+}
+
+@media screen and (max-width: 500px){
+	.bar2 h2 {
+		width: auto;
+	}
+
+	.bar2 h1 {
+		width: auto;
+	}
+}
+</style>
+
+
+
+
+
 <!-- projects carousel bar -->
 
 <div id="projects" class="project-bar">
-	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
 	<h1>Take a look at some of our previous projects</h1>
 	
 	<div class="slideshow-container">
@@ -2740,7 +2841,28 @@ footer .box {
 	</div>
 </div>
 
-<!-- bar3 section -->
+
+<div class="bar1">
+	<div class="bar_overlay1">
+		<div class="box">
+			<h1>Grow your business to the point of overflow!</h1>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- overview section -->
+
+<div class="overview" id="overview">
+	<div class="header">
+		<h1>Quality that's sure to leave a lasting impression</h1>
+	</div>
+	<div class="box">
+		<p>Dynamic detail with intense texturing, <b style="color:black">Magnificent Coloring and High Resolution imaging</b>! As well as custom designs for each layout providing both visual and functional enhancements.</p>	
+	</div>
+</div>
 
 <div class="bar3">
 	<div class="bar_overlay3">
@@ -2753,32 +2875,9 @@ footer .box {
 
 
 
-<!-- overview section -->
-
-<div class="overview" id="overview">
-	<div class="header">
-		<h1><%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
-		<h1>Quality that's sure to leave a lasting impression</h1>
-	</div>
-	<div class="box">
-		<p>Dynamic detail with intense texturing, <b style="color:black">Magnificent Coloring and High Resolution imaging</b>! As well as custom designs for each layout providing both visual and functional enhancements.</p>	
-	</div>
-</div>
-
-
-<div class="bar1">
-	<div class="bar_overlay1">
-		<div class="box">
-			<h1>Grow your business to the point of overflow!</h1>
-		</div>
-	</div>
-</div>
-
-
 <!-- solutions section -->
 
 <div class="solutions" id="solutions">
-	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %>
 	<h1>All the tools your website wants and needs</h1>
 
 	<div class="container">
@@ -2848,9 +2947,8 @@ footer .box {
 
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="pricing">
-	<%= image_tag "gridometry-logo.png", :class => "gridometry-logo" %><br>
     <h1>Packages for every kind of business</h1>
-    <h3>Choose a package that works for you</h4>
+    <h3>Choose a package that works for you</h3>
 
   	<div class="price-box">
         <div class="price-heading" id="essential">
@@ -2866,7 +2964,7 @@ footer .box {
           <p><i class="fas fa-check-circle"></i>5 day Project Window</p>
           <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
           <div class="price-body-bottom" id="price-body-essential">
-           	<%= link_to 'Check Out', new_charge_path, :class => 'price-button' %>	
+           	<%= link_to 'Check Out', new_essential_path, :class => 'price-button' %>	
           </div>
         </div>
 
@@ -2884,7 +2982,7 @@ footer .box {
     <div class="price-box">
         <div class="price-heading" id="standard">
          	<h1>Standard <br> Package</h1>
-          	<h2>$149 <b>$249</b></h2>
+          	<h2>$199 <b>$249</b></h2>
         </div>
         <div class="price-body-top">
           <h4>Suitable for potential startups, creatives, small businesses</h4>
@@ -2897,7 +2995,7 @@ footer .box {
           <p><i class="fas fa-check-circle"></i>Basic Mobile Design</p>
 
           <div class="price-body-bottom" id="price-body-standard">
-          	<%= link_to 'Check Out', charges_standard_path, :class => 'price-button' %>
+          	<%= link_to 'Check Out', new_standard_path, :class => 'price-button' %>
           </div>
         </div>
         <div class="price-footer">
@@ -2926,7 +3024,7 @@ footer .box {
           <p><i class="fas fa-check-circle"></i>Custom Mobile Design</p>
           <p><i class="fas fa-check-circle"></i>48hr Project Window</p>
           <div class="price-body-bottom" id="price-body-professional">
-          	<%= link_to 'Check Out', charges_premium_path, :class => 'price-button' %>	
+          	<%= link_to 'Check Out', new_premium_path, :class => 'price-button' %>	
           </div>
         </div>
         <div class="price-footer">
@@ -2956,14 +3054,6 @@ footer .box {
 	<div class="box">
 		<h2>+1-702-826-9617</h2>
 	</div>
-	<div class="social-link-bottom">
-		<div class="box">
-			<div id="fb" class="fab fa-facebook-square"></div>
-		</div>
-		<div class="box">
-			<div id="ig" class="fab fa-instagram"></div>
-		</div>
-	</div>
 </div>
 
 <div class="seal-section">
@@ -2976,15 +3066,12 @@ footer .box {
 	<%= image_tag "android-card.png", :class => "android-card" %>
 	<%= image_tag "apple-card.png", :class => "apple-card" %>
 	<%= image_tag "diners-card.png", :class => "diners-card" %>
-
 </div>
 
 
 <div class="sitemap">
 	<div class="box">
-		<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
-		<h3>| Privacy Policy</h3>
-		<h3>| Terms of Service</h3>
+		<h3>Copyright<i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
 	</div>
 	<div class="box">
 		<%= image_tag "comodo_secure_seal_113x59_transp.png", :class => "comodo-seal" %>
@@ -3163,7 +3250,7 @@ function myFunction() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('#dropbtn')) {
+  if (!event.target.matches('.fas fa-bars')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
