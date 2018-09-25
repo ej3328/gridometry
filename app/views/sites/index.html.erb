@@ -252,7 +252,6 @@
 
 
 	.view-button-bodyblitz {
-		visibility: hidden;
 		position: relative;
 		top: 0em;
 		margin-top: 8em;
@@ -266,6 +265,14 @@
 		text-decoration: none;
 		color: #0f2a51;
 		transition: all .2s linear 0s;
+	}
+
+
+	.view-button-bodyblitz:hover {
+		background-color: #0f2a51;
+		color: white;
+		transition: all .2s linear 0s;
+
 	}
 
 	.view-button-lashdolls {
@@ -282,6 +289,14 @@
 		text-decoration: none;
 		color: #0f2a51;
 		transition: all .2s linear 0s;
+	}
+
+
+	.view-button-lashdolls:hover {
+		background-color: #0f2a51;
+		color: white;
+		transition: all .2s linear 0s;
+
 	}
 
 	.view-button-gbht {
@@ -301,12 +316,6 @@
 		transition: all .2s linear 0s;
 	}
 
-	.view-button-lashdolls:hover {
-		background-color: #0f2a51;
-		color: white;
-		transition: all .2s linear 0s;
-
-	}
 
 
 
@@ -2370,17 +2379,15 @@
 /*---- contact bar section ----*/
 
 	.contact-bar {
-		background-color: #0f2a51;
+		background-color: rgb(181, 181, 181);
 		width: auto;
 		height: auto;
 		text-align: center;
-		color: rgb(181, 181, 181);
 	}
 
 
 	.contact-bar a {
 		text-decoration: none;
-		color: white;
 	}
 
 	.contact-bar .svg-inline--fa {
@@ -2818,7 +2825,7 @@ footer .box {
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic17.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-bodyblitz' %>	
+		  <%= link_to 'Explore', sites_bodyblitz_path, :class => 'view-button-bodyblitz' %>	
 
 		</div>
 
@@ -3039,6 +3046,134 @@ footer .box {
 
 </div>    
 
+<style>
+/*-- form section --- */
+	
+	.form-page {
+		background-color: #111721;
+		background-position: cover;
+		background-repeat: repeat;
+		width: auto;
+		height: auto;
+		text-align: center;
+	}
+
+	.form-page h1 {
+		color: white;
+		padding-top: 1em;
+		margin-top: 0;
+	}
+
+
+	.form-top h3 {
+		font-size: 1.5em;
+		padding-top: 2.5px;
+		text-align: center;
+		color: #0f2a51;
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+	}
+
+	.form-container {
+		background-color: transparent;
+		width: 70%;
+		height: auto;
+		min-height: 750px;
+		padding-bottom: 1em;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 4em;
+
+	}
+
+	.form-top {
+		border-top-left-radius: .3em;
+		border-top-right-radius: .3em;	
+		background-color: transparent;
+		height: 5em;
+		width: auto;
+		padding-top: .5em;
+		padding-left: -4em;
+	}
+
+	.form_label {
+		color: white;
+	}
+
+	.form_text_field {
+		background-color: white;
+		border: solid 1px orange;
+		border-radius: 15px;
+		width: 70%;
+		height: 5.5em;
+		margin-bottom: 1em;
+	}
+
+	.form_text_area {
+		background-color: white;
+		border: solid 1px orange;
+		border-radius: 15px;
+		width: 70%;
+		max-width: 90%;
+		min-width: 70%;
+		max-height: 17em;
+		min-height: 17em;
+
+	}
+
+	.form_send {
+
+		color: rgb(15, 42, 81);
+	    padding: 13px 4em;
+	    border: 1px solid orange;
+	    border-radius: 15px;
+	    margin-top: 3em;
+	    margin-bottom: 1em;
+	    font-size: 12px;
+	    background-color: rgb(255, 255, 255);
+	    transition: all .2s linear 0s;
+	    text-decoration: none;
+
+	}
+
+	.form_send:hover {
+		background-color: transparent;
+		border: solid 1px white;
+		transition: all .1s linear 0s;
+		color: white;
+
+	}
+
+	#error_explanation {
+		border-bottom: 1px solid red;
+		color: red;
+	}
+
+	.field_with_errors {
+		display:inline;
+    	margin:0px;
+    	padding:0px;
+	}
+
+@media screen and (max-width: 545px){
+
+	.form-top {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;	
+		width: auto;
+	}
+
+	.form-container {
+		border-radius: 0;
+		width: auto;
+	}
+
+	.form-top h3 {
+		font-size: 1.3em;
+	}
+}
+</style>
+
 
 
 <div class="contact-bar">
@@ -3047,12 +3182,6 @@ footer .box {
 	</div>
 	<div class="box">
 		<h2>sales@gridometry.com</h2>
-	</div>
-	<div class="box">
-		<i class="fas fa-phone"></i>
-	</div>
-	<div class="box">
-		<h2>+1-702-826-9617</h2>
 	</div>
 </div>
 
@@ -3071,7 +3200,7 @@ footer .box {
 
 <div class="sitemap">
 	<div class="box">
-		<h3>Copyright<i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
+		<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
 	</div>
 	<div class="box">
 		<%= image_tag "comodo_secure_seal_113x59_transp.png", :class => "comodo-seal" %>

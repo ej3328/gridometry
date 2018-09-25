@@ -30,7 +30,6 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+#secrets
 secrets.yml
-app/controllers/charges_controller.rb
-app/views/charges/premium.html.erb
-app/views/charges/standard.html.erb
+

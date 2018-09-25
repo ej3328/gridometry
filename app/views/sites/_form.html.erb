@@ -1,6 +1,7 @@
 <%= form_with model: @site, local: true do |form| %>
-  
-  <% if @site.errors.any? %>
+
+    
+<% if @site.errors.any? %>
     <div id="error_explanation">
       <ul>
         <% @site.errors.full_messages.each do |msg| %>
@@ -9,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+  
   <p>
     <%= form.label :firstName, "First Name:", :class => "form_label" %><br>
     <%= form.text_field :firstName, :class => "form_text_field" %>
