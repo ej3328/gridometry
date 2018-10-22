@@ -4,6 +4,8 @@ class EssentialController < ApplicationController
 
   def create
 
+    
+
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
@@ -14,7 +16,9 @@ class EssentialController < ApplicationController
       :amount      => 8900,
       :description => 'Website Package',
       :currency    => 'usd',
-    })    
+    }) 
+
+          
 
 
     rescue Stripe::CardError => e
@@ -22,3 +26,5 @@ class EssentialController < ApplicationController
       redirect_to new_essential_path
     end
 end
+
+
