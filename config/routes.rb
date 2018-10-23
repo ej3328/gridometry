@@ -3,13 +3,9 @@ Rails.application.routes.draw do
 
 
   get 'sites/index'
-  get 'sites/new'
   get 'sites/lashdolls'
   get 'sites/bodyblitz'
   get 'sites/vacationhomes'
-  get 'sites/templateE'
-  get 'sites/templateF'
-  get 'sites/templateG'
   get 'sites/cherylstyles'
 
 
