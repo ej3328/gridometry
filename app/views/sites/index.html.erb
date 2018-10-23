@@ -27,6 +27,7 @@
 	<nav class="menu" id="menu">
 		<%= image_tag "gridometry-logo3.png", :class => "gridometry-logo3" %>		<a href="http://www.facebook.com/gridometry" target="_blank"><div id="fb" class="fab fa-facebook-square"></div></a>
 		<a href="http://www.instagram.com/www_gridometry_com/" target="_blank"><div id="ig" class="fab fa-instagram"></div></a>
+		<a href="https://twitter.com/GridometryLLC" target="_blank"><div id="tw" class="fab fa-twitter"></div></a>
 
 			<div class="fixed_nav_links">
 				<ul class="active">
@@ -40,40 +41,9 @@
 	</nav>
 </div>
 
-<style>
-	.jumbo-text-box {
-		display: none;
-		z-index: 2;
-		position: absolute;
-		top: 15em;
-		left: 0;
-	}
-
-	.jumbo-text-box h1 {
-
-		color: #0f2a51;
-		padding: .5em;
-		text-shadow: 2px 2px #3333;
-
-	}
-
-	.text-box h1 {
-		position: absolute;
-		top: 3em;
-		left: 1em;
-		font-size: 4em;
-	}
-
-</style>
 						
 <!-- jumbotron section -->
 <div class="jumbotron" id="home">
-	<div class="jumbo-text-box">
-		<h1>Social Media Management </h1>
-		<h1>Social Media Marketing & Advertising</h1>
-		<h1>Website Development & Design </h1>
-		<h1>Search Engine Optimization </h1>
-	</div>
 	<div class="text-box">
 		<h1>Digital Solutions.<br> All-in-one <br> Place.
 	</div>
@@ -140,38 +110,38 @@
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic17.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_bodyblitz_path, :class => 'view-button-bodyblitz' %>	
+		  <!--<%= link_to 'Explore', sites_bodyblitz_path, :class => 'view-button-bodyblitz' %>	-->
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic18.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-lashdolls' %>	
+		  <!--<%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-lashdolls' %>	-->
 
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic19.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-gbht' %>	
+		  <!--<%= link_to 'Explore', sites_lashdolls_path, :class => 'view-button-gbht' %>	-->
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic20.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', sites_vacationhomes_path, :class => 'view-button-vacationhomes' %>	
+		  <!--<%= link_to 'Explore', sites_vacationhomes_path, :class => 'view-button-vacationhomes' %>	-->
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic21.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', root_path, :class => 'view-button-vacationhomes' %>	
+		  <!--<%= link_to 'Explore', root_path, :class => 'view-button-vacationhomes' %>-->	
 
 		</div>
 
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic22.png", :class => "project-test" %><br>
-		  <%= link_to 'Explore', root_path, :class => 'view-button-vacationhomes' %>	
+		  <!--<%= link_to 'Explore', root_path, :class => 'view-button-vacationhomes' %>-->	
 
 		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -283,9 +253,9 @@
 		<h2>See what our past clients had to say</h2>
 		<div class="carousel">
 			<ul>
-				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><br>-Flat Design Co.</h1></li>
-				<li><h1>"<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>"<br><br>-Zen Space</h1></li>
-				<li><h1>"<i>Absolutely Fantastic!</i>"<br><br>-Macaroo</h1></li>
+				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><br>Flat Design Co.</h1></li>
+				<li><h1>"<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>"<br><br>Zen Space</h1></li>
+				<li><h1>"<i>Absolutely Fantastic!</i>"<br><br>Macaroo</h1></li>
 			</ul>
 		</div>
 	</div>
@@ -299,14 +269,16 @@
 	</div>
 </div>
 
+<style>
+
+
+</style>
 
 
 
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="pricing">
-    <h1>Plans for every kind of business</h1>
-
-
+    <h1 class="pricing-header">Plans for every kind of business</h1>
   	<div class="price-box">
         <div class="price-heading" id="essential">
           <h1>Essential <br> Package</h1>
@@ -408,6 +380,9 @@
 	<div class="box">
 		<a href="http://www.instagram.com/www_gridometry_com/" target="_blank"><div id="ig" class="fab fa-instagram"></div></a>
 	</div>
+	<div class="box">
+		<a href="http://twitter.com/GridometryLLC" target="_blank"><div id="tw" class="fab fa-twitter"></div></a>
+	</div>
 </div>
 
 <div class="seal-section">
@@ -466,7 +441,6 @@ $("#"+MEASUREMENTS_ID).text(getDimensions());
 $(window).on("resize", function(){
     $("#"+MEASUREMENTS_ID).text(getDimensions());
 });
-
 */
 
 //Scroll from the top calculator

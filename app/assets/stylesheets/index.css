@@ -27,6 +27,25 @@
 	    background-color: transparent;
  	}
 
+
+ 	.text-box h1 {
+		color: #0f2a51;
+		position: absolute;
+		top: 3em;
+		left: 1em;
+		font-size: 4em;
+		z-index: 3;
+	}
+
+	@media screen and (max-width: 600px){
+		.text-box h1 {
+			position: absolute;
+			top: 6em;
+			left: 0;
+			font-size: 2.5em;
+		}
+	}
+
 /*-- bar0 section --*/
 
 	.bar_overlay0 {
@@ -187,7 +206,6 @@
 	}
 
 	.bar4 {
-				
 		width: auto;
 		height: 20em;
 		text-align: center;
@@ -303,9 +321,6 @@
 		color: #0f2a51;
 		transition: all .2s linear 0s;
 	}
-
-
-
 
 	.bodyblitz {
 		text-align: center;
@@ -620,8 +635,9 @@
 
 	@media screen and (max-width: 630px){
 		
-		.carousel ul li{
-			display: none;
+
+		.carousel ul li h1 {
+			font-size: 25px;
 		}
 }
 
@@ -917,15 +933,16 @@
     }
 
     .menu .gridometry-logo3 {
-    width: 175px;
-    height: auto;
-}
+    	width: 175px;
+    	height: auto;
+	}
 
 	nav .dropdown {
 		display: block;
 		transition: all .4s linear 0s;
 
 	}  
+
 
    
 }
@@ -976,7 +993,6 @@
 	
 
 	.jumbotron {
-	
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
@@ -1018,6 +1034,13 @@
     opacity: 0;
     animation: imageAnimation 36s linear infinite 0s; 
   }
+
+@media screen and (max-width: 550px){
+ 	.cb-slideshow li span {
+    	width: 75%;
+ 	}
+ }
+ 
 
 
   .cb-slideshow li:nth-child(1) span { 
@@ -1765,7 +1788,6 @@
 		color: #0f2a51;
 		text-shadow: 2px 0px #aba7a74d;
 		font-size: 3em;
-		margin-bottom: 1em;
 
 	}
 
@@ -1795,6 +1817,10 @@
 		margin-top: .5em;
 		margin-bottom: .5em;
 		font-size: 12px;
+	}
+
+	.pricing-header {
+		margin-bottom: 1em;
 	}
 
 
@@ -2375,9 +2401,8 @@
 		padding-left: .5em;
 	}
 
-	.contact-bar .svg-inline--fa:hover {
-		color: gray;
-	}
+	
+
 
 	.contact-bar .box {
 		display: inline-block;
@@ -2455,10 +2480,12 @@ footer .box {
 	padding: 10px;
 }
 
+
+
 #fb.svg-inline--fa.fa-w-14 {
 	color: #00327a;
 	position: absolute;
-	right: 1.7em;
+	right: 3.1em;
 	top: 0;
 	padding-right: 0px;
 	font-size: 22px;
@@ -2468,14 +2495,24 @@ footer .box {
 	color: #00327a;
 	position: absolute;
 	top: 0;
+	right: 1.7em;
+	font-size: 22px;
+}
+
+#tw.svg-inline--fa.fa-w-16 {
+	color: #00327a;
+	position: absolute;
+	top: 0;
 	right: .3em;
 	font-size: 22px;
 }
 
+
+
 .box #fb.svg-inline--fa.fa-w-14 {
 	color: white;
 	position: relative;
-	right: .5em;
+	right: .2em;
 	font-size: 20px;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -2489,18 +2526,29 @@ footer .box {
 	padding-left: 0px;
 }
 
+.box #tw.svg-inline--fa.fa-w-16 {
+	color: white;
+	position: relative;
+	right: 0em;
+	font-size: 20px;
+	padding-left: 0px;
+}
+
+
+
 #fb.svg-inline--fa.fa-w-14:hover {
 	color: gray;
 }
-
 
 #ig.svg-inline--fa.fa-w-14:hover {
 	color: gray;
 }
 
-.box #ig.svg-inline--fa.fa-w-14:hover {
+#tw.svg-inline--fa.fa-w-16:hover {
 	color: gray;
 }
+
+
 
 
 /*-- seal section --*/
@@ -2699,6 +2747,7 @@ footer .box {
 
 	.bar2 h1 {
 		width: auto;
+		font-size: 50px;
 	}
 }
 
@@ -2736,6 +2785,12 @@ nav h1 {
 	height: auto;
 }
 
+@media screen and (max-width: 740px){
+	.ipad-pic1 {
+		width: 300px;
+	}
+}
+
 
 .bar_overlay6 {
 	width: auto;
@@ -2746,6 +2801,27 @@ nav h1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left;
+}
+
+@media screen and (max-width: 600px){
+	.bar_overlay6 {
+		background-image: none;
+		background-color: orange;
+	}
+
+	.bar_overlay3 {
+		background-image: none;
+		background-color: orange;
+	}
+
+	.bar3 h1 {
+		font-size: 3em;
+	}
+
+	.bar_overlay2 {
+		background-image: none;
+		background-color: #0f2a51;
+	}
 }
 
 .bar6 {
