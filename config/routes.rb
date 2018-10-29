@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'sites/lashdolls'
   get 'sites/bodyblitz'
   get 'sites/vacationhomes'
-  get 'sites/cherylstyles'
+  get 'sites/cherylstylesv1'
+  get 'sites/cherylstylesv2'
 
 
   resources :sites
