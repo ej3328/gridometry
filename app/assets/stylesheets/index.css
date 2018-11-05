@@ -615,6 +615,8 @@
 		margin-left: auto;
 	}
 
+
+
 	.carousel ul {
 		width: 1500px;
 		padding: 0;
@@ -634,12 +636,22 @@
 	}
 
 	@media screen and (max-width: 630px){
-		
+
 
 		.carousel ul li h1 {
 			font-size: 25px;
 		}
-}
+	}
+
+	@media screen and (max-width: 410px){
+		.carousel {
+			width: auto;
+		}
+
+		.carousel ul li h1 {
+			font-size: 21px;
+		}
+	}
 
 
 /*---- nav section ----*/
@@ -2633,76 +2645,7 @@ footer .box {
 	height: auto;
 }
 
-/*-- bar3 section ---*/
 
-.bar_overlay5 {
-	background-color: #eb871fe6;
-	width: auto;
-	height: auto;
-	text-align: center;
-	padding-top: 4.5em;
-	padding-bottom: 4.5em;
-}
-
-
-.bar5 {
-	background-image: url("/assets/security_mac.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;		
-	width: auto;
-	height: auto;
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-
-}
-
-.bar5 .box {
-	display: inline-block;
-	vertical-align: middle;
-	width: auto;
-	height: auto;
-
-	text-align: center;
-	margin-left: auto;
-	padding: 0;
-}
-
-.smoothie_shop {
-	width: 400px;
-	height: auto;
-	margin-left: 25px;
-	margin-right: 25px;
-}
-
-.bar5 h1 {
-	color: white;
-	text-shadow: 2px 0px #0f2a51;
-	font-size: 70px;
-	width: 350px;
-}
-
-.bar5 h2 {
-	width: 350px;
-	color: white;
-
-}
-
-@media screen and (max-width: 500px){
-	.smoothie_shop {
-		width: 80%;
-	}
-
-	.bar5 h2 {
-		width: auto;
-	}
-
-	.bar5 h1 {
-		width: auto;
-	}
-}
 
 
 
@@ -2719,6 +2662,14 @@ footer .box {
 
 	padding: 2em;
 }
+
+@media screen and (max-width: 500px){
+	.bar2 .box {
+		padding: 0;
+	}
+}
+
+
 
 .doggy_phone {
 	width: 55%;
@@ -2741,13 +2692,22 @@ footer .box {
 
 
 @media screen and (max-width: 500px){
+	.doggy_phone {
+		width: 35%;
+	}
+
 	.bar2 h2 {
 		width: auto;
+		font-size: 20px;
 	}
 
 	.bar2 h1 {
 		width: auto;
-		font-size: 50px;
+		font-size: 31px;
+	}
+
+	.bar4 h2 {
+		font-size: 40px;
 	}
 }
 
@@ -2787,6 +2747,20 @@ nav h1 {
 
 @media screen and (max-width: 740px){
 	.ipad-pic1 {
+		width: 300px;
+	}
+
+	.mac-template {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 410px){
+	.ipad-pic1 {
+		width: 200px;
+	}
+
+	.mac-template {
 		width: 300px;
 	}
 }

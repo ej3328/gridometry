@@ -3,9 +3,6 @@ Rails.application.routes.draw do
 
 
   get 'sites/index'
-  get 'sites/lashdolls'
-  get 'sites/bodyblitz'
-  get 'sites/vacationhomes'
   get 'sites/cherylstylesv1'
   get 'sites/cherylstylesv2'
 
@@ -14,5 +11,6 @@ Rails.application.routes.draw do
   resources :essential, only: [:new, :create]
   resources :standard, only: [:new, :create]
   resources :premium, only: [:new, :create]
+
 
 end
