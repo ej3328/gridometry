@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
 
   get 'sites/index'
-  get 'sites/cherylstylesv1'
-  get 'sites/cherylstylesv2'
 
 
   resources :sites

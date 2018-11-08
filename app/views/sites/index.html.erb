@@ -6,7 +6,6 @@
  	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 	<script src="jquery.numscroller-1.0.js"></script>
  	<title>Gridometry</title>
   	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
@@ -108,6 +107,10 @@
 	<h1>Take a look at some of our previous projects</h1>
 	
 	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <%= image_tag "mac-pic27-wp.png", :class => "project-test" %><br>
+
+		</div>
 		<div class="mySlides fade">
 		  <%= image_tag "mac-pic17.png", :class => "project-test" %><br>
 
@@ -362,9 +365,6 @@
 </div>    
 
 <style>
-
-
-
 .bar5 {
 	width: auto;
 	text-align: center;
@@ -373,7 +373,6 @@
 	margin-left: auto;
 	background-color: #eb871fe6;
 }
-
 .bar5 h1 {
 	font-size: 2em;
 	color: white;
@@ -382,8 +381,6 @@
 	text-shadow: 2px 0px #0f2a51;
 	text-align: center;
 }
-
-
 </style>
 
 <div class="bar5">
@@ -436,7 +433,6 @@
 
 
 <script>
-
 /*
 $(".alert-success").show();
 	setTimeout(function(){ 
@@ -460,13 +456,11 @@ $("#"+MEASUREMENTS_ID).css({
 getDimensions = function(){
     return $(window).width() + ' (' + $(document).width() + ') x ' + $(window).height() + ' (' + $(document).height() + ')';
 }
-
 $("#"+MEASUREMENTS_ID).text(getDimensions());
 $(window).on("resize", function(){
     $("#"+MEASUREMENTS_ID).text(getDimensions());
 });
 */
-
 //Scroll from the top calculator
 /*
 var $window = $(window);
@@ -477,7 +471,6 @@ $(window).on('scroll', function() {
     console.log($topOffset);
 });
 */
-
 // customer review carousel section
 $(document).ready(function(){
 // Set the interval to be 5 seconds
@@ -488,44 +481,28 @@ $(document).ready(function(){
 	})
 },9900);
 });
-
 // scroll nav section 
 // When the user scrolls down 700px from the top of the document, slide down the navbar
-
 $(document).ready(function(){
-
 	window.onscroll = function(){
 		scrollFunction()
 	};
-
 	function scrollFunction() {
 	    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1){
 	    	$('#nav-bar').addClass('scroll_nav');
 	    	$('#nav-bar').removeClass('fixed_nav');
 	    	$('#menu').addClass('scroll_nav_links');	
 	    	$('#menu').removeClass('fixed_nav_links');	
-
 	    }
-
 	    else {
 	    	$('#nav-bar').addClass('fixed_nav');	    
 	    	$('#nav-bar').removeClass('scroll_nav');  
 	    	$('#menu').addClass('fixed_nav_links');	
 	    	$('#menu').removeClass('scroll_nav_links');	
-
 	    }
-
 	}
 });
-
-
-
-
-
-
-
 //Scroll page to nav links 
-
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".menu a").on('click', function(event) {
@@ -533,10 +510,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -550,9 +525,6 @@ $(document).ready(function(){
   });
   
 });
-
-
-
 // project bar carousel section
 $(document).ready(function(){
 // Set the interval to be 5 seconds
@@ -563,21 +535,15 @@ $(document).ready(function(){
 	})
 },9900);
 });
-
 //project bar carousel buttons 
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -593,19 +559,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active-dot";
 }
-
-
-
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.fas fa-bars')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -616,16 +577,9 @@ window.onclick = function(event) {
     }
   }
 }
-
-
-
-
 </script>
 
 
 
 </body>
 </html>
-
-
-
