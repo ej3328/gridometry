@@ -2450,6 +2450,7 @@
 /*---- contact bar section ----*/
 
 	.contact-bar {
+		padding-top: 10px;
 		background-color: #152a48;
 		width: auto;
 		height: auto;
