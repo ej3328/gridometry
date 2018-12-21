@@ -10,7 +10,7 @@ class StandardController < ApplicationController
 
     charge = Stripe::Charge.create({
       :customer    => customer.id,
-      :amount      => 8900,
+      :amount      => 5900,
       :description => 'Website Package',
       :currency    => 'usd',
     })    

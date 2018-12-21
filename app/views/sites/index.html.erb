@@ -172,11 +172,6 @@
 	</div>
 </div>
 
-<style>
-	.bar2, .bar6 {
-		display: none;
-	}
-</style>
 
 <!-- overview section -->
 <div class="overview" id="overview">
@@ -192,117 +187,8 @@
 	</div>
 </div>
 
-<style>
 
 
- #stage {
-    margin: 1em auto;
-    width: auto;
-    height: 63vh;
-  }
-
-  #stage .iphone8 {
-    position: absolute;
-    margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-  }
-
-
-  #stage a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 4s;
-    animation-duration: 1s;
-    z-index: 20;
-  }
-
-  #stage a:nth-of-type(2) {
-    z-index: 10;
-  }
-
-  #stage a:nth-of-type(n+3) {
-    display: none;
-  }
-
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.0; }
-  }
-
-  @media screen and (max-width: 500px){
-  	#stage {
-  		height: 300px;
-  	}
-  }
-
-</style>
-
-<script type="text/javascript">
-
-  // Original JavaScript code by Chirp Internet: www.chirp.com.au
-  // Please acknowledge use of this code by including this header.
-
-  window.addEventListener("DOMContentLoaded", function(e) {
-
-    var stage = document.getElementById("stage");
-    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-    var arr = stage.getElementsByTagName("a");
-    for(var i=0; i < arr.length; i++) {
-      arr[i].addEventListener("animationend", fadeComplete, false);
-    }
-
-  }, false);
-
-</script>
-
-
-<div class="bar2">
-	<div class="bar_overlay2">
-		<div id="text-box" class="box">
-			<h1>Is Your Website Mobile Ready?</h1><br>
-			<h2>Scale your business with a mobile ready, fully responsive and user friendly  web platform that your customers will absolutely love! </h2>
-		</div>
-	</div>
-</div>
-
-
-<div class="bar6">
-	<div class="bar_overlay6">
-		<h1>Digital Marketing Facts:</h1>
-		<div class="box">
-			<h2>Pay Per Click</h2>
-			<span class='numscroller' data-min='0' data-max='90' data-delay='5' data-increment='2'></span><b>%</b><br>
-			<p>Online business owners, rather than <br> 
-			clicking on a purchased ad, these business <br>
-			owners are more likely to use search results<br>
-			from their favorite search engine.</p>
-		</div>
-		<div class="box">
-			<h2>Social Media Marketing</h2>
-			<span class='numscroller' data-min='0' data-max='80' data-delay='5' data-increment='2'></span><b>%</b><br>
-			<p>Of online Marketers say they have<br> successfully obtained new business<br> using Facebook.</p>
-		</div>
-		<div class="box">
-			<h2>Search Engine Optimization(SEO)</h2>
-			<span class='numscroller' data-min='0' data-max='72' data-delay='5' data-increment='2'></span><b>%</b><br>
-			<p>Of marketers agree that relevancy is the<br> single biggest factor for better SEO.</p>
-		</div>
-	</div>
-</div>
-
-
-<div class="bar2" id="bar3">
-	<div class="bar_overlay2">
-		<div class="box">
-			<%= image_tag "ipad_transparent-pic3.png", :class => "ipad-pic1" %>
-		</div>
-		<div id="text-box" class="box">
-			<h1>Grow your business to the point of overflow!</h1><br>
-			<h2>With a quality website, the right marketing strategy and a company that's ready to help, your business is sure to achieve new heights! </h2>
-		</div>
-	</div>
-</div>
 
 <div class="bar4">
 	<div class="bar_overlay4">
@@ -327,8 +213,6 @@
 
 
 
-
-
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="pricing">
     <h1 class="pricing-header">Plans for every kind of business</h1>
@@ -347,16 +231,6 @@
           <div class="price-body-bottom" id="price-body-essential">
            	<%= link_to 'Check Out', new_essential_path, :class => 'price-button' %>	
           </div>
-        </div>
-
-        <div class="price-footer">
-            <h4>Add On: $25 for 24Hr Rush Delivery</h4>
-        	<div class="box">
-        		<b>Share your idea?</b><br>
-        	</div>
-        	<div class="box">
-        		<b>Want to discuss?</b><br>
-        	</div>
         </div>
     </div>
 
@@ -378,15 +252,7 @@
           	<%= link_to 'Check Out', new_standard_path, :class => 'price-button' %>
           </div>
         </div>
-        <div class="price-footer">
-            <h4>Add On: $25 for 24Hr Rush Delivery</h4>
-        	<div class="box">
-        		<b>Share your idea?</b><br>
-        	</div>
-        	<div class="box">
-        		<b>Want to discuss?</b><br>
-        	</div>
-        </div>
+        
     </div> 
 
     <div class="price-box">
@@ -406,37 +272,9 @@
           	<%= link_to 'Check Out', new_premium_path, :class => 'price-button' %>	
           </div>
         </div>
-        <div class="price-footer">
-        	<div class="box">
-        		<b>Share your idea?</b><br>
-        	</div>
-        	<div class="box">
-        		<b>Want to discuss?</b><br>
-        	</div>
-        </div>
     </div> 
 
 </div>    
-
-<style>
-.bar5 {
-	width: auto;
-	text-align: center;
-	margin-top: 4em;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #eb871fe6;
-}
-.bar5 h1 {
-	font-size: 2em;
-	color: white;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	text-shadow: 2px 0px #0f2a51;
-	text-align: center;
-}
-</style>
-
 
 
 
@@ -485,6 +323,22 @@
 
 
 <script>
+
+
+  //iphone8 slideshow
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+
 
 $(".alert-success").show();
 	setTimeout(function(){ 
