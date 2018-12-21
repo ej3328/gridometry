@@ -157,7 +157,7 @@
 
 	.bar2 h1 {
 
-		font-size: 2em;
+		font-size: 60px;
 		color: white;
 
 	}
@@ -589,7 +589,7 @@
 		}
 
 		.bar2 h1 {
-			font-size: 1.5em;
+			font-size: 50px;
 		}
 
 		.bar3 .box {
@@ -1004,12 +1004,12 @@
 	
 	
 
-	.jumbotron {
-		width: 100%;
-		height: 100vh;
-		overflow: hidden;
-		background-color: transparent;
-	}
+.jumbotron {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: transparent;
+}
 
   .jumbo_slideshow .glyphicon {
       border: solid red;
@@ -1148,6 +1148,7 @@
 		margin-right: 1em;
 		margin-top: .3em;
 		margin-bottom: 10px;
+		padding-bottom: 1em;
 	}
 	
 	
@@ -1569,8 +1570,8 @@
 		width: auto;
 		height: auto;
 
-		padding-top: 2em;
-		padding-bottom: 7em;
+		padding-top: 0;
+		padding-bottom: 1em;
 		margin-left: 5em;
 		margin-right: 5em;
 
@@ -1611,6 +1612,7 @@
 	}
 
 	.solutions p {
+		font-size: 1.3em;
 		margin-left: 1em;
 		margin-right: 1em;
 		margin-top: 0;
@@ -1637,37 +1639,27 @@
 		z-index: 2;
 	}
 
-	.lightbulb {
-		width: 2.5em;
-		height: auto;
+	.sm-art-box {
+		height: 50px;
+		padding: 20px 20px 25px 20px;
 	}
 
+
 	.paint-brush {
-		width: 3em;
+		width: 4em;
 		height: auto;
 	}
 
 	.small-smart-phone {
-		width: 1.3em;
+		width: 1.9em;
 		height: auto;
 	}
-
 
 	.screwdriver {
-		width: 2.5em;
+		width: 3.2em;
 		height: auto;
 	}
 
-	.responsive {
-		width: 3em;
-		height: auto;
-	}
-
-	.phone-support {
-		width: 3.3em;
-		height: auto;
-
-	}
 
 @media screen and (max-width: 670px){
 	.solutions .header {
@@ -2671,15 +2663,15 @@ footer .box {
 
 
 
-.doggy_phone {
-	width: 55%;
+.iphone8 {
+	width: 16em;
 	height: auto;
 }
 
 .bar2 h1 {
 	color: white;
 	text-shadow: 2px 2px #d87b10;
-	font-size: 70px;
+	font-size: 60px;
 	width: 400px;
 }
 
@@ -2692,8 +2684,8 @@ footer .box {
 
 
 @media screen and (max-width: 500px){
-	.doggy_phone {
-		width: 35%;
+	.iphone8 {
+		width: 40%;
 	}
 
 	.bar2 h2 {

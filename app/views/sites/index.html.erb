@@ -33,7 +33,7 @@
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#overview">OVERVIEW</a></li>
 					<li><a href="#solutions">SOLUTIONS</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#projects">DESIGNS</a></li>
 					<li><a href="#pricing">PRICING</a></li>
 				</ul>	
 			</div>
@@ -72,40 +72,43 @@
 	</div>
 </div>
 
+<!-- solutions section -->
 
-<!-- overview section -->
-<div class="overview" id="overview">
-	<div class="header">
-		<h1>Beautiful Designs For Every Industry</h1>
-	</div>
-	<div class="box">
-	</div>
-	<%= image_tag "mac-traveltemplate-screengrab.png", :class => "mac-template" %>
-	<%= image_tag "mac-restauranttemplate.png", :class => "mac-template" %>
-	<%= image_tag "mac-pic33.png", :class => "mac-template" %>
+<div class="solutions" id="solutions">
+	<h1>Tools That Get The Job Done</h1>
 
+	<div class="container">
+		<h2>Web Development</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icons_t.png", :class => "screwdriver" %>
+		</div>
+		<p>Custom websites and applications for all businesses and devices.</p>
 		
-</div>
+	</div>
 
 
-
-<div class="bar2">
-	<div class="bar_overlay2">
-		<div class="box">
-			<%= image_tag "doggy_phone.png", :class => "doggy_phone" %>
+	<div class="container">
+		<h2>Social Media Marketing</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_i.png", :class => "small-smart-phone" %>
 		</div>
-		<div id="text-box" class="box">
-			<h1>Is Your Website Mobile Ready?</h1><br>
-			<h2>Scale your business with a mobile ready, fully responsive and user friendly  web platform that your customers will absolutely love! </h2>
+		<p>Scale your business by attracting more customers that increase your bottom line.</p>
+	</div>
+
+
+	<div class="container">
+		<h2>UX/UI Design</h2>
+		<div class="sm-art-box">
+			<%= image_tag "grid_icon_pb.png", :class => "paint-brush" %>
 		</div>
+		<p>Synergistic creatives fused with creative processes is a sure recipe for magical designs.</p>
 	</div>
 </div>
-
 
 <!-- projects carousel bar -->
 
 <div id="projects" class="project-bar">
-	<h1>Take a look at some of our previous projects</h1>
+	<h1>Web Designs For Every Industry</h1>
 	
 	<div class="slideshow-container">
 		<div class="mySlides fade">
@@ -147,9 +150,119 @@
 		  <%= image_tag "mac-pic28.png", :class => "project-test" %><br>
 
 		</div>
+
+		<div class="mySlides fade">
+		  <%= image_tag "mac-traveltemplate-screengrab.png", :class => "project-test" %><br>
+
+		</div>
+
+		<div class="mySlides fade">
+		  <%= image_tag "mac-restauranttemplate.png", :class => "project-test" %><br>
+
+		</div>
+
+		<div class="mySlides fade">
+		  <%= image_tag "mac-pic33.png", :class => "project-test" %><br>
+
+		</div>
+
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+	</div>
+</div>
+
+<style>
+	.bar2, .bar6 {
+		display: none;
+	}
+</style>
+
+<!-- overview section -->
+<div class="overview" id="overview">
+	<div class="header">
+		<h1>Mobile Designs Made Ready & Responsive</h1>
+	</div>
+	<div class="box">
+	<div id="stage">
+		<a><%= image_tag "doggy_iphone.png", :class => "iphone8" %></a>
+		<a><%= image_tag "forher_iphone.png", :class => "iphone8" %></a>
+		<a><%= image_tag "evolv_iphone.png", :class => "iphone8" %></a>
+	</div>
+	</div>
+</div>
+
+<style>
+
+
+ #stage {
+    margin: 1em auto;
+    width: auto;
+    height: 63vh;
+  }
+
+  #stage .iphone8 {
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+  }
+
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+  @media screen and (max-width: 500px){
+  	#stage {
+  		height: 300px;
+  	}
+  }
+
+</style>
+
+<script type="text/javascript">
+
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+</script>
+
+
+<div class="bar2">
+	<div class="bar_overlay2">
+		<div id="text-box" class="box">
+			<h1>Is Your Website Mobile Ready?</h1><br>
+			<h2>Scale your business with a mobile ready, fully responsive and user friendly  web platform that your customers will absolutely love! </h2>
+		</div>
 	</div>
 </div>
 
@@ -179,66 +292,6 @@
 </div>
 
 
-
-
-<!-- solutions section -->
-
-<div class="solutions" id="solutions">
-	<h1>All the tools your website wants and needs</h1>
-
-	<div class="container">
-		<h2>Website Development</h2>
-		<p>Custom, unique and trendy web designs for all types of businesses and all types of devices.</p>
-		<div class="sm-art-box">
-			<%= image_tag "grid_icon_pb.png", :class => "paint-brush" %>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<h2>Digital Marketing</h2>
-		<p>Scale your business by attracting more customers that increase your bottom line.</p>
-		<div class="sm-art-box">
-			<%= image_tag "grid_icon_i.png", :class => "small-smart-phone" %>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<h2>Social Media Marketing</h2>
-		<p>Synergistic creatives fused with creative processes is a sure recipe for magical marketing ideas.</p>
-		<div class="sm-art-box">
-			<%= image_tag "grid_icon_b.png", :class => "lightbulb" %>
-		</div>
-	</div>
-
-	<div class="container">
-		<h2>Site Management</h2>
-		<p>Feel free to reach out to us for any technical issue or site malfunctions.</p>
-		<div class="sm-art-box">
-			<%= image_tag "grid_icons_t.png", :class => "screwdriver" %>
-		</div>
-	</div>
-
-	<div class="container">
-		<h2>Responsiveness</h2>	
-		<p>Fully functional site that your visitors will find simple and user friendly.</p>
-		<div class="sm-art-box">
-			<%= image_tag "grid_icon_r.png", :class => "responsive" %>
-		</div>
-	</div>
-
-	<div class="container" >
-		<h2>Customer Support</h2>
-		<p>If you need assistance with orders, refunds, or adjustments, no problem.</p>
-		<div class="sm-art-box">	
-			<%= image_tag "grid_icon_p.png", :class => "phone-support" %>
-		</div>
-	</div>
-
-</div>
-
-
 <div class="bar2" id="bar3">
 	<div class="bar_overlay2">
 		<div class="box">
@@ -253,7 +306,7 @@
 
 <div class="bar4">
 	<div class="bar_overlay4">
-		<h2>See what our past clients had to say</h2>
+		<h2>See What Past Clients Had To Say</h2>
 		<div class="carousel">
 			<ul>
 				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><br>Flat Design Co.</h1></li>
@@ -282,7 +335,7 @@
   	<div class="price-box">
         <div class="price-heading" id="essential">
           <h1>Essential <br> Package</h1>
-          <h2>$89 <b>$189</b></h2>
+          <h2>$19 <b>$89</b></h2>
         </div>
 
         <div class="price-body-top">
@@ -310,7 +363,7 @@
     <div class="price-box">
         <div class="price-heading" id="standard-bestseller">
          	<h1>Standard <br> Package</h1>
-          	<h2>$199 <b>$249</b></h2>
+          	<h2>$59 <b>$119</b></h2>
         </div>
         <div class="price-body-top">
           <p><i class="fas fa-check-circle"></i>Unlimited Design Concepts</p>
@@ -339,7 +392,7 @@
     <div class="price-box">
         <div class="price-heading" id="professional">
           <h1>Premium <br> Package</h1>
-          <h2>$289 <b>$389</h2>
+          <h2>$89 <b>$149</h2>
         </div>
         <div class="price-body-top">
           <p><i class="fas fa-check-circle"></i>Unlimited Design Concepts</p>
@@ -432,12 +485,12 @@
 
 
 <script>
-/*
+
 $(".alert-success").show();
 	setTimeout(function(){ 
 	$(".alert-success").fadeOut(); }, 8000);
  
-	
+/*	
 //Show window dimensions
 var MEASUREMENTS_ID = 'measurements'; // abstracted-out for convenience in renaming
 $("body").append('<div id="'+MEASUREMENTS_ID+'"></div>');
@@ -460,6 +513,8 @@ $(window).on("resize", function(){
     $("#"+MEASUREMENTS_ID).text(getDimensions());
 });
 */
+
+
 //Scroll from the top calculator
 /*
 var $window = $(window);
