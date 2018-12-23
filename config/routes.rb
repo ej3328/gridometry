@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'sites/index'
   get 'sites/lashdolls'
+  get 'sites/new'
 
 
   resources :sites
