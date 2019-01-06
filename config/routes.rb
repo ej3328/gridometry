@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
 
   get 'sites/index'
-  get 'sites/new'
-
+  get 'sites/lashdolls'
+  get 'sites/vacationhomes'
 
   resources :sites 
   resources :essential, only: [:new, :create]

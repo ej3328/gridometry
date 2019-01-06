@@ -31,10 +31,11 @@
 			<div class="fixed_nav_links">
 				<ul class="active">
 					<li><a href="#home">HOME</a></li>
-					<li><a href="#overview">OVERVIEW</a></li>
 					<li><a href="#solutions">SOLUTIONS</a></li>
 					<li><a href="#projects">DESIGNS</a></li>
 					<li><a href="#pricing">PRICING</a></li>
+					<li><a href="#contact">CONTACT US</a></li>
+
 				</ul>	
 			</div>
 	</nav>
@@ -188,21 +189,6 @@
 </div>
 
 
-
-
-<div class="bar4">
-	<div class="bar_overlay4">
-		<h2>See What Past Clients Had To Say</h2>
-		<div class="carousel">
-			<ul>
-				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><br>Flat Design Co.</h1></li>
-				<li><h1>"<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>"<br><br>Zen Space</h1></li>
-				<li><h1>"<i>Absolutely Fantastic!</i>"<br><br>Macaroo</h1></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
 <div class="bar3">
 	<div class="bar_overlay3">
 		<div class="box">
@@ -212,8 +198,23 @@
 </div>
 
 
+<div class="bar4">
+	<div class="bar_overlay4">
+		<h2>See What Past Clients Had To Say</h2>
+		<div class="carousel">
+			<ul>
+				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><%= image_tag "flat-design-logo.png", :class => "thumbnail" %><br>Flat Design Co.</h1></li>
 
-<!-- Container (Pricing Section) -->
+				<li><h1>"<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>"<br><%= image_tag "zen-space-logo.png", :class => "thumbnail" %><br>Zen Space</h1></li>
+
+				<li><h1>"<i>Absolutely Fantastic!</i>"<br><%= image_tag "macaroo-logo.png", :class => "thumbnail" %><br>Macaroo</h1></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- Container (Pricing Section) 
 <div id="pricing" class="pricing">
     <h1 class="pricing-header">Plans for every kind of business</h1>
   	<div class="price-box">
@@ -253,44 +254,143 @@
         </div>
     </div> 
 
-</div>    
+</div> -->   
 
+<style>
 
+.contact-form {
+	text-align: center;
+	background-color: rgb(21, 35, 53);
+	margin: 0;
+	padding-bottom: 9em;
+	padding-top: 3em;
+	padding-left: 0;
+    padding-right: 0;
+	border-radius: 0;
 
-<div class="contact-bar">
-	<div class="box">
-		<a href="http://www.facebook.com/gridometry" target="_blank"><div id="fb" class="fab fa-facebook-square"></div></a>
-	</div>
-	<div class="box">
-		<a href="http://www.instagram.com/www_gridometry_com/" target="_blank"><div id="ig" class="fab fa-instagram"></div></a>
-	</div>
-	<div class="box">
-		<a href="http://twitter.com/GridometryLLC" target="_blank"><div id="tw" class="fab fa-twitter"></div></a>
-	</div>
+}
+
+.contact-form hr {
+	width: 25px;
+	height: 2px;
+	background-color: white;
+}
+
+.contact-form h1 {
+	font-size: 3em;
+	color: white;
+	padding-right: 5px;
+}
+
+.contact-form h4 {
+	color: white;
+	margin-top: .5em;
+	margin-bottom: 2em;
+}
+
+form {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 55%;
+}
+
+input[type="text"], input[type="email"], textarea {
+	display: block;
+  	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border: 0;
+	padding: 10px 15px;
+	background: #fff;
+	font-size: 12pt;
+	margin-bottom: 3px;
+	color: black; 
+}
+
+textarea {
+	min-height: 150px;
+	margin-bottom: 5px; 
+}
+
+.button {
+	margin: 5px 0 0 0;
+	font-size: 12pt;
+	padding: 10px 30px;
+	color: #686868;
+	background: #eaeaea;
+	outline: 0; 
+	float: right;
+}
+
+.button:hover {
+	color: white;
+	background-color: transparent;
+	border: solid 1px #eaeaea;
+}
+
+.footer {
+	background-color: rgb(25, 30, 47);
+}
+
+.thumbnail{
+	width: 75px;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+        </style>
+
+<div class="contact-form" id="contact">
+	<h1>Contact Us</h1>
+	<hr>
+	<h4>We'd love to hear from you!</h4>
+
+	<form action="https://formspree.io/gridometry@gmail.com" method="POST">
+	    <input placeholder="What's your name?" type="text" name="name" required>
+	    <input placeholder="Got an email?" type="email" name="email" required>
+	    <textarea placeholder="How can we help?" type="text" name="message"></textarea><br>
+	    <input type="submit" value="Submit" class="button" id="submit">
+	</form>
 </div>
 
-<div class="seal-section">
-	<%= image_tag "visa-card.png", :class => "visa-card" %>
-	<%= image_tag "google-card.png", :class => "google-card" %>
-	<%= image_tag "master-card.png", :class => "master-card" %>
-	<%= image_tag "discover-card.png", :class => "discover-card" %>
-	<%= image_tag "american-card.png", :class => "american-card" %>
-	<%= image_tag "jcb-card.png", :class => "jcb-card" %>
-	<%= image_tag "android-card.png", :class => "android-card" %>
-	<%= image_tag "apple-card.png", :class => "apple-card" %>
-	<%= image_tag "paypal-card.png", :class => "paypal-card" %>
-	<%= image_tag "diners-card.png", :class => "diners-card" %>
-</div>
+<div class="footer">
+	<div class="contact-bar">
+		<div class="box">
+			<a href="http://www.facebook.com/gridometry" target="_blank"><div id="fb" class="fab fa-facebook-square"></div></a>
+		</div>
+		<div class="box">
+			<a href="http://www.instagram.com/www_gridometry_com/" target="_blank"><div id="ig" class="fab fa-instagram"></div></a>
+		</div>
+		<div class="box">
+			<a href="http://twitter.com/GridometryLLC" target="_blank"><div id="tw" class="fab fa-twitter"></div></a>
+		</div>
+	</div>
+
+	<div class="seal-section">
+		<%= image_tag "visa-card.png", :class => "visa-card" %>
+		<%= image_tag "google-card.png", :class => "google-card" %>
+		<%= image_tag "master-card.png", :class => "master-card" %>
+		<%= image_tag "discover-card.png", :class => "discover-card" %>
+		<%= image_tag "american-card.png", :class => "american-card" %>
+		<%= image_tag "jcb-card.png", :class => "jcb-card" %>
+		<%= image_tag "android-card.png", :class => "android-card" %>
+		<%= image_tag "apple-card.png", :class => "apple-card" %>
+		<%= image_tag "paypal-card.png", :class => "paypal-card" %>
+		<%= image_tag "diners-card.png", :class => "diners-card" %>
+	</div>
 
 
-<div class="sitemap">
-	<div class="box">
-		<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
+	<div class="sitemap">
+		<div class="box">
+			<h3><i class="far fa-copyright"></i>2018 Gridometry LLC | All Rights Reserved</h3>
+		</div>
+		<div class="box">
+			<%= image_tag "comodo_secure_seal_113x59_transp.png", :class => "comodo-seal" %>
+		</div>
 	</div>
-	<div class="box">
-		<%= image_tag "comodo_secure_seal_113x59_transp.png", :class => "comodo-seal" %>
-	</div>
+
 </div>
+
 
 
 
@@ -312,12 +412,12 @@
   }, false);
 
 
-
+/*
 $(".alert-success").show();
 	setTimeout(function(){ 
 	$(".alert-success").fadeOut(); }, 8000);
- 
-	
+*/ 
+/*	
 //Show window dimensions
 var MEASUREMENTS_ID = 'measurements'; // abstracted-out for convenience in renaming
 $("body").append('<div id="'+MEASUREMENTS_ID+'"></div>');
@@ -339,6 +439,7 @@ $("#"+MEASUREMENTS_ID).text(getDimensions());
 $(window).on("resize", function(){
     $("#"+MEASUREMENTS_ID).text(getDimensions());
 });
+*/
 
 
 
@@ -383,6 +484,8 @@ $(document).ready(function(){
 	    }
 	}
 });
+
+
 //Scroll page to nav links 
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
@@ -416,6 +519,8 @@ $(document).ready(function(){
 	})
 },9900);
 });
+
+
 //project bar carousel buttons 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -440,6 +545,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active-dot";
 }
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
