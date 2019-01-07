@@ -52,17 +52,19 @@
 		width: 100%;
 		height: auto;
 
+		background-image: url("/assets/bkgd-gradient5.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: left;
 	}
 	
 	.bar0 {
-		background-color: #eaeaea;
+		background-image: url("/assets/wooden-background.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: left;
 		background-attachment: fixed;
+		width: 100%;
 		height: auto;
 		text-align: center;
 	}
@@ -76,14 +78,11 @@
 	}
 
 	.bar0 h1 {
-
-		font-family: 'Oswald', sans-serif;
 		text-shadow: 2px 2px #3333;
-		font-size: 4em;
+		font-size: 3em;
 		color: white;
-		text-transform: uppercase;
-		padding-top: 2em;
-		padding-bottom: 2em;
+		padding-top: 3em;
+		padding-bottom: 3em;
 	}
 
 	.gridometry-logo2 {
@@ -105,10 +104,7 @@
 			vertical-align: middle;
 		}
 
-		.bar0 h1 {
-			font-size: 3em;
-
-		}
+		
 	}
 
 	@media screen and (max-width: 600px){
@@ -119,6 +115,7 @@
 	
 
 
+
 /*-- bar2 section --*/
 
 	.bar_overlay2 {
@@ -127,10 +124,15 @@
 		background-color: #0f2a51e6;
 		padding-top: 2.5em;
 		padding-bottom: 2.5em;
+		width: auto;
+    	height: auto;
+    	padding-top: 4em;
+    	padding-bottom: 4em;
 
 		
 	}
 
+	
 	
 	.bar2 {
 	
@@ -144,21 +146,14 @@
 		text-align: center;
 	}
 
-	#bar3 {
-		background-image: url("/assets/building_clouds.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: left;
-		background-attachment: fixed;
-		width: 100%;
-		height: auto;
-		text-align: center;
-	}
 
 	.bar2 h1 {
 
-		font-size: 60px;
-		color: white;
+    text-shadow: 2px 2px #3333;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    padding-top: 2em;
+    padding-bottom: 2em;
 
 	}
 
@@ -189,14 +184,25 @@
 	}
 
 	.bar3 h1 {
-		color: white;
-		font-size: 40px;
-		text-shadow: 2px 0px #0f2a51;
+	    text-shadow: 2px 2px #3333;
+	    font-size: 3em;
+	    color: rgb(255, 255, 255);
+	    padding-top: 2em;
+	    padding-bottom: 2em;
 
 	}
 	
 
-	
+	#bar3 {
+		background-image: url("/assets/building_clouds.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-attachment: fixed;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
 
 	/*-- bar4 section --*/
 
@@ -205,12 +211,14 @@
 		height: auto;
 	}
 
+
+
 	.bar4 {
 		width: auto;
 		height: 20em;
 		text-align: center;
-		margin-top: 4em;
-		margin-bottom: 3em;
+		padding-top: 6em;
+		padding-bottom: 5em;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -439,7 +447,7 @@
 	}
 
 	.project-test {
-		width: 30em;
+		width: 35em;
 		height: auto;
 		vertical-align: middle;
 	}
@@ -568,10 +576,11 @@
 
 
 	.bar3 .box {
-		width: 50%;
+		display: inline-block;
+		width: 40%;
 		height: auto;
 		text-align: center;
-		padding: 4em;
+		vertical-align: middle;
 	}
 
 	.bar3 button {
@@ -582,32 +591,24 @@
 	@media screen and (max-width: 630px){
 		
 
-		.bar3 {
-			width: auto;
-			background-attachment: scroll;
-		}
+		
 
 		.bar2 {
 			width: auto;
 			background-position: center;
 			background-repeat: no-repeat;
-			background-attachment: scroll;
 		}
 
 		.bar_overlay3 {
 			width: auto;
 		}
-
 		
-
-
-
 		.bar3 h1 {
 			font-size: 1.5em;
 		}
 
 		.bar2 h1 {
-			font-size: 50px;
+			font-size: 2em;
 		}
 
 		.bar3 .box {
@@ -1630,6 +1631,7 @@
 	}
 
 	.solutions p {
+		font-family: 'Times New Roman', sans-serif;
 		font-size: 1.3em;
 		margin-left: 1em;
 		margin-right: 1em;
@@ -1698,11 +1700,6 @@
 
 @media screen and (max-width: 630px){
 	
-	.solutions {
-		margin-left: 1em;
-		margin-right: 1em;
-
-	}
 
 	.solutions h1 {
 		font-size: 31px;
@@ -2470,25 +2467,7 @@
 	
 /*------- footer section ------*/
 
-footer {
-	text-align: center;
-	height: auto;
-	background-color: gray;
-	color: rgb(181, 181, 181);
-}
 
-footer .svg-inline--fa {
-	margin-right: .5em;
-}
-
-
-footer .box {
-	display: inline-block;
-	width: 16em;
-	height: auto;
-	margin-right: .5em;
-	margin-left: .5em;
-}
 
 .powered-by-gridometry {
 	margin: 0;
@@ -2654,14 +2633,10 @@ footer .box {
 
 .bar2 .box {
 	display: inline-block;
-	vertical-align: middle;
-	width: auto;
-	height: auto;
-
-	text-align: center;
-	margin-left: auto;
-
-	padding: 2em;
+		width: 40%;
+		height: auto;
+		text-align: center;
+		vertical-align: middle;
 }
 
 @media screen and (max-width: 500px){
@@ -2677,12 +2652,7 @@ footer .box {
 	height: auto;
 }
 
-.bar2 h1 {
-	color: white;
-	text-shadow: 2px 2px #d87b10;
-	font-size: 60px;
-	width: 400px;
-}
+
 
 .bar2 h2 {
 	width: 400px;
@@ -2711,6 +2681,8 @@ footer .box {
 		font-size: 40px;
 	}
 }
+
+
 
 .jumbo-text {
 	border: solid 1px blue;
@@ -2784,19 +2756,15 @@ nav h1 {
 		background-color: orange;
 	}
 
-	.bar_overlay3 {
-		background-image: none;
-		background-color: orange;
-	}
+	
 
 	.bar3 h1 {
-		font-size: 3em;
+		font-size: 2em;
+		padding-top: 0;
+    	padding-bottom: 0;
 	}
 
-	.bar_overlay2 {
-		background-image: none;
-		background-color: #0f2a51;
-	}
+	
 }
 
 .bar6 {
