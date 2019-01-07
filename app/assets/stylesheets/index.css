@@ -1680,6 +1680,11 @@
 		height: auto;
 	}
 
+	.search-icon {
+		width: 3.5em;
+		height: auto;
+	}
+
 
 @media screen and (max-width: 670px){
 	.solutions .header {
