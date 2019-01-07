@@ -1,5 +1,7 @@
 
 /*--- body section ---*/ 
+
+
 	
 	
  	h1, h2, h3, h4, h5, h6 {
@@ -591,8 +593,6 @@
 	@media screen and (max-width: 630px){
 		
 
-		
-
 		.bar2 {
 			width: auto;
 			background-position: center;
@@ -620,7 +620,74 @@
 	}
 
 
-	
+	@media screen and (max-width: 420px){
+
+		.menu gridometry-logo3 {
+			width: 150px;
+			height: auto;
+		}
+
+		.text-box h1 {
+			position: absolute;
+			top: 4em;
+			left: 15px;
+			font-size: 1.5em;
+		}
+
+		.bar4 {
+			padding-left: 2em;
+		}
+
+		.bar3 {
+			background-image: none;
+		}
+
+		.bar2 {
+			background-image: none;
+		}
+
+		.bar0 {
+			background-image: none;
+		}
+
+		form {
+			width: 80%;
+		}
+
+	}
+
+	@media screen and (max-width: 385px){
+
+		.bar4 {
+			padding-left: 10px;
+		}
+
+		.bar4 h2 {
+			padding-right: 34px;
+		}
+
+
+	}
+
+	@media screen and (max-width: 350px){
+
+		.bar4 {
+			padding-top: 4em;
+			padding-bottom: 4em;
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.bar4 h2 {
+			padding: 0;
+		}
+
+		.bar_overlay4 {
+			padding:0;
+		}
+
+
+	}
 	
 
 /*--- carousel section ----*/	
@@ -988,7 +1055,7 @@
 		transition: all .4s linear 0s;
 	}
 
-	.gridometry-logo {
+	.gridometry-logo3 {
 		width: 35px;
 		height: auto;
 		
@@ -1639,7 +1706,6 @@
 
 	}
 
-
 	.solutions .container {
 		padding-top: 2em;
 		display: inline-block;
@@ -1650,6 +1716,20 @@
 		height: auto;
 		vertical-align: top;
 		text-align: center;
+	}
+
+	@media screen and (max-width: 500px){
+		
+		menu .gridometry-logo3 {
+		    width: 148px;
+    		height: auto;
+    	}
+
+    	.solutions {
+    		margin-left: 0;
+			margin-right: 0;
+
+    	}
 	}
 
 
@@ -2306,137 +2386,98 @@
 
 /*---- contact section ----*/
 
+
+.contact-form {
+	text-align: center;
+	background-color: rgb(21, 35, 53);
+	margin: 0;
+	padding-bottom: 9em;
+	padding-top: 3em;
+	padding-left: 0;
+    padding-right: 0;
+	border-radius: 0;
+
+}
+
+.contact-form hr {
+	width: 25px;
+	height: 2px;
+	background-color: white;
+}
+
+.contact-form h1 {
+	font-size: 3em;
+	color: white;
+	padding-right: 5px;
+}
+
+.contact-form h4 {
+	color: white;
+	margin-top: .5em;
+	margin-bottom: 2em;
+}
 	
+form {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 55%;
+}
 
-	.contact-button {
-		width: auto;
-		height: auto;
-		color: #0f2a51;
-		padding: 20px 20px;
-		margin-top: 2em;
-		margin-bottom: 1em;
-		background-color: transparent;
-		transition: all .2s linear 0s;
-		text-decoration: none;
-	}
-
-
-	.contact-button:hover {
-		color: orange;
-		transition: all .1s linear 0s;
-
-	}
-
-	
-	.contact-button-bar {
-		background-color: white;
-		text-align: center;
-	}	
-
-
-	.contact-form {
-		width: auto;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: .8em;
-		padding-top: .8em;
-		padding-bottom: .8em;
-		padding-right: .3em;
-		border-radius: .5em;
-		text-align: center;
-	}
-
-	.contact-form h3 {
-		color: white;
-		text-align: left;
-	}
-
-	.contact-form .form_button:hover {
-		background-color: #505991;
-	}
-
-	.contact-form .form_button {
-		border: solid 1px black;
-		border-radius: .3em;
-		height: 3.5em;
-		width: 10em;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		left: 12.7em;
-		background-color: #e1e1e1;
-		transition-property: background-color;
-	    transition-duration: .2s;
-	    transition-timing-function: ease;
-	}
-
-	@media screen and (max-width: 425px){
-
-		.contact h3 {
-			display: none;
-		}
-
-		.contact h1 {
-			margin-bottom: 2em;
-		}
-
-		.form_text_field {
+@media screen and (max-width: 500px){
+		form {
 			width: 80%;
-			height: 3.5em;
-		}
-
-		.form_text_area {
-			width: 80%;
-			height: 3.5em;
-		}
-
-		.form-button {
-
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			left: 0;
-		
 		}
 	}
 
-/*---- contact bar section ----*/
-
-	.contact-bar {
-		padding-top: 10px;
-		width: auto;
-		height: auto;
-		text-align: center;
-	}
-
-
-	.contact-bar a {
-		text-decoration: none;
-	}
-
-	.contact-bar .svg-inline--fa {
-		color: white;
-		font-size: 1.5em;
-		padding-left: .5em;
-	}
-
-
-	.contact-bar .box {
-		display: inline-block;
-		vertical-align: middle;
-		padding-left: .3em;
-		padding-top: .2em;
-		padding-bottom: .2em;
-	}
-	
-	.contact-bar h2 {
-		color: white;
-		font-size: 12px;
-		padding-right: 2em;
-	}
+input[type="text"], input[type="email"], textarea {
+	font-family: 'Times New Roman', sans-serif;
+	display: block;
+  	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border: 0;
+	padding: 10px 15px;
+	background: #fff;
+	font-size: 12pt;
+	margin-bottom: 3px;
+	color: black; 
+}
 
 	
+textarea {
+	min-height: 150px;
+	margin-bottom: 5px; 
+}
+
+.button {
+	font-family: 'Times New Roman', sans-serif;
+	margin: 5px 0 0 0;
+	font-size: 12pt;
+	padding: 10px 30px;
+	color: #686868;
+	border: solid 1px gray;
+	background: #eaeaea;
+	outline: 0; 
+	float: right;
+}
+	
+.button:hover {
+	color: white;
+	background-color: transparent;
+	border: solid 1px #eaeaea;
+}
+
+.footer {
+	background-color: rgb(25, 30, 47);
+	padding-top: 4em;
+}
+
+.thumbnail{
+	width: 75px;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}	
 
 
 /*---- sitemap section ----*/
@@ -2638,10 +2679,10 @@
 
 .bar2 .box {
 	display: inline-block;
-		width: 40%;
-		height: auto;
-		text-align: center;
-		vertical-align: middle;
+	width: 40%;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
 }
 
 @media screen and (max-width: 500px){
@@ -2969,3 +3010,32 @@ span.numscroller {
 		font-size: 1.3em;
 	}
 }
+
+@media screen and (max-width: 500px){
+	.bar0 .box {
+		width: 100%;
+	}
+
+	.bar_overlay2 {
+		padding: 0;
+	}
+
+	.bar0 h1 {
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+	}
+
+	.bar2 .box {
+		width: 100%;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.bar3 .box {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+
