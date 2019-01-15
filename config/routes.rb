@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'sites/index'
   get 'sites/lashdolls'
   get 'sites/vacationhomes'
+  get 'sites/piesunlimited'
 
   resources :sites 
   resources :essential, only: [:new, :create]

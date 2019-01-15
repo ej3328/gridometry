@@ -7,6 +7,7 @@ Rails.application.config.assets.version = '1.0'
 #sites/index
 #CSS
 Rails.application.config.assets.precompile += %w( index.css )
+Rails.application.config.assets.precompile += %w( piesunlimited.css )
 
 
 #index

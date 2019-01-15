@@ -36,7 +36,7 @@
 		top: 3em;
 		left: 1em;
 		font-size: 4em;
-		z-index: 2;
+		z-index: 1;
 	}
 
 	@media screen and (max-width: 600px){
@@ -876,6 +876,10 @@
 
 	}
 
+	#lashbasics {
+		display: none;
+	}
+
 /*----- screen width > -----*/
 
 @media screen and (min-width: 741px) {
@@ -1041,10 +1045,10 @@
 
 	}  
 
-
-   
+	#lashbasics {
+		display: block;
+	}
 }
-
 
 
 

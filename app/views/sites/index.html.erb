@@ -29,16 +29,16 @@
 		<a href="http://www.instagram.com/www_gridometry_com/" target="_blank"><div id="ig" class="fab fa-instagram"></div></a>
 		<a href="https://twitter.com/GridometryLLC" target="_blank"><div id="tw" class="fab fa-twitter"></div></a>-->
 
-			<div class="fixed_nav_links">
-				<ul class="active">
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#solutions">SOLUTIONS</a></li>
-					<li><a href="#projects">DESIGNS</a></li>
-					<!--<li><a href="#pricing">PRICING</a></li>-->
-					<li><a href="#contact">CONTACT US</a></li>
-
-				</ul>	
-			</div>
+		<div class="fixed_nav_links">
+			<ul class="active">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#solutions">SOLUTIONS</a></li>
+				<li><a href="#projects">DESIGNS</a></li>
+				<!--<li><a href="#pricing">PRICING</a></li>-->
+				<li><a href="#contact">CONTACT US</a></li>
+			</ul>	
+			<i class="fas fa-bars" onclick="openLB()"></i>
+		</div>
 	</nav>
 </div>
 
@@ -74,6 +74,111 @@
 	</div>
 </div>
 
+<style>
+
+.overlay {
+	color: purple;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay a {
+	color: #0f2a51;
+	text-decoration: none;
+}
+
+.overlay a:hover, a:focus {
+	color: gray;
+	text-decoration: none;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay ul li {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: blue;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.svg-inline--fa.fa-w-14  {
+	visibility: hidden;
+	position: absolute;
+	right: 21px;
+	top: 17px;
+}
+
+@media screen and (max-width: 740px){
+
+	.svg-inline--fa.fa-w-14 {
+		visibility: visible;
+    	color: #0f2a51;
+    	font-size: 25px;
+	}
+
+	.svg-inline--fa.fa-w-14:hover {
+    	color: gray;
+	}
+
+
+}
+
+</style>
+
+<script>
+
+function openLB() {
+    document.getElementById("lashbasics").style.height = "100%";
+}
+
+function closeLB() {
+    document.getElementById("lashbasics").hide();
+}
+
+</script>
+
+
+
+
+<div id="lashbasics" class="overlay">
+  <div class="overlay-content">
+	<ul class="active">
+		<li><a href="#home">HOME</a></li>
+		<li><a href="#solutions">SOLUTIONS</a></li>
+		<li><a href="#projects">DESIGNS</a></li>
+		<!--<li><a href="#pricing">PRICING</a></li>-->
+		<li><a href="#contact">CONTACT US</a></li>
+	</ul>
+  </div>
+</div>
+
+
+
+
+
 <!-- solutions section -->
 
 <div class="solutions" id="solutions">
@@ -90,7 +195,7 @@
 
 
 	<div class="container">
-		<h2>Social Media Marketing</h2>
+		<h2>Branding & Marketing</h2>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_i.png", :class => "small-smart-phone" %>
 		</div>
@@ -100,7 +205,7 @@
 	<br>
 
 	<div class="container">
-		<h2>UX/UI Design</h2>
+		<h2>UX & UI Design</h2>
 		<div class="sm-art-box">
 			<%= image_tag "grid_icon_pb.png", :class => "paint-brush" %>
 		</div>
@@ -247,7 +352,7 @@
   	<div class="price-box">
         <div class="price-heading" id="essential">
           <h1>Starter <br> Package</h1>
-          <h2>$599</h2>
+          <h2></h2>
         </div>
 
         <div class="price-body-top">
@@ -260,7 +365,7 @@
     <div class="price-box">
         <div class="price-heading" id="standard-bestseller">
          	<h1>Standard <br> Package</h1>
-          	<h2>$999 </h2>
+          	<h2></h2>
         </div>
         <div class="price-body-top">
           <div class="price-body-bottom" id="price-body-standard">
@@ -273,7 +378,7 @@
     <div class="price-box">
         <div class="price-heading" id="professional">
           <h1>Professional <br> Package</h1>
-          <h2>$89</h2>
+          <h2></h2>
         </div>
         <div class="price-body-top">
           	<%= link_to 'Check Out', new_premium_path, :class => 'price-button' %>	
