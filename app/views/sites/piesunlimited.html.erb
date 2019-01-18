@@ -30,23 +30,6 @@
       padding-bottom: 14px;
     }
 
-    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body{line-height:1}
-ol,ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-table{border-collapse:collapse;border-spacing:0}
-
-body{background-color:#ffffff;font-family:Asap, sans-serif;font-weight:400;font-size:16px;text-transform:none;line-height:1.8em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased}
-::-moz-selection{background-color:#000;color:#fff}
-::selection{background:#FFF7B6;color:black}
-abbr{border-bottom:1px dotted #d5c3aa}
-.text-align--left{text-align:left}
-.text-align--center{text-align:center}
-.text-align--right{text-align:right}
-.logo{font-family:Asap;font-weight:400;font-size:34px;text-transform:none;color:}
-.logo a,.logo a:hover,.logo a:visited,.logo a:active{color:;line-height:45px}
 
 
 
@@ -100,7 +83,6 @@ blockquote{margin:0 0 20px;padding:9px 20px 0 19px;border-left:1px solid #d5c3aa
 blockquote cite{display:block;font-size:12px;color:#555}
 blockquote cite:before{content:"\2014 \0020"}
 blockquote cite a,blockquote cite a:visited,blockquote cite a:visited{color:#555}
-hr{border:solid red;border-width:1px 0 0;clear:both;margin:12px 0;height: 2px}
 .quote{font-size:16px;line-height:22px;text-align:center;margin:0 0 20px 0;font-style:italic}
 a,a:visited{color:#bf1533;text-decoration:none;outline:0;-webkit-transition:color .1s linear;-moz-transition:color .1s linear;-o-transition:color .1s linear;-ms-transition:color .1s linear;transition:color .1s linear}
 a:hover,a:focus{color:#947057}
@@ -2399,14 +2381,18 @@ body {
       25% { opacity: 0 }
       100% { opacity: 0 }
   }
-
  
 
   hr {
+    border: solid 1px rgb(5, 5, 76);
     width: 70px;
+    border-width: 1px 0 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3em;
   }
+
+
 
   .img-bar1 {
   background-image: url("/assets/pu-pic4.jpg");
@@ -2470,31 +2456,33 @@ body {
     }
 
     #bar1-pu {
-  margin: 4em 0;
+      text-align: center;
+      margin: 4em 0;
     }
 
-   
+   #bar1-pu p {
+    font-size: 30px;
+   }
 
 </style>
 
 
 
 <div class="container" id="bar1-pu">
-      <div id="shopify-section-1496257333961" class="shopify-section headline-section featured-content-section">
-        <div class="homepage_content section clearfix">
-          <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
-          <h2 class="title center">
-            A Las Vegas Tradition Since 2002
-          </h2>
-          <hr>        
+  <h1 class="title">Our History</h1>
+  <hr>
 
-          <div class="featured_text ">
-            <p>Pies Unlimited has been serving up delicious treats in Las Vegas <strong>for over 17 years</strong>. We are proud to be a <strong>family-owned</strong> local business in a city we love.</p>  
-          </div>
+  <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
-        </div>
-      </div>
+  <h2 class="title">A Las Vegas Tradition Since 2002</h2>
+
+  <div class="featured_text" id="about">
+    <p><b>Pies Unlimited</b> has been serving up delicious treats in Las Vegas <strong>for over 17 years</strong>. We are proud to be a <strong>family-owned</strong> local business in a city we love.</p>  
+  </div>
+
 </div>
+
+
 
 <style>
 
@@ -2505,7 +2493,7 @@ body {
     font-size: 4.5em;
     color: white;
     width: auto;
-    text-shadow: 3px 0 13px rgba(18, 58, 134, 0.59);  
+    text-shadow: 3px 0 13px #000000ad;  
   }
 
    .img-bar2 h1 {
@@ -2515,7 +2503,7 @@ body {
     font-size: 4.5em;
     color: white;
     width: auto;
-    text-shadow: 3px 0 13px rgba(18, 58, 134, 0.59);
+    text-shadow: 3px 0 13px #000000ad;
   }
 
   .makeup {
@@ -2534,14 +2522,104 @@ body {
   </div>
 </div>
 
-  
+<div class="main-boxi">
+    <h1 class="title">Our Specialty For Cakes, Pies And More!</h1>
+    <hr>
+
+    <div class="boxi">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+
+      <div class="all-text-boxi">
+            <h2 class="title">Homeade Sweetness</h2>
+            
+            <div class="featured_text ">
+              <p>Our Pies, Cakes, Cupcakes and Cheeesecakes taste as close to homemade as you can get without making it yourself.</p>  
+            </div>
+      </div>
+    </div>
+
+    <div class="boxi">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+
+            <div class="all-text-boxi">
+            <h2 class="title">It Tastes Just Like Sugar</h2>
+            
+            <div class="featured_text ">
+              <p>If you want a No Sugar Added Pie, Cake, or Cheesecake that tastes as good as one with sugar then you have come to the right place.</p>  
+            </div>
+          </div>
+    </div>
+
+    <div class="boxi">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+
+            <div class="all-text-boxi">
+            <h2 class="title">Baked Fresh Daily</h2>
+
+            <div class="featured_text ">
+              <p>We make all of our goodies from scratch daily. We do not use any additives or preservatives in our products. We offer gluten sensitive products and vegan products.</p>  
+            </div>
+          </div>
+      </div>
+
+</div>
+
+
+<style>
+
+  .main-boxi {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 4em 0;
+  }
+
+  .main-boxi p {
+    width: auto;
+    height: auto;
+  }
+
+  .boxi {
+    display: inline-block;
+    margin: 0 0;
+    vertical-align: top;
+    width: 40%;
+    height: auto;
+    max-width: 300px;
+    min-width: 250px;
+  }
+
+  .all-text-boxi {
+    width: auto;
+    height: auto;
+  }
+
+  .pie-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .main-boxi h1 {
+    color: rgb(191, 21, 51);
+    font-size: 34px;
+  }
+
+
+
+</style>
+
+<div class="img-bar2">
+  <div class="makeup">
+    <h1>Every Batch, <br>From Scratch!</h1>
+  </div>
+</div>
+
 <div class="container" id="cupcake-container">
 
-  <h2 class="title center">
-    Try Our New Pies!
-  </h2>
+  <h1 class="title">Try Our New Pies!</h1>
   <hr>
-  <h5>A Little Bliss In Every Bite.</h5>
+  
 
   <div class="cupcake-box1">
     <div class="circle" id="cupcake1">
@@ -2566,112 +2644,29 @@ body {
       <%= image_tag "pu-pic7.jpg", :class => "pie3"  %>
     </div> 
 
-   
+    <div class="circle" id="cupcake3">
+      <%= image_tag "pu-pic5.jpg", :class => "pie3"  %>
+    </div>
   </div>
 
-</div>
-
-<style>
-
-  .main-boxi {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin: 4em 0;
-  }
-
-  .main-boxi p {
-    width: auto;
-    height: auto;
-  }
-
-  .boxi {
-    display: inline-block;
-    margin: 20px 0;
-    vertical-align: top;
-    width: 40%;
-    height: auto;
-    max-width: 300px;
-    min-width: 250px;
-  }
-
-  .all-text-boxi {
-    width: auto;
-    height: auto;
-  }
-
-  .pie-icon {
-    width: 50px;
-    height: auto;
-  }
-
-  .main-boxi h1 {
-    color: #05054c;
-    font-size: 3.5em;
-  }
-
-
-
-</style>
-
-<div class="main-boxi">
-    <h1>Our Specialty!</h1>
-
-    <div class="boxi">
-      <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
-      <div class="all-text-boxi">
-            <h2 class="title center">
-              Homeade Sweetness
-            </h2>
-            <hr>
-            <div class="featured_text ">
-              <p>Our Pies, Cakes, Cupcakes and Cheeesecakes taste as close to homemade as you can get without making it yourself.</p>  
-            </div>
-      </div>
-    </div>
-
-    <div class="boxi">
-            <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
-            <div class="all-text-boxi">
-            <h2 class="title center">
-              It Tastes Just Like Sugar
-            </h2>
-            <hr>
-            <div class="featured_text ">
-              <p>If you want a No Sugar Added Pie, Cake, or Cheesecake that tastes as good as one with sugar then you have come to the right place.</p>  
-            </div>
-          </div>
-    </div>
-
-    <div class="boxi">
-            <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
-            <div class="all-text-boxi">
-            <h2 class="title center">
-              Baked Fresh Daily
-            </h2>
-            <hr>
-            <div class="featured_text ">
-              <p>We make all of our goodies from scratch daily. We do not use any additives or preservatives in our products. We offer gluten sensitive products and vegan products.</p>  
-            </div>
-          </div>
-      </div>
-
-</div>
-
-
-
-
-<div class="img-bar2">
-  <div class="makeup">
-    <h1>Every Batch, <br>From Scratch!</h1>
-  </div>
 </div>
 
 <style>
 
 #bar4-pu {
+  padding: 4em 0;
+  background-color: rgb(5, 5, 76);
   margin: 3em 0;
   text-align: center;
+  color: white;
+}
+
+#bar4-pu hr {
+  border: solid .5px rgb(191, 21, 51);
+}
+
+#bar4-pu p {
+  color: white;
 }
 
 .mail-box {
@@ -2683,50 +2678,44 @@ body {
 }
 
 #bar5-pu {
-  margin: 4em 0;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 7em;
+}
+
+#bar5-pu h1 {
+  color: rgb(191, 21, 51);
 }
 </style>
 
 
 <div class="container" id="bar4-pu">
 
+      <h1>Service That's Simple!</h1>
+      <hr>
       <div class="mail-box">
-            <h2 class="title center">
-              Pick Up?
-            </h2>
+            <h2 class="title" style="color:white">Pick Up?</h2>
             
-            <hr>      
-
             <div class="featured_text ">
               <p>If you're in the Las Vegas area please feel free to stop in for a visit. Keep in mind we have a limited stock on hand.<br>
               <i>*Pre-orders welcome</i></p>  
             </div>
 
       </div>
-
       <div class="mail-box">
-            <h2 class="title center">
-              Prefer Delivery?
-            </h2>
+            <h2 class="title" style="color: white">Delivery?</h2>
             
-            <hr>
-
             <div class="featured_text ">
-              <p>We can deliver to
-              residential or commercial
-              Monday thru Friday.
-              Las Vegas and Henderson Area Only!
-              Shipping
-              Available on Fruit Pies Only!<br>
-              <i>*Delivery fee applies</i></p>  
+              <p>We deliver to residential locations as well as commercial locations Monday thru Friday.
+              Shipping Available for fruit pies only!</p>
+              <i>*Las Vegas and Henderson deliveries only</i>
+              <i>*Delivery fee applies</i>
             </div>
 
             <!--<div class="image-container">
               <%= image_tag "pies-unlimited-delivery-truck.png", :class => "delivery-truck" %>   
             </div>-->
       </div>
-
-
 </div>
 
 
@@ -2734,12 +2723,19 @@ body {
 
   .featured_text i {
     font-size: 12px;
+    padding-top: 0;
+  }
+
+  h1.title {
+    color: rgb(191, 21, 51);
   }
 
   h2.title {
+    color: rgb(5, 5, 76);
     margin-top: 0 !important;
-    color: #05054c;
   }
+
+
   .image-container {
     text-align: center;
   }
@@ -2781,9 +2777,6 @@ body {
     top: -2px;
   }
 
- 
-
-
   .container .cupcake-box1 {
     text-align: center;
     padding-top: 2em;
@@ -2795,9 +2788,8 @@ body {
   }
 
   #cupcake-container {
+    margin-top: 3em;
     text-align: center;
-    background-color: rgb(5, 5, 76);
-    color: white;
   }
 
   .circle {
@@ -2810,13 +2802,7 @@ body {
     margin-left: 1em;
     margin-right: 1em;
   }
-  
-  #cupcake-container h2 {
-    padding-top: 1em;
-    color: white;
-    font-size: 3em;
 
-  }
 
   #cupcake-container h5 {
     font-size: 25px;
@@ -2842,7 +2828,7 @@ body {
 }
 
 .contact-form h1 {
-  font-size: 3.5em;
+  font-size: 34px;
   color: #05054c;  
   padding-right: 5px;
 }
@@ -2895,10 +2881,10 @@ textarea {
   color: #fff;
   outline: 0; 
   float: right;
-
+  border: solid 1px transparent;
 
 }
-  
+
 .pu-button:hover {
   color: white;
   background-color: #05054c;
@@ -2912,8 +2898,9 @@ textarea {
   transition:all .1s linear
 }
 
-.footer_social_icons a:hover{color:rgb(85, 46, 31);
-  background-color:white
+.footer_social_icons a:hover {
+  color: rgb(85, 46, 31);
+  background-color:white;
 }
 
 
@@ -2940,9 +2927,9 @@ textarea {
 
 
 <div class="container">
-  <div class="contact-form" id="contact">
+  <div class="form" id="bar5-pu">
     <h1>Contact Us</h1>
-
+    <hr>
     <form action="" method="POST">
         <input placeholder="Name:" type="text" name="name" required>
         <input placeholder="Email:" type="email" name="email" required>
@@ -3023,20 +3010,14 @@ h6.gift-header {
 
 
 <div class="football">
-    
-
     <div class="footsie">
       <ul class="footer_menu">
-      <h6>Press</h6>
+      <h6>Press Mentions</h6>
         
           <li>National Pie Day NEWS 13</li>
           
         
-          <li>Review Journal</li>
-          
-        
-          <li>Summerlin South View</li>
-          
+          <li>Review Journal</li>          
         
           <li>In Business Las Vegas</li>
 
@@ -3068,8 +3049,8 @@ h6.gift-header {
         }
 
         .footer_social_icons .svg-inline--fa:hover {
-          background-color: white;
-          color: gray;
+          background-color: rgb(191, 21, 51);
+          color: white;
           border-radius: 22px;
           padding: 7px;
         }
