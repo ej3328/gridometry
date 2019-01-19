@@ -19,22 +19,6 @@
     <div id="shopify-section-header" class="shopify-section header-section">
 
 <style>
-    .nav {
-      text-align: center;
-    }
-
-    .pu-logo {
-      width: 132px;
-      height: auto;
-      padding-left: 25px;
-      padding-bottom: 14px;
-    }
-
-
-
-
-
-
 
 @media (max-width: 480px){.logo a,.logo a:hover,.logo a:visited,.logo a:active{padding-bottom:15px}
 }
@@ -1726,6 +1710,27 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
 }
 
 
+.nav {
+  text-align: center;
+}
+
+.pu-logo {
+  width: 132px;
+  height: auto;
+  padding-left: 25px;
+  padding-bottom: 14px;
+}
+
+.social-logo {
+  width: 20px;
+  height: auto;
+}
+
+.nav ul li .social_icons li {
+  padding: 5px;
+}
+
+
 
 </style>
 
@@ -1745,8 +1750,8 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
             
             <li>
               <ul class="social_icons">
-                <span><i class="fab fa-facebook-f"></i></span>
-                <span><i class="fab fa-instagram"></i></span>
+                <li><%= image_tag "facebook-icon-blue.png", :class => "social-logo" %></li>
+                <li><%= image_tag "instagram-icon-blue.png", :class => "social-logo" %></li>
               </ul>
             </li>
 
@@ -3212,13 +3217,11 @@ h6.gift-header {
 
       </style>
 
-      <div class="footsie">
+     <div class="footsie">
         <ul class="footer_social_icons">
             <h6 class="social">Social</h6>
-            <li>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-            </li>
+                <li><%= image_tag "facebook-icon.png", :class => "social-logo" %></li>
+                <li><%= image_tag "instagram-icon.png", :class => "social-logo" %></li>
         </ul>
       </div>
 
