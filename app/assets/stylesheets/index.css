@@ -3041,5 +3041,78 @@ span.numscroller {
 	}
 }
 
+/*--- other ----*/
+
+
+.overlay {
+	color: purple;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay a {
+	color: #0f2a51;
+	text-decoration: none;
+}
+
+.overlay a:hover, a:focus {
+	color: gray;
+	text-decoration: none;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay ul li {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: blue;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.svg-inline--fa.fa-w-14  {
+	visibility: hidden;
+	position: absolute;
+	right: 21px;
+	top: 17px;
+}
+
+@media screen and (max-width: 740px){
+
+	.svg-inline--fa.fa-w-14 {
+		visibility: visible;
+    	color: #0f2a51;
+    	font-size: 25px;
+	}
+
+	.svg-inline--fa.fa-w-14:hover {
+    	color: gray;
+	}
+
+
+}
+
 
 
