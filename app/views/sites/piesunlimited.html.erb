@@ -9,6 +9,8 @@
     <title>Pies Unlimited</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 
@@ -118,7 +120,8 @@ ul.menu ul li:last-child{border-bottom:0}
 @media (min-width: 799px){.toggle_menu{display:none !important}
 }
 ul.top_menu{margin-bottom:10px;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:flex-end;-moz-justify-content:flex-end;-ms-justify-content:flex-end;justify-content:flex-end;-ms-flex-pack:flex-end}
-ul.top_menu li a{padding-bottom:0}
+ul.top_menu li a{padding-bottom:0; transition: all .2s linear 0s;
+}
 ul.top_menu form.search{margin-bottom:0}
 ul.top_menu li a,ul.top_menu li a:visited,ul.top_menu li a:active,select#currencies{font-size:15px;color:#e02533}
 ul.top_menu li a:hover{color:rgb(5, 5, 76)}
@@ -1721,13 +1724,34 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
   padding-bottom: 14px;
 }
 
-.social-logo {
+.social-logo-fb {
   width: 20px;
   height: auto;
+  transition: all .2s linear 0s;
+
+}
+
+.social-logo-ig {
+  width: 20px;
+  height: auto;
+  transition: all .2s linear 0s;
+
+}
+
+.social-logo-fb:hover {
+  width: 25px;
+  transition: all .2s linear 0s;
+
+}
+
+.social-logo-ig:hover {
+  width: 25px;
+  transition: all .2s linear 0s;
+
 }
 
 .nav ul li .social_icons li {
-  padding: 5px;
+  padding: 2px;
 }
 
 
@@ -1750,8 +1774,8 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
             
             <li>
               <ul class="social_icons">
-                <li><%= image_tag "facebook-icon-blue.png", :class => "social-logo" %></li>
-                <li><%= image_tag "instagram-icon-blue.png", :class => "social-logo" %></li>
+                <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><%= image_tag "facebook-icon-blue.png", :class => "social-logo-fb" %></a></li>
+                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><%= image_tag "instagram-icon-blue.png", :class => "social-logo-ig" %></a></li>
               </ul>
             </li>
 
@@ -1764,13 +1788,13 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
 
         </ul>
 
-        <ul class="main menu">
+        <ul class="main-menu">
           
-          <li><a href=javascript:void(0) >Home</a></li>
-          <li><a href=javascript:void(0) >Product List</a></li>
-          <li><a href=javascript:void(0) >Fundraising</a></li>
-          <li><a href=javascript:void(0) >Gift Packages</a></li>
-          <li><a href=javascript:void(0) >Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product-list">Product List</a></li>
+          <li><a href="#fundraiser">Fundraising</a></li>
+          <li><a href="#gift-packages">Gift Packages</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
 
           
         </ul>
@@ -1785,6 +1809,8 @@ h1,h1.home,h1.blog_title,.title a,h2{padding:0}
     </div>
   </div>
 </div>
+
+
 
 <div class="nav">
   <ul class="mobile_menu toggle_menu">
@@ -2517,11 +2543,12 @@ body {
 </div>
 
 <div class="main-boxi">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+
     <h1 class="title">Our Specialty For Cakes, Pies And More!</h1>
     
 
     <div class="boxi">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
       <div class="all-text-boxi">
             <h2 class="title">Homeade Sweetness</h2>
@@ -2533,7 +2560,6 @@ body {
     </div>
 
     <div class="boxi">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
             <div class="all-text-boxi">
             <h2 class="title">It Tastes Just Like Sugar</h2>
@@ -2545,7 +2571,6 @@ body {
     </div>
 
     <div class="boxi">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
             <div class="all-text-boxi">
             <h2 class="title">Baked Fresh Daily</h2>
@@ -2556,7 +2581,6 @@ body {
             </div>
           </div>
       </div>
-
 </div>
 
 
@@ -2602,6 +2626,31 @@ body {
 
 
 
+
+  #pie-container {
+    margin: 3em 0;
+    text-align: center;
+  }
+
+  .pie-boxes {
+    text-align: center;
+  }
+
+  .pie-box {
+    display: inline-block;
+  }
+
+  .pie {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    
+  }
+
+
+
+
+
 </style>
 
 <div class="img-bar2">
@@ -2610,39 +2659,42 @@ body {
   </div>
 </div>
 
-<div class="container" id="cupcake-container">
+<div class="container" id="pie-container">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
-  <h1 class="title">Try Our New Pies!</h1>
-  
-  
+    <h1 class="title">Try Our New Pies!</h1>
 
-  <div class="cupcake-box1">
-    <div class="circle" id="cupcake1">
-      <%= image_tag "pu-pic8.jpg", :class => "pie1"  %>
+    <div class="pie-boxes">
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
+
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
+
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
+    
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
+
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
+
+      <div class="pie-box" id="pie">
+        <%= image_tag "pu-pie12.png", :class => "pie"  %>
+        <h2>Lemon Pie</h2>
+      </div>
     </div>
-
-    <div class="circle" id="cupcake2">
-      <%= image_tag "pu-pic9.jpg", :class => "pie2"  %>
-    </div>
-
-    <div class="circle" id="cupcake3">
-      <%= image_tag "pu-pic5.jpg", :class => "pie3"  %>
-    </div>
-  </div>
-
-  <div class="cupcake-box2">
-    <div class="circle" id="cupcake3">
-      <%= image_tag "pu-pic6.jpg", :class => "pie4"  %>
-    </div>    
-
-    <div class="circle" id="cupcake3">
-      <%= image_tag "pu-pic7.jpg", :class => "pie3"  %>
-    </div> 
-
-    <div class="circle" id="cupcake3">
-      <%= image_tag "pu-pic5.jpg", :class => "pie3"  %>
-    </div>
-  </div>
 
 </div>
 
@@ -2651,7 +2703,7 @@ body {
 #bar4-pu {
   padding: 4em 0;
   background-color: rgb(5, 5, 76);
-  margin: 3em 0;
+  margin: 0 0;
   text-align: center;
   color: white;
 }
@@ -2679,7 +2731,7 @@ body {
 }
 
 #bar5-pu h1 {
-  color: #00009e;
+  color: black;
 }
 
 
@@ -2690,10 +2742,11 @@ body {
 .fundraiser {
   text-align: center;
   padding: 0 2em;
+  margin-bottom: 8em;
 }
 
 .fundraiser h1 {
-  color: #00009e;
+  color: black;
 }
 
 .fundraiser .title {
@@ -2715,7 +2768,7 @@ body {
 
 /*--- gift packaging ---*/
 
-.gift-packaging {
+.gift-packages {
   background-image: url("/assets/gift-packages.JPG");
   background-position: center;
   background-attachment: scroll;
@@ -2729,12 +2782,12 @@ body {
   padding: 3em 0;
 }
 
-.gift-packaging h2 {
+.gift-packages h2 {
   margin-bottom: 0;
 }
 
-.gift-packaging h1 {
-  color: rgb(0, 0, 158);
+.gift-packages h1 {
+  color: black;
 }
 
 
@@ -2749,47 +2802,65 @@ body {
 }
 
 
-
 </style>
 
-<div class="gift-packaging">
-
-   
-  
 
 
+
+
+
+<div class="gift-packages" id="gift-packages">
     <div class="packages-box">
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
       <h1>Gift Packages</h1>
 
 
       <div class="packages-text">
-      Fun Pack- Includes four of our 4” Mini Pies any flavor for $15.00
-<br>      
-      Family Pack-Includes two of our 9” Pies any flavor for $25.00
-<br>
-      Say Cheese Pack-Includes one of our 9” signature cheesecakes any flavor for-$25.00
-<br>
-      Cheesy Pie Pack-Includes one of our 9” Pies any flavor and one 9” signature cheesecake any flavor for-$35.00
-<br>
-      Party Pack-Includes two of our 9” Pies any flavor and four of our 4” mini pies any flavor for-$40.00
-<br>
-      The Royalty Pack-Includes 24 Brownie Bites, two of our 9” Pies any flavor, one of our 9” Signature Cheesecake any flavor, and four of our 4” Mini pies any flavor for-$75.00
+      Fun Pack- Includes four of our 4” Mini Pies any flavor for 
+      <br>
+      $15.00
+      
+      <br>      
+      
+      Family Pack-Includes two of our 9” Pies any flavor for
+      <br>$25.00
+      
+      <br>
+      
+      Say Cheese Pack-Includes one of our 9” signature cheesecakes any flavor for
+      <br>
+      $25.00
+      
+      <br>
+      
+      Cheesy Pie Pack-Includes one of our 9” Pies any flavor and one 9” signature cheesecake any flavor for
+      $35.00
+      <br>
+      
+      Party Pack-Includes two of our 9” Pies any flavor and four of our 4” mini pies any flavor for
+      <br>$40.00
+      
+      <br>
+      
+      The Royalty Pack-Includes 24 Brownie Bites, two of our 9” Pies any flavor, one of our 9” Signature Cheesecake any flavor, and four of our 4” Mini pies any flavor for
+      $75.00
+      
       </div>
+      
       <br>
 
           *We offer gift packaging options for all different sizes of events an occasions.
 
 
     </div>
-
-
-  
-
 </div>
 
 
-<div class="fundraiser">
+<div class="fundraiser" id="fundraiser">
+
+              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+
   <h1>Fundraiser Opportunities</h1>
 
   
@@ -2805,7 +2876,7 @@ body {
     
     <li><b>PREPARE:</b> It is very important that you reserve your fundraiser date so that we can give your fundraiser the attention it deserves.</li>
     
-    <li><b>CONFIRM:</b> We strongly recommend selling until you have confirmed a delivery/pickup date with our office.</li>
+    <li><b>CONFIRM:</b> We strongly recommend against selling until you have confirmed a delivery/pickup date with our office.</li>
 
     <li><b>REVIEW:</b> Fundraisers are usually reserved months in advance, planning ahead is key to a successful fundraiser. The more time you give your sellers, the more pies they will sell.</li>
 
@@ -2819,7 +2890,7 @@ body {
 
   <br>
 
-  <p>Thank you for your interest in a Pies Unlimited Fundraiser! You have chosen a very tasty way to make big profits and have fun while you're at it. Please contact us at 702-433-PIES for more information on setting up your next fundraiser.</p>
+  <p>Thank you for your interest in becoming a partner with the Pies Unlimited Fundraising program! You have chosen a very tasty way to make big profits and a great way to have fun while you're at it! If you have any additional questions, please contact us at 702-433-PIES for more information on set up and ready to go!</p>
 
 </div>
 
@@ -2833,7 +2904,7 @@ body {
   }
 
   h1.title {
-    color: #00009e;
+    color: black;
   }
 
   h2.title {
@@ -2850,68 +2921,6 @@ body {
     height: auto;
   }
   
-  .pie1 {
-    margin: 0 auto;
-    height: 123%;
-    width: auto;
-    position: relative;
-    top: 0px;
-  }
-
-  .pie2 {
-    margin: 0 auto;
-    height: auto;
-    width: 150px;
-    position: relative;
-    top: -84px;
-  }
-
-  .pie3 {
-    margin: 0 auto;
-    height: auto;
-    width: 150px;
-    position: relative;
-    top: -21px;
-  }
-
-  .pie4 {
-    margin: 0 auto;
-    height: auto;
-    width: 150px;
-    position: relative;
-    top: -2px;
-  }
-
-  .container .cupcake-box1 {
-    text-align: center;
-    padding-top: 2em;
-  }
-
-  .container .cupcake-box2 {
-    text-align: center;
-    padding-bottom: 2em;
-  }
-
-  #cupcake-container {
-    margin-top: 3em;
-    text-align: center;
-  }
-
-  .circle {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 52%;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-
-  #cupcake-container h5 {
-    font-size: 25px;
-  }
 
 
 
@@ -2987,26 +2996,18 @@ textarea {
   outline: 0; 
   float: right;
   border: solid 1px transparent;
+  transition: all .4s linear 0s;     
+
 
 }
 
 .pu-button:hover {
   color: white;
-  background-color: rgb(0, 0, 158);
-}
- 
-.footer_social_icons a{font-size:15px;color:#fff;background-color:rgb(85, 46, 31);
-  border-radius:50%;
-  padding:8px;
-  margin:0 8px 5px 0;
-  line-height:2;
-  transition:all .1s linear
+  background-color: rgb(5, 5, 76);
+  transition: all .4s linear 0s;     
+
 }
 
-.footer_social_icons a:hover {
-  color: rgb(85, 46, 31);
-  background-color:white;
-}
 
 
 
@@ -3025,15 +3026,59 @@ textarea {
   width: 50%;
   margin: 0 auto;
 }
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
+
 </style>
 
 
 
-<div class="location">
+<script>
+
+//Scroll page to nav links 
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".main-menu a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+});
 
 
-</div>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var target = {lat:36.238525, lng:-115.175963};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: target});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: target, map: map});
+}
 
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDaE4Dchs7EoMUAiYlH10K7WPhTvNwk9k&callback=initMap">
+</script>
 
 <div class="container" id="bar4-pu">
 
@@ -3064,9 +3109,13 @@ textarea {
       </div>
 </div>
 
+<div id="map"></div>
+  
 
-<div class="container">
+<div class="container" id="contact-us">
   <div class="form" id="bar5-pu">
+                 <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
+ 
     <h1>Contact Us</h1>
     
     <form action="" method="POST">
@@ -3166,29 +3215,19 @@ h6.gift-header {
     <div class="footsie">
       <ul class="footer_menu">
       <h6>Navigation</h6>
-          <li><a href=javascript:void(0) >Home</a></li>
-          <li><a href=javascript:void(0) >Product List</a></li>
-          <li><a href=javascript:void(0) >Fundraising</a></li>
-          <li><a href=javascript:void(0) >Gift Packages</a></li>
-          <li><a href=javascript:void(0) >Contact Us</a></li>
+          <li><a href=#home>Home</a></li>
+          <li><a href=#product-list>Product List</a></li>
+          <li><a href=#fundraiser>Fundraising</a></li>
+          <li><a href=#gift-packages>Gift Packages</a></li>
+          <li><a href=#contact-us>Contact Us</a></li>
         </ul>
     </div>
 
       <style>
 
-        .footer_social_icons .svg-inline--fa {
-          background-color: white;
-          color: rgb(5, 5, 76);
-          border-radius: 22px;
-          padding: 7px;
-        }
+       
 
-        .footer_social_icons .svg-inline--fa:hover {
-          background-color: rgb(191, 21, 51);
-          color: white;
-          border-radius: 22px;
-          padding: 7px;
-        }
+       
 
         #hours {
           padding-left: 3em;
@@ -3208,11 +3247,14 @@ h6.gift-header {
         }
 
         ul.sister-site li a {
-          color: red;
+          color: white;
+          transition: all .2s linear 0s;     
         }
 
         ul.sister-site li a:hover {
-          color: white;
+          color: rgb(191, 21, 51);
+          transition: all .2s linear 0s;     
+
         }
 
       </style>
@@ -3220,14 +3262,18 @@ h6.gift-header {
      <div class="footsie">
         <ul class="footer_social_icons">
             <h6 class="social">Social</h6>
-                <li><%= image_tag "facebook-icon.png", :class => "social-logo" %></li>
-                <li><%= image_tag "instagram-icon.png", :class => "social-logo" %></li>
+                <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><%= image_tag "facebook-icon.png", :class => "social-logo-fb" %></a></li>
+                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><%= image_tag "instagram-icon.png", :class => "social-logo-ig" %></a></li>
         </ul>
       </div>
 
       <div class="footsie" id="hours">
         <ul class="footer_menu">
-        <h6>Hours of Operation:</h6>
+            <h6>Location:</h6>
+            <li>2465 W Craig Rd</li>
+            <li> North Las Vegas, NV 89032</li>
+            <br>
+            <h6>Store Hours:</h6>
             <li>Monday - Friday 10am - 5:30pm</li>
             <li>Saturday 10am - 3:00pm</li>
             <li>Sunday Closed</li>
@@ -3240,7 +3286,7 @@ h6.gift-header {
 
       <div class="footsie" >
         <ul class="sister-site">
-            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.FantasyWeddingCakes.com</a> for more information.</li>
+            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
             
         </ul>
       </div>
@@ -3254,8 +3300,9 @@ h6.gift-header {
 
   <br>
 
-  <h6>&copy; 2019 Pies Unlimited</h6>
+  <h6>&copy; 2019 Pies Unlimited. All Rights Reserved.</h6>
 </div>
+
 
 
 
