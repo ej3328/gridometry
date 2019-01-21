@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 
 
 
@@ -24,7 +25,6 @@
 
 @media (max-width: 480px){.logo a,.logo a:hover,.logo a:visited,.logo a:active{padding-bottom:15px}
 }
-h1,h2,h3,h4,h5,h6,.collection_title,.headline,.subtitle{font-family:"Merriweather Sans", sans-serif;font-weight:400;text-transform:none;color:;display:block;letter-spacing:0px;text-rendering:optimizeLegibility}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.collection_title{font-weight:inherit}
 h1 a,h1 a:visited,.collection_title a,.collection_title a:visited{color:}
 h1 a:hover,h1 a:active,.collection_title a:hover,.collection_title a:active{color:}
@@ -2346,7 +2346,7 @@ body {
 
 @media screen and (max-width: 550px){
   .cc-slideshow li span {
-      width: 75%;
+      width: 150%;
   }
  }
  
@@ -2416,7 +2416,7 @@ body {
 
 
   .img-bar1 {
-  background-image: url("/assets/pu-pic4.jpg");
+  background-image: url("/assets/berry-pie.jpeg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -2427,7 +2427,7 @@ body {
 
 
   .img-bar2 {
-  background-image: url("/assets/pu-pic2.jpg");
+  background-image: url("/assets/rasp-cheesecake.jpeg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -2468,7 +2468,7 @@ body {
 
   #bottom-footer {
       text-align: center;
-      background-color: #05054c;
+      background-color: #bf1533;
     }
 
     #bottom-footer h6 {
@@ -2491,7 +2491,6 @@ body {
 
 <div class="container" id="bar1-pu">
 
-  <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
   <h1 class="title">Our History</h1>
   
@@ -2529,11 +2528,7 @@ body {
     text-shadow: 3px 0 13px #000000ad;
   }
 
-  .makeup {
-    width: 100%;
-    height: auto;
-  }
-
+ 
 
 </style>
 
@@ -2545,7 +2540,6 @@ body {
 </div>
 
 <div class="main-boxi">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
     <h1 class="title">Our Specialty For Cakes, Pies And More!</h1>
     
@@ -2626,9 +2620,6 @@ body {
     font-size: 34px;
   }
 
-
-
-
   #pie-container {
     margin: 3em 0;
     text-align: center;
@@ -2643,7 +2634,7 @@ body {
   }
 
   .pie {
-    margin: 0 auto;
+    margin: 0 3em;
     width: 200px;
     height: auto;
     
@@ -2662,40 +2653,30 @@ body {
 </div>
 
 <div class="container" id="pie-container">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
-    <h1 class="title">Try Our New Pies!</h1>
+    <h1 class="title">Try Our New Mouthwatering, Flavorful, Deliciously, Homemade Pies!</h1>
 
     <div class="pie-boxes">
       <div class="pie-box" id="pie">
         <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
       </div>
 
       <div class="pie-box" id="pie">
-        <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
+        <%= image_tag "pu-pie13.png", :class => "pie"  %>
       </div>
 
       <div class="pie-box" id="pie">
-        <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
+        <%= image_tag "pu-pie14.png", :class => "pie"  %>
       </div>
     
       <div class="pie-box" id="pie">
-        <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
+        <%= image_tag "pu-pie15.png", :class => "pie"  %>
       </div>
 
       <div class="pie-box" id="pie">
-        <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
+        <%= image_tag "pu-pie16.png", :class => "pie"  %>
       </div>
 
-      <div class="pie-box" id="pie">
-        <%= image_tag "pu-pie12.png", :class => "pie"  %>
-        <h2>Lemon Pie</h2>
-      </div>
     </div>
 
 </div>
@@ -2704,7 +2685,7 @@ body {
 
 #bar4-pu {
   padding: 4em 0;
-  background-color: rgb(5, 5, 76);
+  background-color: #bf1533;
   margin: 0 0;
   text-align: center;
   color: white;
@@ -2771,17 +2752,16 @@ body {
 /*--- gift packaging ---*/
 
 .gift-packages {
-  background-image: url("/assets/gift-packages.JPG");
+  background-image: url("/assets/gift-packages3.jpeg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  text-align: center;
-
+  height: auto;
   margin: 5em 0;
+  padding: 6em 0;
   text-align: center;
-  padding: 3em 0;
 }
 
 .gift-packages h2 {
@@ -2789,18 +2769,24 @@ body {
 }
 
 .gift-packages h1 {
-  color: black;
+  color: white;
 }
 
 
-.packages-box {
-  background-color: white;
-  padding: 3em;
-  margin: 1em 4em;
+.package-box {
+  color: white;
+  overflow: hidden;
 }
 
-.packages-text {
-  text-align: left;
+.package-box h5 {
+  font-size: 1.2em;
+}
+
+.chalk-board {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  overflow: hidden;
 }
 
 
@@ -2810,58 +2796,17 @@ body {
 
 
 
-
 <div class="gift-packages" id="gift-packages">
-    <div class="packages-box">
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
-
-      <h1>Gift Packages</h1>
-
-
-      <div class="packages-text">
-      Fun Pack- Includes four of our 4” Mini Pies any flavor for 
-      <br>
-      $15.00
-      
-      <br>      
-      
-      Family Pack-Includes two of our 9” Pies any flavor for
-      <br>$25.00
-      
-      <br>
-      
-      Say Cheese Pack-Includes one of our 9” signature cheesecakes any flavor for
-      <br>
-      $25.00
-      
-      <br>
-      
-      Cheesy Pie Pack-Includes one of our 9” Pies any flavor and one 9” signature cheesecake any flavor for
-      $35.00
-      <br>
-      
-      Party Pack-Includes two of our 9” Pies any flavor and four of our 4” mini pies any flavor for
-      <br>$40.00
-      
-      <br>
-      
-      The Royalty Pack-Includes 24 Brownie Bites, two of our 9” Pies any flavor, one of our 9” Signature Cheesecake any flavor, and four of our 4” Mini pies any flavor for
-      $75.00
-      
-      </div>
-      
-      <br>
-
-          *We offer gift packaging options for all different sizes of events an occasions.
-
-
+    <h1>Gift Packages</h1>
+    <div class="package-box">
+        <%= image_tag "chalk-board.png", :class => "chalk-board" %>
     </div>
 </div>
 
 
+
 <div class="fundraiser" id="fundraiser">
 
-              <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
 
   <h1>Fundraiser Opportunities</h1>
 
@@ -3082,11 +3027,27 @@ function initMap() {
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDaE4Dchs7EoMUAiYlH10K7WPhTvNwk9k&callback=initMap">
 </script>
 
+<style>
+
+.car {
+  width: 100px;
+  height: auto;
+}
+
+.truck {
+  width: 100px;
+  height: auto;
+}
+
+</style>
+
+
 <div class="container" id="bar4-pu">
 
       <h1>Service That's Simple!</h1>
       
       <div class="mail-box">
+            <%= image_tag "car-pickup.png", :class => "car" %>
             <h2 class="title" style="color:white">Pick Up?</h2>
             
             <div class="featured_text ">
@@ -3096,6 +3057,7 @@ function initMap() {
 
       </div>
       <div class="mail-box">
+            <%= image_tag "pu-delivery.png", :class => "truck" %>
             <h2 class="title" style="color: white">Delivery?</h2>
             
             <div class="featured_text ">
@@ -3116,7 +3078,6 @@ function initMap() {
 
 <div class="container" id="contact-us">
   <div class="form" id="bar5-pu">
-                 <%= image_tag "pie-icon.png", :class => "pie-icon" %>   
  
     <h1>Contact Us</h1>
     
@@ -3153,7 +3114,7 @@ function initMap() {
 <style>
 
 .football {
-  background-color: #05054c;
+  background-color: #bf1533;
   padding-top: 3em;
   padding-bottom: 3em;
   padding-left: 3em;
