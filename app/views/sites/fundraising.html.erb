@@ -11,6 +11,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
 
 <style>
@@ -80,8 +81,8 @@ margin-top: 0 !important;
 
 .football {
   background-color: #bf1533;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 3em;
 }
 
@@ -241,7 +242,6 @@ transition: all .2s linear 0s;
 
 
 
-
 /*--- nav section ---*/
 
 ul {
@@ -291,10 +291,17 @@ nav ul li {
   vertical-align: middle;
 }
 
+.call-box {
+  text-align: center;
+}
+
 
 .call-box a {
 color: rgb(191, 21, 51);
-font-size: 15px;
+font-size: 16px;
+position: absolute;
+top: 0;
+right: 45px;
 }
 
 .call-box a:hover {
@@ -647,9 +654,27 @@ text-shadow: 3px 0 13px #000000ad;
 /*--- fundraiser section ---*/
 
 .fundraiser {
-  text-align: center;
-  padding: 0 2em;
-  margin-bottom: 8em;
+text-align: center;
+padding: 0;
+margin-bottom: 0;
+
+text-align: center;
+width: 100%;
+height: auto;
+padding: 8em 0;
+background-image: url("/assets/pie-background2.png");
+background-position: center;
+background-attachment: scroll;
+background-repeat: repeat;
+background-size: cover;
+background-color: white;
+
+
+
+}
+
+.fundraiser ul {
+  padding-left: 0;
 }
 
 
@@ -657,9 +682,21 @@ text-shadow: 3px 0 13px #000000ad;
   text-align: center;
 }
 
-.fundraiser ol li {
-  text-align: left;
+.fundraiser ul li {
+
+
+  text-align: center;
   color: rgb(10, 103, 155);
+  list-style-type: none;
+  padding-bottom: 20px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 19px;
+
+
+
 }
 
 .fundraiser h2 {
@@ -669,11 +706,18 @@ text-shadow: 3px 0 13px #000000ad;
 
 .fundraiser p {
   padding: 0 6em;
-  color: rgb(10, 103, 155);
+  color: black;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fundraiser b {
+  color: rgb(191, 21, 51);
 }
 
 .fundraiser i {
-  color: rgb(10, 103, 155);
+  color: black;
 }
 
 /*--- end ---*/
@@ -682,9 +726,6 @@ text-shadow: 3px 0 13px #000000ad;
 
 /*--- gift packaging ---*/
 
-.gift-packages {
-  
-}
 
 .gift-packages h2 {
   margin-bottom: 0;
@@ -940,6 +981,7 @@ padding-right: 5em;
           <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
           <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
@@ -948,7 +990,6 @@ padding-right: 5em;
         </ul>        
   </div>
 </nav>
-
           
        
 
@@ -964,7 +1005,7 @@ padding-right: 5em;
 
 
 <div class="fundraiser" id="fundraiser">
-  <h1 class="title">Fundraiser Opportunities</h1>
+  <h1 class="title">Fundraising Opportunities</h1>
 
   <hr>
 
@@ -972,16 +1013,16 @@ padding-right: 5em;
    
   <br>
   
-  <ol>
-    <li><b>PURCHASE:</b> We'll sell you our pies at a fixed price, you then set your own pricing for your fundraiser.</li>
+  <ul>
+    <li><b>PURCHASE:</b> <br> We'll sell you our pies at a fixed price, you then set your own pricing for your fundraiser.</li>
 
-    <li><b>PLAN:</b> Schedule an appointment for your fundraiser date.</li>
+    <li><b>PLAN:</b> <br>Schedule an appointment for your fundraiser date.</li>
     
-    <li><b>PREPARE:</b> It is very important that you reserve your fundraiser date so that we can give your fundraiser the attention it deserves.</li>
+    <li><b>PREPARE:</b> <br>It is very important that you reserve your fundraiser date so that we can give your fundraiser the attention it deserves.</li>
     
-    <li><b>CONFIRM:</b> We strongly recommend against selling until you have confirmed a delivery/pickup date with our office.</li>
+    <li><b>CONFIRM:</b> <br>We strongly recommend against selling until you have confirmed a delivery/pickup date with our office.</li>
 
-    <li><b>REVIEW:</b> Fundraisers are usually reserved months in advance, planning ahead is key to a successful fundraiser. The more time you give your sellers, the more pies they will sell.</li>
+    <li><b>REVIEW:</b> <br> Fundraisers are usually reserved months in advance, planning ahead is key to a successful fundraiser. The more time you give your sellers, the more pies they will sell.</li>
 
     <br>
     <br>
@@ -989,11 +1030,11 @@ padding-right: 5em;
     <i>*We require a minimum of 50 items for fundraising pricing.</i><br>
 
     <i>*If the order is below the minimum required our price will be slightly higher.</i>
-  </ol>
+  </ul>
 
   <br>
 
-  <p>Thank you for your interest in becoming a partner with the Pies Unlimited Fundraising program! You have chosen a very tasty way to make big profits and a great way to have fun while you're at it! If you have any additional questions, please contact us at 702-433-PIES for more information on set up and ready to go!</p>
+  <p>If you have any additional questions, please contact us at 702-433-PIES for more information on set up and ready to go!</p>
 
 </div>
 
@@ -1035,6 +1076,7 @@ padding-right: 5em;
           <h3>Navigation</h3>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
       </ul>       
@@ -1069,12 +1111,6 @@ padding-right: 5em;
         </ul>
       </div>
 
-      <div class="footsie" >
-        <ul class="sister-site">
-            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
-            
-        </ul>
-      </div>
         
     </div>
 </div>

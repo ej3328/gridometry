@@ -80,8 +80,8 @@ margin-top: 0 !important;
 
 .football {
   background-color: #bf1533;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 3em;
 }
 
@@ -291,10 +291,17 @@ nav ul li {
   vertical-align: middle;
 }
 
+.call-box {
+  text-align: center;
+}
+
 
 .call-box a {
 color: rgb(191, 21, 51);
-font-size: 15px;
+font-size: 16px;
+position: absolute;
+top: 0;
+right: 45px;
 }
 
 .call-box a:hover {
@@ -535,9 +542,6 @@ background-repeat: repeat;
 background-size: cover;
 background-color: white;
 
-
-
-
 }
 
 .main-boxi p {
@@ -603,9 +607,6 @@ text-shadow: 3px 0 13px #000000ad;
 
 
 
-
-
-
 /*--- end ---*/
 
 
@@ -634,11 +635,6 @@ text-shadow: 3px 0 13px #000000ad;
 
 
 /*--- end ---*/
-
-
-
-
-
 
 
 
@@ -899,25 +895,47 @@ padding-right: 5em;
 
 /*--- product list ---*/
 
+.product-list-container {
+text-align: center;
+width: 100%;
+height: auto;
+background-image: url("/assets/pie-background2.png");
+background-position: center;
+background-attachment: scroll;
+background-repeat: repeat;
+background-size: contain;
+background-color: white;
+clear: right;
+}
+
+.product-list-container h1 {
+  text-align: center;
+  color: rgb(191, 21, 51);
+}
+
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  vertical-align: top;
 }
 
 #customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid rgb(10, 103, 155);
+  padding: 5px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even){background-color: ;}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: ;}
 
 #customers th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: rgb(10, 103, 155);
   color: white;
 }
@@ -937,7 +955,6 @@ padding-right: 5em;
 
 
 
-
 <nav>
   <div class="pu-nav-bar">
 
@@ -946,6 +963,7 @@ padding-right: 5em;
           <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
           <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
@@ -976,6 +994,7 @@ padding-right: 5em;
 
 
 <!-- product list section -->
+<div class="product-list-container">
 
 <h1>Product List</h1>
 
@@ -986,59 +1005,37 @@ padding-right: 5em;
 <table id="customers">
   <tr>
     <th>4" Mini Pies</th>
-    <p>The Perfect On-the-Go Dessert!</p>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    
   </tr>
   <tr>
     <td>Apple</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Blueberry</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Boysenberry</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
     <td>Cherry</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Peach</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
     <td>Pineapple</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
     <td>Rhubarb</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Raspberry</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
     <td>Strawberry</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Strawberry Rhubarb</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
 
 
@@ -1046,285 +1043,169 @@ padding-right: 5em;
 
   <tr>
     <td>Banana Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Chocolate Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Coconut Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>German Chocolate Cream</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
     <td>Lemon Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Lemon Meringue</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Peanut Butter Cream</td>
-    <td>$3.10</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Peanut Butter Chocolate Cream</td>
-    <td>$3.10</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Custard</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Coconut Custard</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
 
 
   <tr>
     <td>Pumpkin</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Pecan</td>
-    <td>$3.10</td>
-    <td>$3.35</td>
   </tr>
   <tr>
-    <td>Fresh Strawberry (seasonal)</td>
-    <td>Call for pricing</td>
-    <td>Call for pricing</td>
+    <td>Fresh Strawberry (seasonal) <br> *Call for pricing</td>
   </tr>
   <tr>
     <td>Strawberry Banana Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Mango Cream</td>
-    <td>$3.65</td>
-    <td>N/A</td>
   </tr>
 
   <tr>
     <td>Salted Peanut butter Chocolate Cream</td>
-    <td>$3.65</td>
-    <td>N/A</td>
   </tr>
 </table>
 
 <!-- end -->
 
-<!-- single serve section -->
-
-<table id="customers">
-  <tr>
-    <th>Single Serve Greate <br>for a quick treat!</th>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
-  </tr>
-  <tr>
-    <td>Oreo Brownies (individually wrapped)</td>
-    <td>$2.25ea</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>Cheesecake Duos</td>
-    <td>2 slices for $4.50</td>
-    <td>N/A</td>
-  </tr>
-</table>
-
-<!-- end -->
 
 <!-- 9" fruit pies section -->
 
 <table id="customers">
   <tr>
-    <th>9" Fruit Pies</th>
+    <th>9" Fruit Pies<br>
     <p> Our delectable fruit filling made from scratch with a crust top. Crumb top or cream top.
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    <h5>Choice of Regular or Non-regular</h5></p>
+    </th>
   </tr>
   <tr>
     <td>Apple</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Apple Crumb</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Apple Cream</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
-  </tr>
-  <tr>
-    <td>Blueberry (Fancy $14.99)</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Blueberry Crumb</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Blueberry Cream</td>
-    <td>$2.95</td>
-    <td>10.95</td>
   </tr>
    
    <tr>
     <td>Boysenberry</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
   <tr>
     <td>Boysenberry Crumb</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
   <tr>
     <td>Boysenberry Cream</td>
-    <td>$2.95</td>
-    <td>$3.10</td>
   </tr>
 
 
 
   <tr>
     <td>Cherry</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Cherry Crumb</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Cherry Cream</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
 
 
   <tr>
     <td>Peach</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
    <tr>
     <td>Peach Crumb</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
    <tr>
     <td>Peach Cream</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
 
 
   <tr>
     <td>Pineapple</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
    <tr>
     <td>Pineapple Crumb</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
    <tr>
     <td>Pineapple Cream</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
 
 
   <tr>
     <td>Rhubarb</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
   <tr>
     <td>Rhubarb Crumb</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
   <tr>
     <td>Rhubarb Cream</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
   </tr>
 
 
   <tr>
     <td>Raspberry</td>
-    <td>$11.25</td>
-    <td>$12.25</td>
   </tr>
   <tr>
     <td>Raspberry Crumb</td>
-    <td>$11.25</td>
-    <td>$12.25</td>
   </tr>
   <tr>
     <td>Raspberry Cream</td>
-    <td>$11.25</td>
-    <td>$12.95</td>
   </tr>
 
 
   <tr>
     <td>Strawberry</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Strawberry Crumb</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Strawberry Cream</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Strawberry Rhubarb</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
   <tr>
     <td>Strawberry Rhubarb Crumb</td>
-    <td>$9.95</td>
-    <td>$3.10</td>
   </tr>
   <tr>
     <td>Strawberry Rhubarb Cream</td>
-    <td>$9.95</td>
-    <td>$10.95</td>
   </tr>
 </table>
 
@@ -1332,50 +1213,6 @@ padding-right: 5em;
 
 
 
-<!-- 9" Specialty pies section -->
-
-<table id="customers">
-  <tr>
-    <th>9" Specialty Pies</th>
-    <p>Available Year Round<br>
-    Pre-ordered recommended</p>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
-  </tr>
-  <tr>
-    <td>Boston Creme Pie</td>
-    <td>$11.99</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>Coconut Custard</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
-  </tr>
-  <tr>
-    <td>Custard</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
-  </tr>
-
-  <tr>
-    <td>Key Lime</td>
-    <td>$13.75</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>Pecan</td>
-    <td>$10.95</td>
-    <td>$11.95</td>
-  </tr>
-  <tr>
-    <td>Pumpkin</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
-  </tr>
-</table>
-
-<!-- end -->
 
 <!-- 9" Cream Pies -->
 <table id="customers">
@@ -1384,62 +1221,41 @@ padding-right: 5em;
     Pudding Center Topped with a Non-Dairy<br>
     Whipped Cream</th>
     
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    
   </tr>
 
   <tr>
     <td>Banana</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
   <tr>
     <td>Banana Chocolate</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
   <tr>
     <td>Strawberry Banana</td>
-    <td>$11.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Mango Cream</td>
-    <td>$11.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Chocolate</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>Coconut</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>Lemon</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>German Chocolate</td>
-    <td>$10.75</td>
-    <td>$11.75</td>
   </tr>
   <tr>
     <td>Peanut Butter</td>
-    <td>$10.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Peanut Butter Chocolate</td>
-    <td>$10.75</td>
-    <td>N/A</td>
   </tr>
 </table>
 
@@ -1451,52 +1267,35 @@ padding-right: 5em;
   <tr>
     <th>9" Meringue <br> Our creamy pudding topped with out Light<br> and tasty egg white Meringue baked to a beautiful golden brown</th>
     
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    
   </tr>
 
    <tr>
     <td>Lemon</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>Banana</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>Banana Chocolate</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
   <tr>
     <td>Chocolate</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
   <tr>
     <td>Coconut</td>
-    <td>$9.75</td>
-    <td>$10.75</td>
   </tr>
 
   <tr>
     <td>German Chocolate</td>
-    <td>$10.75</td>
-    <td>$11.75</td>
   </tr>
   <tr>
     <td>Peanut Butter</td>
-    <td>$10.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Peanut Butter Chocolate</td>
-    <td>$10.75</td>
-    <td>N/A</td>
   </tr>
 </table>
 
@@ -1504,40 +1303,7 @@ padding-right: 5em;
 
 
 
-<!-- 9" Cheesecakes -->
-<table id="customers">
-  <tr>
-    <th>9" Cheesecakes</th>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
-  </tr>
 
-  <tr>
-    <td>New York Style Plain</td>
-    <td>$18.25</td>
-    <td>$19.25</td>
-  </tr>
-  <tr>
-    <td>Key Lime</td>
-    <td>$19.25</td>
-    <td>$20.25</td>
-  </tr>
-  <tr>
-    <td>Chocolate Swirl Cheesecake</td>
-    <td>$19.25</td>
-    <td>$20.25</td>
-  </tr>
-  <tr>
-    <td>Chocolate Cheesecake</td>
-    <td>$19.25</td>
-    <td>$20.25</td>
-  </tr>
-  <tr>
-    <td>Fruit (Blueberry, Cherry, Strawberry, <br> pineapple, Raspberry</td>
-    <td>$21.25</td>
-    <td>$22.25</td>
-  </tr>
-</table>
 
 
 
@@ -1545,35 +1311,48 @@ padding-right: 5em;
 <table id="customers">
   <tr>
     <th>9" Gourmet Cheesecakes (Pre-order only)</th>
-    <th>$25.99</th>
   </tr>
 
   <tr>
     <td>Amaretto</td>
+  </tr>
+  <tr>
     <td>Lemon</td>
   </tr>
   <tr>
     <td>Cappuccino</td>
+  </tr>
+  <tr>
     <td>Mandarin Orange</td>
   </tr>
   <tr>
     <td>Carmel Apple or Dulce de Leche</td>
+  </tr>
+  <tr>
     <td>Oreo</td>
   </tr>
   <tr>
     <td>German Chocolate</td>
+  </tr>
+  <tr>
     <td>Snickers</td>
   </tr>
   <tr>
     <td>Irish Cream</td>
+  </tr>
+  <tr>
     <td>Triple Choco Peanut Btr</td>
   </tr>
   <tr>
     <td>Kahlua Almond Fudge</td>
+  </tr>
+  <tr>
     <td>White Chocolate</td>
   </tr>
   <tr>
     <td>Southern Pecan</td>
+  </tr>
+  <tr>
     <td>Black Forest</td>
   </tr>
 </table>
@@ -1585,83 +1364,52 @@ padding-right: 5em;
 <table id="customers">
   <tr>
     <th>Seasonal Pies, Cakes & Cheesecakes (*Call for availability)</th>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    
   </tr>
    <tr>
     <td>Cookies & Cream Pie</td>
-    <td>$13.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Grasshopper Pie</td>
-    <td>$13.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>9" Fresh Strawberry Pie</td>
-    <td>$17.99</td>
-    <td>$18.99</td>
   </tr>
   <tr>
     <td>10" Fresh Strawberry Cheesecake</td>
-    <td>$34.99</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>9" Fresh Strawberry Cheesecake</td>
-    <td>$30.00</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Strawberry Shortcake 10"</td>
-    <td>$29.99</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Boston Creme w/ Strawberries</td>
-    <td>$16.99</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Eggnog Cream Pie</td>
-    <td>$11.25</td>
-    <td>$11.45</td>
   </tr>
   <tr>
     <td>Mince Pie</td>
-    <td>$11.75</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Sweet Potatoe Pie</td>
-    <td>$11.75</td>
-    <td>$12.45</td>
   </tr>
   <tr>
     <td>CranApple Crumb Pie</td>
-    <td>$11.25</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Cranberry Cheesecake</td>
-    <td>$25.25</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Eggnog Cheesecake</td>
-    <td>$19.25</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Pumpkin Cheesecake</td>
-    <td>$21.95</td>
-    <td>$19.95</td>
   </tr>
   <tr>
     <td>Pumpkin Spice Cake</td>
-    <td>$16.99</td>
-    <td>$17.99</td>
   </tr>
  
 </table>
@@ -1671,102 +1419,51 @@ padding-right: 5em;
 <!-- Regular Cakes -->
 <table id="customers">
   <tr>
-    <th>Regular Cakes</th>
-    <th>9" Round (double layer) Serves 8-12</th>
-    <th>Quarter Sheet (single layer) Serves 12-24</th>
-    <th>Half Sheet (single layer) Serves 48-60</th>
-    <th>Full Sheet (single layer) Serves 84-120</th>
+    <th>Regular Cakes <br>
+    <h5>Choice of:</h5>
+    9" Round (double layer) Serves 8-12,<br>
+    Quarter Sheet (single layer) Serves 12-24,<br>
+    Half Sheet (single layer) Serves 48-60,<br>
+    Full Sheet (single layer) Serves 84-120<br>
   </tr>
    <tr>
     <td>Black Forest</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Boston Creme Pie</td>
-    <td>$11.99</td>
-    <td>N/A</td>
-    <td>N/A</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td>Carrot</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Chocolate Fudge</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Eggnog</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>German Chocolate</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Lemon or Strawberry</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Pineapple</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Pineapple Upside Down <br> Single Layer*</td>
-    <td>$11.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Raspberry</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Red Velvet</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>Pumpkin Spice</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
   <tr>
     <td>White</td>
-    <td>$16.99</td>
-    <td>$18.99</td>
-    <td>$24.99</td>
-    <td>$45.99</td>
   </tr>
  
 </table>
@@ -1778,76 +1475,113 @@ padding-right: 5em;
 <!-- No Sugar Added Cakes -->
 <table id="customers">
   <tr>
-    <th>No Sugar Added Cakes (sweetened w/ Maltitol)</th>
-    <th>9" Round (double layer) Serves 8-12</th>
-    <th>Quarter Sheet (single layer) Serves 12-24</th>
-    <th>Half Sheet (single layer) Serves 48-60</th>
-    <th>Full Sheet (single layer) Serves 84-120</th>
+    <th>
+    No Sugar Added Cakes (sweetened w/ Maltitol)<br>
+    <h5>Choice of:</h5>
+    9" Round (double layer) Serves 8-12<br>
+    Quarter Sheet (single layer) Serves 12-24<br>
+    Half Sheet (single layer) Serves 48-60<br>
+    Full Sheet (single layer) Serves 84-120<br>
+    </th>
   </tr>
    <tr>
     <td>NSA Carrot</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Chocolate</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA German Chocolate</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Lemon</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Pineapple</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Raspberry</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Strawberry</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA Pumpkin Spice</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
   <tr>
     <td>NSA White</td>
-    <td>$17.99</td>
-    <td>$19.99</td>
-    <td>$25.99</td>
-    <td>$46.99</td>
   </tr>
 </table>
+
+
+<!-- Rosette Cakes -->
+<table id="customers">
+  <tr>
+    <th>Rosette Cakes <br> <h5>*No Sugar Added Artificially Sweetened with Maltitol</h5>
+</th>
+    
+  </tr>
+  <tr>
+    <td>8" 3 Layer Rosette Cake <br> Ombre Available</td>
+  </tr>
+  <tr>
+    <td>9" 3 Layer Rosette Cake <br> Ombre Available</td>
+  </tr>
+  <tr>
+    <td>10" 3 Layer Rosette Cake <br> Ombre Available</td>
+  </tr>
+  <tr>
+    <td>Standard Cupcakes <br> Chocolate, Red Velvet, Vanilla, Carrot, Strawberry, Lemon</td>
+  </tr>
+  <tr>
+    <td>Mini Cupcakes <br> Chocolate, Red Velvet, Vanilla</td>
+  </tr>
+</table>
+
+
+<!-- 9" Cheesecakes -->
+<table id="customers">
+  <tr>
+    <th>9" Cheesecakes</th>
+    
+  </tr>
+
+  <tr>
+    <td>New York Style Plain</td>
+  </tr>
+  <tr>
+    <td>Key Lime</td>
+  </tr>
+  <tr>
+    <td>Chocolate Swirl Cheesecake</td>
+  </tr>
+  <tr>
+    <td>Chocolate Cheesecake</td>
+  </tr>
+  <tr>
+    <td>Fruit (Blueberry, Cherry, Strawberry, <br> pineapple, Raspberry</td>
+  </tr>
+</table>
+
+
+
+
+<!-- single serve section -->
+
+<table id="customers">
+  <tr>
+    <th>Single Serve Greate <br>for a quick treat!</th>
+    
+  </tr>
+  <tr>
+    <td>Oreo Brownies (individually wrapped)</td>
+  </tr>
+  <tr>
+    <td>Cheesecake Duos</td>
+  </tr>
+</table>
+
+<!-- end -->
 
 
 
@@ -1856,28 +1590,19 @@ padding-right: 5em;
 <table id="customers">
   <tr>
     <th>1/2 Sheet Brownie</th>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
+    
   </tr>
    <tr>
     <td>Plain</td>
-    <td>$19.95</td>
-    <td>$21.95</td>
   </tr>
   <tr>
     <td>w/ Walnuts</td>
-    <td>$22.99</td>
-    <td>$23.99</td>
   </tr>
   <tr>
     <td>w/ Icing</td>
-    <td>$22.99</td>
-    <td>$23.99</td>
   </tr>
   <tr>
     <td>Marshmallow & Ganache</td>
-    <td>$20.99</td>
-    <td>N/A</td>
   </tr>
 </table>
 
@@ -1886,23 +1611,6 @@ padding-right: 5em;
   list-style-type: none;
 }
 
-</style>
-
-<!-- Fresh Strawberries -->
-<div class="fresh-strawberries-box">
-  <h3>Fresh Strawberries</h3>
-  <ul>
-  <li>2 layer 9”   $5</li>
-  <li>2 layer 8”   $3</li>
-  <li>3 layer   8”   $5</li>
-  <li>3 layer   8”   $5</li>
-  <li>3 layer   9”   $7</li>
-  <li>3 layer  10”   $8</li>
-  </ul>
-</div>
-<!-- end -->
-
-<style>
 
 .disclaimer-box ul li {
   list-style-type: none;
@@ -1910,66 +1618,24 @@ padding-right: 5em;
 
 </style>
 
+
+
+
+
+
+
+</div>
+<!-- end of all tables -->
+
+
 <div class="disclaimer-box">
   <ul>
-
-    <li>Writing     $5</li>
-    <li>Decoration  $5</li>
-    <li>Sugar Paper $15</li>
     <br>
     <li>*Additional fee applies for writing on any cakes or frosting changes from standard. Cakes are lightly decorated.</li>
     <li>*NSA Items artificially sweetened with Maltitol</li>
     <li>*Fee for decoration & fresh fruit</li>
   </ul>
 </div>
-
-
-<p>
-SHEET CAKES 2LYR<br>
-(1/4 Sheet single lyr $18.99-/2lyr $37.98)<br>
-(H/S single lyr $24.99-/2lyr $49.98)<br>
-(F/S single lyr $45.99-/2lyr $91.98)<br>
-</p>
-
-
-<!-- Rosette Cakes -->
-<table id="customers">
-  <tr>
-    <th>Rosette Cakes</th>
-    <th>Regular</th>
-    <th>No Sugar Added*</th>
-  </tr>
-  <tr>
-    <td>8" 3 Layer Rosette Cake <br> Ombre Available</td>
-    <td>$23.99</td>
-    <td>$24.99</td>
-  </tr>
-  <tr>
-    <td>9" 3 Layer Rosette Cake <br> Ombre Available</td>
-    <td>$27.99</td>
-    <td>$28.99</td>
-  </tr>
-  <tr>
-    <td>10" 3 Layer Rosette Cake <br> Ombre Available</td>
-    <td>$31.99</td>
-    <td>$32.99</td>
-  </tr>
-  <tr>
-    <td>Standard Cupcakes <br> Chocolate, Red Velvet, Vanilla, Carrot, Strawberry, Lemon</td>
-    <td>$13.50/dz 6 Each Assorted okay</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>Mini Cupcakes</td>
-    <td>$14.95 /24 Pack Single Flavor Only</td>
-    <td>N/A</td>
-  </tr>
-</table>
-  <h5>*No Sugar Added Artificially Sweetened with Maltitol</h5>
-
-
-
-
 <!-- end of product list -->
 
 
@@ -1996,6 +1662,7 @@ SHEET CAKES 2LYR<br>
           <h3>Navigation</h3>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
       </ul>       
@@ -2030,12 +1697,7 @@ SHEET CAKES 2LYR<br>
         </ul>
       </div>
 
-      <div class="footsie" >
-        <ul class="sister-site">
-            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
-            
-        </ul>
-      </div>
+     
         
     </div>
 </div>

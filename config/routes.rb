@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'sites/piesunlimited'
   get 'sites/fundraising'
   get 'sites/productlist'
+  get 'sites/giftpackages'
   get 'sites/contactus'
 
   resources :sites 

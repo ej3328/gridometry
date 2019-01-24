@@ -80,8 +80,8 @@ margin-top: 0 !important;
 
 .football {
   background-color: #bf1533;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 3em;
 }
 
@@ -291,10 +291,17 @@ nav ul li {
   vertical-align: middle;
 }
 
+.call-box {
+  text-align: center;
+}
+
 
 .call-box a {
 color: rgb(191, 21, 51);
-font-size: 15px;
+font-size: 16px;
+position: absolute;
+top: 0;
+right: 45px;
 }
 
 .call-box a:hover {
@@ -726,17 +733,6 @@ text-align: center;
 
 
 
-/*--- map section ---*/
-
-#map {
-height: 300px;  /* The height is 400 pixels */
-width: 100%;  /* The width is the width of the web page */
-}
-
-
-/*--- end ---*/
-
-
 
 
 
@@ -848,6 +844,7 @@ height: 300px;  /* The height is 400 pixels */
 
 .boxx h2 {
   color: rgb(191, 21, 51);
+  margin: 0;
 }
 
 .boxx li {
@@ -862,9 +859,6 @@ height: 300px;  /* The height is 400 pixels */
 
 
 /*-- end --*/
-
-
-
 
 
 
@@ -937,7 +931,6 @@ padding-right: 5em;
 <body>
 
 
-
 <nav>
   <div class="pu-nav-bar">
 
@@ -946,6 +939,7 @@ padding-right: 5em;
           <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
           <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
@@ -954,9 +948,7 @@ padding-right: 5em;
         </ul>        
   </div>
 </nav>
-
-          
-       
+ 
 
 
 
@@ -995,15 +987,49 @@ padding-right: 5em;
   <div class="boxx">
     <div class="text">
       <ul>
+        <i id="location-marker" class="fas fa-map-marker-alt"></i>
         <h2>Location</h2><br>
         <li>2465 W Craig Rd</li>
         <li>North Las Vegas, NV 89032</li>
       </ul>
     </div>
+
+    <div class="text" id="sister-site">
+      <ul>
+        <h2>Visit Our Sister Site!</h2>
+        <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
+      </ul>
+    </div>
+
   </div>
 </div>
 
+<style>
 
+#location-marker {
+  font-size: 2em;
+  color: rgb(10, 103, 155);
+  background-color: transparent;
+}
+
+#sister-site {
+  margin-top: 44px;
+  width: 330px;
+}
+
+#sister-site ul li a {
+  color: rgb(10, 103, 155);
+  text-decoration: none;
+}
+
+#sister-site ul li a:hover {
+  color: rgb(191, 21, 51);
+}
+
+#sister-site h2 {
+  margin-bottom: .8em;
+}
+</style>
 
 <!-- end -->
 
@@ -1035,6 +1061,7 @@ padding-right: 5em;
           <h3>Navigation</h3>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
       </ul>       
@@ -1065,13 +1092,6 @@ padding-right: 5em;
             <br>
             <li>Telephone: 702-433-7437</li>
             <li>Fax: 702-433-7432</li>
-            
-        </ul>
-      </div>
-
-      <div class="footsie" >
-        <ul class="sister-site">
-            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
             
         </ul>
       </div>

@@ -80,8 +80,8 @@ margin-top: 0 !important;
 
 .football {
   background-color: #bf1533;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 3em;
 }
 
@@ -291,10 +291,17 @@ nav ul li {
   vertical-align: middle;
 }
 
+.call-box {
+  text-align: center;
+}
+
 
 .call-box a {
 color: rgb(191, 21, 51);
-font-size: 15px;
+font-size: 16px;
+position: absolute;
+top: 0;
+right: 45px;
 }
 
 .call-box a:hover {
@@ -392,19 +399,18 @@ width: 150%;
 
 
 .cc-slideshow li:nth-child(1) span { 
-background-image: url("/assets/best-chocolate-cake-bkgrd2.png"); 
-
+background-image: url("/assets/sweet-potato-pie-bkgrd5.png"); 
 }
 .cc-slideshow li:nth-child(2) span { 
-background-image: url("/assets/homeade-pie-bkgrd2.png"); 
+background-image: url("/assets/chocolate-cake-bkgrd3.png"); 
 animation-delay: 10s; 
 }
 .cc-slideshow li:nth-child(3) span { 
-background-image: url("/assets/fruit-bkgrd4.png"); 
+background-image: url("/assets/fruit-bkgrd5.png"); 
 animation-delay: 20s; 
 }
 .cc-slideshow li:nth-child(4) span { 
-background-image: url("/assets/yellow-pie-bkgrd.png"); 
+background-image: url("/assets/yellow-pie-bkgrd2.png"); 
 animation-delay: 30s; 
 }
 .cc-slideshow li:nth-child(5) span { 
@@ -522,7 +528,7 @@ text-align: center;
 width: 100%;
 height: auto;
 padding: 8em 0;
-background-image: url("/assets/pie-background2.png");
+background-image: url("/assets/pie-background3.png");
 background-position: center;
 background-attachment: scroll;
 background-repeat: repeat;
@@ -642,8 +648,9 @@ text-shadow: 3px 0 13px #000000ad;
 
 .fundraiser {
   text-align: center;
-  padding: 0 2em;
+  padding: 0;
   margin-bottom: 8em;
+
 }
 
 
@@ -651,9 +658,21 @@ text-shadow: 3px 0 13px #000000ad;
   text-align: center;
 }
 
-.fundraiser ol li {
-  text-align: left;
+.fundraiser ul li {
+font-family: 'Crimson Text', serif;
+
+
+  text-align: center;
   color: rgb(10, 103, 155);
+  list-style-type: none;
+  padding-bottom: 20px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 19px;
+
+
 }
 
 .fundraiser h2 {
@@ -664,6 +683,9 @@ text-shadow: 3px 0 13px #000000ad;
 .fundraiser p {
   padding: 0 6em;
   color: rgb(10, 103, 155);
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fundraiser i {
@@ -892,6 +914,9 @@ padding-right: 5em;
 
 
 /*--- product list ---*/
+.product-list-container h1 {
+  text-align: center;
+}
 
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -936,6 +961,7 @@ padding-right: 5em;
           <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
           <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
@@ -1001,20 +1027,20 @@ padding-right: 5em;
 
 <div class="bar1">
   <div class="makeup">
-    <h1>Great taste,<br> without the sugar!</h1>
+    <h1>Great Taste,<br> Great Pie!</h1>
   </div>
 </div>
 
 <div class="main-boxi">
 
-    <h1 class="title">Our Specialty For Cakes, Pies And More!</h1>
+    <h1 class="title">Our Specialty Is Pies!</h1>
     
     <hr>
 
     <div class="boxi">
 
       <div class="all-text-boxi">
-            <h2 class="title">Homeade Sweetness</h2>
+            <h2 class="title">Homeade Goodness</h2>
             
             <div class="featured_text ">
               <p>Our Pies, Cakes and Cheeesecakes taste as close to homemade as you can get without making it yourself.</p>  
@@ -1025,10 +1051,10 @@ padding-right: 5em;
     <div class="boxi">
 
             <div class="all-text-boxi">
-            <h2 class="title">It Tastes Just Like Sugar</h2>
+            <h2 class="title">Sweet Dreams</h2>
             
             <div class="featured_text ">
-              <p>If you want a No Sugar added pie, cake or cheesecake that tastes as good as one with sugar then you've come to the right place.</p>  
+              <p>If you want a delicious delight that you've only seen in your dreams, then you've come to the right place.</p>  
             </div>
           </div>
     </div>
@@ -1040,7 +1066,7 @@ padding-right: 5em;
 
             <div class="featured_text ">
               <p>We make all of our goodies from scratch daily. We do not use any additives or preservatives in our products.<br>
-              <i>*Gluten sensitive products and vegan products available</i></p>  
+              <i style="color:black">*Gluten sensitive products and vegan products available</i></p>  
             </div>
           </div>
       </div>
@@ -1081,7 +1107,7 @@ padding-right: 5em;
             
             <div class="featured_text ">
               <p>If you're in the Las Vegas area please feel free to stop in for a visit. Keep in mind we have a limited stock on hand.<br>
-              <i>*Pre-orders welcome</i></p>  
+              <i style="color:black">*Pre-orders welcome</i></p>  
             </div>
 
       </div>
@@ -1092,9 +1118,9 @@ padding-right: 5em;
             
             <div class="featured_text ">
               <p>We deliver to residential locations as well as commercial locations Monday thru Friday.
-              Shipping Available for fruit pies only!<br>
-              <i>*Las Vegas and Henderson deliveries only</i>
-              <i>*Delivery fee applies</i><p>
+              <br>
+              <i style="color:black">*Las Vegas and Henderson deliveries only</i>
+              <i style="color:black">*Delivery fee applies</i><p>
             </div>
 
             <!--<div class="image-container">
@@ -1116,9 +1142,22 @@ padding-right: 5em;
 
 
 
+<style>
 
+.gift-package-img {
+background-image: url("/assets/gift packaging 2.JPG");
+background-position: center;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 50vh;
+text-align: center;
+}
 
+</style>
 
+<div class="gift-package-img"></div>
 
 
 
@@ -1151,6 +1190,7 @@ padding-right: 5em;
           <h3>Navigation</h3>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
           <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
       </ul>       
@@ -1185,12 +1225,7 @@ padding-right: 5em;
         </ul>
       </div>
 
-      <div class="footsie" >
-        <ul class="sister-site">
-            <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
-            
-        </ul>
-      </div>
+  
         
     </div>
 </div>
