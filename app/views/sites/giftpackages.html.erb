@@ -234,12 +234,25 @@ transition: all .2s linear 0s;
 
 /*--- nav section ---*/
 
+.top-facebook {
+position: absolute;
+top: 3px;
+right: 168px;
+}
+
+.top-instagram {
+position: absolute;
+top: 3px;
+right: 210px;
+}
+
 ul {
   margin: 0;
   height: auto;
 }
 
 nav {
+
 text-align: center;
 z-index: 999;
 position: sticky;
@@ -929,8 +942,6 @@ padding-right: 5em;
 
 <nav>
   <div class="pu-nav-bar">
-
-        
         <ul class="main-nav">
           <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
           <li><%= link_to "Home", sites_piesunlimited_path %></li>
@@ -938,8 +949,8 @@ padding-right: 5em;
           <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
           <li><%= link_to "Fundraising", sites_fundraising_path %></li>
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
-          <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></li>
+          <li><div class="top-facebook"><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></div></li>
+          <li><div class="top-instagram"><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></div></li>
           <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
         </ul>        
   </div>
