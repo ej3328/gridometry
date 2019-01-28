@@ -45,7 +45,8 @@ width: 100% !important;
 
 
 .container p {
-font-size: 18px;
+font-size: 30px;
+
 padding-left: 1em;
 padding-right: 1em;
 max-width: 600px;
@@ -399,22 +400,22 @@ width: 150%;
 
 
 .cc-slideshow li:nth-child(1) span { 
-background-image: url("/assets/sweet-potato-pie-bkgrd5.png"); 
+background-image: url("/assets/pu-slideshow-bkgrd1"); 
 }
 .cc-slideshow li:nth-child(2) span { 
-background-image: url("/assets/chocolate-cake-bkgrd3.png"); 
+background-image: url("/assets/pu-slideshow-bkgrd2"); 
 animation-delay: 10s; 
 }
 .cc-slideshow li:nth-child(3) span { 
-background-image: url("/assets/fruit-bkgrd5.png"); 
+background-image: url("/assets/pu-slideshow-bkgrd3"); 
 animation-delay: 20s; 
 }
 .cc-slideshow li:nth-child(4) span { 
-background-image: url("/assets/yellow-pie-bkgrd2.png"); 
+background-image: url("/assets/pu-slideshow-bkgrd4"); 
 animation-delay: 30s; 
 }
 .cc-slideshow li:nth-child(5) span { 
-background-image: url("/assets/pecan-pie-bkgrd.png"); 
+background-image: url("/assets/pu-slideshow-bkgrd5"); 
 animation-delay: 40s; 
 }
 
@@ -458,14 +459,35 @@ padding-bottom: 4em;
 
 }
 
-#history p {
-font-size: 30px;
-}
-
 
 /*-- end --*/
 
 
+
+/*--- specialty section ---*/
+
+#specialty {
+text-align: center;
+width: 100%;
+height: auto;
+padding: 8em 0;
+background-image: url("/assets/pie-background3.png");
+background-position: center;
+background-attachment: scroll;
+background-repeat: repeat;
+background-size: cover;
+background-color: white;
+
+
+
+
+}
+
+
+
+
+
+/*--- end ---*/
 
 
 /*--- bar1 section ---*/
@@ -514,76 +536,6 @@ text-align: center;
 
 /*--- end ---*/
 
-
-
-
-
-
-
-
-/*--- pie/main-boxi section ---*/
-
-.main-boxi {
-text-align: center;
-width: 100%;
-height: auto;
-padding: 8em 0;
-background-image: url("/assets/pie-background3.png");
-background-position: center;
-background-attachment: scroll;
-background-repeat: repeat;
-background-size: cover;
-background-color: white;
-
-
-
-
-}
-
-.main-boxi p {
-width: auto;
-height: auto;
-font-size: 24px;
-color: rgb(10, 103, 155);
-}
-
-.boxi {
-display: inline-block;
-margin: 0 0;
-vertical-align: top;
-width: 40%;
-height: auto;
-max-width: 300px;
-min-width: 250px;
-}
-
-.all-text-boxi {
-width: auto;
-height: auto;
-}
-
-
-
-.main-boxi h1 {
-font-size: 34px;
-}
-
-#pie-container {
-margin: 3em 0;
-text-align: center;
-}
-
-.pie-boxes {
-text-align: center;
-}
-
-.pie-box {
-display: inline-block;
-}
-
-
-
-/*--- end ---*/
 
 
 /*--- bar3 section ---*/
@@ -698,9 +650,6 @@ font-family: 'Crimson Text', serif;
 
 /*--- gift packaging ---*/
 
-.gift-packages {
-  
-}
 
 .gift-packages h2 {
   margin-bottom: 0;
@@ -966,7 +915,8 @@ padding-right: 5em;
           <li><%= link_to "Contact Us", sites_contactus_path %></li>
           <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></li>
           <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></li>
-          <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
+          <li><div class="call-box">
+          <a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
         </ul>        
   </div>
 </nav>
@@ -1007,13 +957,10 @@ padding-right: 5em;
 <div class="container" id="history">
     
       <h1 class="title">Our History</h1>
-      
       <hr>
-
       <div class="featured_text" id="about">
               <p>A Las Vegas Tradition Since 2002, Pies Unlimited</b> has been serving up delicious treats in Las Vegas <strong>for over 17 years</strong>. We are proud to be a <strong>family-owned</strong> local business in a city we love.</p>  
       </div>
-
 </div>
 
 
@@ -1031,46 +978,17 @@ padding-right: 5em;
   </div>
 </div>
 
-<div class="main-boxi">
 
-    <h1 class="title">Our Specialty Is Pies!</h1>
+
+
+<div class="container" id="specialty">
     
-    <hr>
-
-    <div class="boxi">
-
-      <div class="all-text-boxi">
-            <h2 class="title">Homeade Goodness</h2>
-            
-            <div class="featured_text ">
-              <p>Our Pies, Cakes and Cheeesecakes taste as close to homemade as you can get without making it yourself.</p>  
-            </div>
+      <h1 class="title">Our Specialty Is Pie!</h1>
+      <hr>
+      <div class="featured_text" id="about">
+              <p>All of our desserts are made from scratch daily without the use of additives or preservatives. We use only the highest quality ingredients in our products.</p>
+              <i style="color:black">*Gluten sensitive products and vegan products available</i>  
       </div>
-    </div>
-
-    <div class="boxi">
-
-            <div class="all-text-boxi">
-            <h2 class="title">Sweet Dreams</h2>
-            
-            <div class="featured_text ">
-              <p>If you want a delicious delight that you've only seen in your dreams, then you've come to the right place.</p>  
-            </div>
-          </div>
-    </div>
-
-    <div class="boxi">
-
-            <div class="all-text-boxi">
-            <h2 class="title">Baked Fresh Daily</h2>
-
-            <div class="featured_text ">
-              <p>We make all of our goodies from scratch daily. We do not use any additives or preservatives in our products.<br>
-              <i style="color:black">*Gluten sensitive products and vegan products available</i></p>  
-            </div>
-          </div>
-      </div>
-
 </div>
 
 
@@ -1144,20 +1062,23 @@ padding-right: 5em;
 
 <style>
 
-.gift-package-img {
-background-image: url("/assets/gift packaging 2.JPG");
-background-position: center;
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-size: cover;
-width: 100%;
-height: 50vh;
-text-align: center;
+.bottom-pic {
+  position: relative;
+  margin-bottom: -4px;
 }
+
+.bottom-pie-pic {
+  width: 100%;
+  height: auto;
+}
+
+
 
 </style>
 
-<div class="gift-package-img"></div>
+<div class="bottom-pic">
+  <%= image_tag "bottom-pie-pic.jpg", :class => "bottom-pie-pic" %>
+</div>
 
 
 

@@ -216,21 +216,18 @@ h6.gift-header {
   color: rgb(191, 21, 51);
 }
 
-#hours {
-padding-left: 3em;
-}
 
-.sister-site {
+.sister-site-box {
 width: 210px;
 padding-left: 0;
 }
 
-ul.sister-site li a {
+ul.sister-site-box li a {
 color: white;
 transition: all .2s linear 0s;     
 }
 
-ul.sister-site li a:hover {
+ul.sister-site-box li a:hover {
 color: rgb(10, 103, 155);
 transition: all .2s linear 0s;     
 
@@ -827,9 +824,12 @@ textarea {
 
 
 #map {
-width: 450px;  /* The width is the width of the web page */
-height: 300px;  /* The height is 400 pixels */
+width: 375px;
+height: 300px;  
+margin: .5em;
 }
+
+
 
 .map-container {
   text-align: center;
@@ -980,11 +980,21 @@ padding-right: 5em;
 </div>
 
 <div class="map-container">
+
+  <div class="boxx" id="sister-site-box">
+   <div class="text" >
+      <ul>
+        <h2>Visit Our Sister Site!</h2><!-- change verbage below -->
+        <li>If you are looking for specialty cakes for birthdays, weddings or anniversaries <br>visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
+      </ul>
+    </div>
+  </div>
+
   <div class="boxx">
     <div id="map"></div>
   </div>
 
-  <div class="boxx">
+  <div class="boxx" id="store-info-box">
     <div class="text">
       <ul>
         <i id="location-marker" class="fas fa-map-marker-alt"></i>
@@ -994,10 +1004,17 @@ padding-right: 5em;
       </ul>
     </div>
 
-    <div class="text" id="sister-site">
+    <br>
+
+    <div class="text" id="hours">
       <ul>
-        <h2>Visit Our Sister Site!</h2>
-        <li>Looking for specialty cakes for birthdays, weddings or anniversaries? <br>Visit our sister site <a href="http://www.fantasyweddingcakes.com" target="_blank">www.fantasyweddingcakes.com</a> for more information.</li>
+        <h2>Store Hours:</h2>
+        <li>Monday - Friday 10am - 5:30pm</li>
+        <li>Saturday 10am - 3:00pm</li>
+        <li>Sunday Closed</li>
+        <br>
+        <li>Telephone: 702-433-7437</li>
+        <li>Fax: 702-433-7432</li>
       </ul>
     </div>
 
@@ -1006,28 +1023,51 @@ padding-right: 5em;
 
 <style>
 
+#hours {
+}
+
+.map-container ul {
+  padding: 0px;
+}
+
 #location-marker {
   font-size: 2em;
   color: rgb(10, 103, 155);
   background-color: transparent;
 }
 
-#sister-site {
-  margin-top: 44px;
-  width: 330px;
+#store-info-box {
+  width: 275px;
+  padding-left: 25px;
 }
 
-#sister-site ul li a {
+
+#sister-site-box {
+  margin-top: 44px;
+  width: 245px;
+  margin-right: 35px;
+}
+
+#sister-site-box ul li a {
   color: rgb(10, 103, 155);
   text-decoration: none;
+  transition: all .3s linear 0s;     
+
+
 }
 
-#sister-site ul li a:hover {
+#sister-site-box ul li a:hover {
   color: rgb(191, 21, 51);
 }
 
-#sister-site h2 {
+#sister-site-box h2 {
   margin-bottom: .8em;
+}
+
+@media screen and (max-width: 500px){
+  #sister-site-box {
+    margin: 0px;
+  }
 }
 </style>
 
@@ -1074,8 +1114,7 @@ padding-right: 5em;
                 <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="footer-facebook" class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="footer-instagram" class="fab fa-instagram"></i></a></li>
 
-                <!--<li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><%= image_tag "facebook-icon.png", :class => "social-logo-fb" %></a></li>
-                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><%= image_tag "instagram-icon.png", :class => "social-logo-ig" %></a></li>-->
+               
         </ul>
       </div>
 

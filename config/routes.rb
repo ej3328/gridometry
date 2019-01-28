@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'sites/productlist'
   get 'sites/giftpackages'
   get 'sites/contactus'
+  get 'sites/cakedesigns'
 
   resources :sites 
   resources :essential, only: [:new, :create]
