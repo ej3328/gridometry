@@ -954,7 +954,14 @@ right: 210px;
           <li><div class="top-instagram"><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></div></li>
           <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
         </ul>
-        <div class="test"><i id="test" class="fas fa-bars"></i></div>
+
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
   </div>
 </nav>
 
@@ -991,6 +998,7 @@ right: 210px;
 
 
 
+
 <div class="container" id="history">
     
       <h1 class="title">Our History</h1>
@@ -1002,7 +1010,122 @@ right: 210px;
 
 
 
+<style>
 
+
+
+
+
+
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+.show {
+  display: none;
+}
+
+.dropbtn {
+  display: none;
+}
+
+
+@media screen and (max-width: 910px){
+  nav a {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dropbtn {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+
+
+
+ 
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 <!-- bar1 section -->
 
