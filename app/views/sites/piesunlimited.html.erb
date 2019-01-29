@@ -522,7 +522,7 @@ text-shadow: 3px 0 13px #000000ad;
 /*--- bar2 section---*/
 
 .bar2 {
-background-image: url("/assets/plain-cheesecake.jpg");
+background-image: url("/assets/mixing-dough-bkgrd.png");
 background-position: center;
 background-attachment: scroll;
 background-repeat: no-repeat;
@@ -904,6 +904,34 @@ top: 3px;
 right: 210px;
 }
 
+/*--- mobile section ---*/
+
+.test {
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  nav a {
+    display: none;
+  }
+
+  .test {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+  }
+
+  .svg-inline--fa {
+      border-radius: 8px;
+  }
+
+  .svg-inline--fa:hover {
+      border-radius: 8px;
+  }
+}
+
 </style>
 
 
@@ -925,7 +953,8 @@ right: 210px;
           <li><div class="top-facebook"><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></div></li>
           <li><div class="top-instagram"><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></div></li>
           <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
-        </ul>        
+        </ul>
+        <div class="test"><i id="test" class="fas fa-bars"></i></div>
   </div>
 </nav>
 
