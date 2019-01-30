@@ -146,7 +146,9 @@ background-color: #bf1533;
 
 #bottom-footer h6 {
 color: white;
-font-size: 15px;
+font-weight: 0;
+font-size: 12px;
+margin: 0;
 }
 
 
@@ -164,11 +166,6 @@ text-align: center;
 background-color: #bf1533;
 }
 
-#bottom-footer h6 {
-color: white;
-font-size: 15px;
-margin-bottom: 0;
-}
 
 .top-footer {
 text-align: center;
@@ -391,12 +388,6 @@ animation: imageAnimation 50s linear infinite 0s;
 
 
 
-@media screen and (max-width: 550px){
-.cc-slideshow li span {
-width: 150%;
-}
-}
-
 
 
 .cc-slideshow li:nth-child(1) span { 
@@ -580,7 +571,7 @@ text-shadow: 3px 0 13px #000000ad;
   display: inline-block;
   margin: 0 auto;
   vertical-align: top;
-  width: 40%;
+  width: 400px;
   height: auto;
 }
 
@@ -904,33 +895,8 @@ top: 3px;
 right: 210px;
 }
 
-/*--- mobile section ---*/
 
-.test {
-  display: none;
-}
 
-@media screen and (max-width: 800px){
-  nav a {
-    display: none;
-  }
-
-  .test {
-    display: initial;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    font-size: 2em;
-  }
-
-  .svg-inline--fa {
-      border-radius: 8px;
-  }
-
-  .svg-inline--fa:hover {
-      border-radius: 8px;
-  }
-}
 
 </style>
 
@@ -955,18 +921,20 @@ right: 210px;
           <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
         </ul>
 
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div class="button" onclick="myFunction()"><%= image_tag "menu-icon.png", :class=>"dropbtn" %></div>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <li><%= link_to "Home", sites_piesunlimited_path %></li>
+          <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
+          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
+          <li><%= link_to "Contact Us", sites_contactus_path %></li>
         </div>
 
   </div>
 </nav>
 
-          
-       
+
+
 
 
 <div class="container">
@@ -1015,8 +983,14 @@ right: 210px;
 
 
 
+/*--- mobile section ---*/
 
 
+.test {
+  display: none;
+}
+
+ 
 
 .dropdown {
   position: absolute;
@@ -1028,15 +1002,18 @@ right: 210px;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  right: 20px;
+  background-color: #f8f8f8;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 0;
 }
 
+li {
+  list-style-type: none;
+}
 .dropdown-content a {
-  color: black;
+  color: rgb(10, 103, 155);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -1045,10 +1022,6 @@ right: 210px;
 .dropdown a:hover {
   background-color: #ddd;
 }
-
-
-
-
 
 
 .show {
@@ -1073,27 +1046,110 @@ right: 210px;
     display: initial;
     position: absolute;
     top: 50px;
-    right: 50px;
-    font-size: 2em;
+    right: 76px;
 
-    background-color: #3498DB;
+    background-color: rgb(10, 103, 155);
     color: white;
-    padding: 16px;
+    padding: 4px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+
+    width: 26px;
+    padding: 12px;
+    border-radius: 8px;
   }
 
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: rgb(191, 21, 51);
   }
 
+  nav a {
+    display: none;
+  }
 
+  .test {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+  }
 
-
- 
 }
 
+@media screen and (max-width: 500px){
+
+  .jumbotron {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: transparent;
+  }
+
+  .cc-slideshow li span { 
+  margin-top: 5em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-size: contain;
+  background-position: 5% 5%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 50s linear infinite 0s; 
+  }
+
+  .cc-slideshow, .cc-slideshow:after { 
+    height: 22vh;
+  }
+
+  .container p {
+    font-size: 22px;
+  }
+
+  .bar1 h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+  }
+
+  .bar2 h1 {
+    font-size: 2.5em;
+  }
+
+  h1.title {
+    font-size: 1.8em;
+  }
+
+  #history {
+    padding-top: 10em;
+  }
+
+  #specialty {
+    padding: 3em 0 4em 0;
+  }
+
+  .mail-box {
+    margin: 1em auto;
+  }
+
+  .football {
+    padding-left: 0;
+  }
+
+  #hours {
+    padding-left: 0;
+  }
+
+  .footsie {
+    font-size: 14px;
+  }
+  
+}
+
+
+/*--- end ---*/
 
 </style>
 
@@ -1146,7 +1202,7 @@ window.onclick = function(event) {
       <h1 class="title">Our Specialty Is Pie!</h1>
       <hr>
       <div class="featured_text" id="about">
-              <p>All of our desserts are made from scratch daily without the use of additives or preservatives. We use only the highest quality ingredients in our products.</p>
+              <p>All of our desserts are made from scratch daily with additives or preservatives. We use only the highest quality ingredients in our products.</p>
               <i style="color:black">*Gluten sensitive products and vegan products available</i>  
       </div>
 </div>
@@ -1328,17 +1384,3 @@ window.onclick = function(event) {
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- end -->

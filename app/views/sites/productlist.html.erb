@@ -967,21 +967,7 @@ clear: right;
 
 
 
-<nav>
-  <div class="pu-nav-bar">
-        <ul class="main-nav">
-          <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
-          <li><%= link_to "Home", sites_piesunlimited_path %></li>
-          <li><%= link_to "Product List", sites_productlist_path %></li>
-          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
-          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
-          <li><%= link_to "Contact Us", sites_contactus_path %></li>
-          <li><div class="top-facebook"><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></div></li>
-          <li><div class="top-instagram"><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></div></li>
-          <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
-        </ul>        
-  </div>
-</nav>
+
 
           
        
@@ -1001,12 +987,12 @@ clear: right;
 }
 
 .product-container {
-  width: 250px;
+  width: 20%;
   height: auto;
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  padding: 1em 1em;
+  padding: 1em 2em;
 }
 
 .product-container i {
@@ -1027,102 +1013,129 @@ clear: right;
   margin: 2.5em 0;
 }
 
+.product-box1 {
+}
+
+.product-box2 {
+}
+
+.product-box3 {
+}
+
+
+@media screen and (max-width: 700px){
+  .product-container {
+    width: 300px;
+  }
+}
+
+
 </style>
 
+
+
+
 <div class="product-list">
-  <h1> Product List </h1>
-  <div class="product-container">
-    <h2>9" Fruit Pies</h2>
-    <i>*Regular and No Sugar Added <br> Options Available*</i>
-    <br>
-    <i>*Available in Double Crust, Crumb Top or Cream*</i>
-    <br>
-    <br>
-    <ul>
-      <li>Apple</li>
-      <li>Blueberry</li>
-      <li>Blueberry Cream</li>
-      <li>Boysenberry</li>
-      <li>Cherry</li>
-      <li>Peach</li>
-      <li>Pineapple</li>
-      <li>Rhubarb</li>
-      <li>Raspberry</li>
-      <li>Strawberry</li>
-    </ul>
+
+  <div class="product-box1">
+    <h1> Product List </h1>
+    <div class="product-container">
+      <h2>9" Fruit Pies</h2>
+      <i>*Regular and No Sugar Added <br> Options Available*</i>
+      <br>
+      <i>*Available in Double Crust, Crumb Top or Cream*</i>
+      <br>
+      <br>
+      <ul>
+        <li>Apple</li>
+        <li>Blueberry</li>
+        <li>Blueberry Cream</li>
+        <li>Boysenberry</li>
+        <li>Cherry</li>
+        <li>Peach</li>
+        <li>Pineapple</li>
+        <li>Rhubarb</li>
+        <li>Raspberry</li>
+        <li>Strawberry</li>
+      </ul>
+    </div>
+    <div class="product-container">
+
+      <h2>9" Cream Pies</h2>
+      <i>*Regular and No Sugar Added <br> Options Available*</i>
+      <br>
+      <br>
+      <ul>
+        <li>Banana</li>
+        <li>Banana Chocolate</li>
+        <li>Strawberry Banana</li>
+        <li>Mango </li>
+        <li>Chocolate</li>
+        <li>Coconut</li>
+        <li>Lemon</li>
+        <li>German Chocolate</li>
+        <li>Peanut Butter</li>
+        <li>Peanut Butter Chocolate</li>
+      </ul>
+    </div>
+
+
+    <div class="product-container">
+
+      <h2>9" Seasonal Pies</h2>
+      <i>*Regular and No Sugar Added <br> Options Available*</i>
+      <br>
+      <br>
+      <ul>
+        <li>Cookies & Cream</li>
+        <li>Grasshopper</li>
+        <li>Fresh Strawberry</li>
+        <li>Boston Creme w/ Strawberries</li>
+        <li>Eggnog Cream</li>
+        <li>Mince</li>
+        <li>Sweet Potatoe</li>
+        <li>Cranberry Apple</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="product-container">
-    <h2>9" Cream Pies</h2>
-    <i>*Regular and No Sugar Added <br> Options Available*</i>
-    <br>
-    <br>
-    <ul>
-      <li>Banana</li>
-      <li>Banana Chocolate</li>
-      <li>Strawberry Banana</li>
-      <li>Mango </li>
-      <li>Chocolate</li>
-      <li>Coconut</li>
-      <li>Lemon</li>
-      <li>German Chocolate</li>
-      <li>Peanut Butter</li>
-      <li>Peanut Butter Chocolate</li>
-    </ul>
+  <div class="product-box2">
+    <div class="product-container">
+      <h2>9" Specialty Pies</h2>
+      <i>*Regular and No Sugar Added <br> Options Available*</i>
+      <br>
+      <br>
+      <ul>
+        <li>Boston Cream</li>
+        <li>Coconut Custard</li>
+        <li>Custard</li>
+        <li>Keylime</li>
+        <li>Pecan</li>
+        <li>Pumpkin</li>
+      </ul>
+    </div>
+
+    <div class="product-container">
+
+        <h2>9" Meringue Pies</h2>
+        <i>*Regular and No Sugar Added <br> Options Available*</i>
+        <br>
+        <br>
+        <ul>
+          <li>Lemon</li>
+          <li>Banana</li>
+          <li>Banana Chocolate</li>
+          <li>Chocolate</li>
+          <li>Coconut</li>
+          <li>German Chocolate</li>
+          <li>Peanut Butter</li>
+          <li>Peanut Butter Chocolate</li>
+        </ul>
+      </div>
   </div>
+  
 
-
-  <div class="product-container">
-    <h2>9" Meringue Pies</h2>
-    <i>*Regular and No Sugar Added <br> Options Available*</i>
-    <br>
-    <br>
-    <ul>
-      <li>Lemon</li>
-      <li>Banana</li>
-      <li>Banana Chocolate</li>
-      <li>Chocolate</li>
-      <li>Coconut</li>
-      <li>German Chocolate</li>
-      <li>Peanut Butter</li>
-      <li>Peanut Butter Chocolate</li>
-    </ul>
-  </div>
-
-
-  <div class="product-container">
-    <h2>9" Specialty Pies</h2>
-    <i>*Regular and No Sugar Added <br> Options Available*</i>
-    <br>
-    <br>
-    <ul>
-      <li>Boston Cream</li>
-      <li>Coconut Custard</li>
-      <li>Custard</li>
-      <li>Keylime</li>
-      <li>Pecan</li>
-      <li>Pumpkin</li>
-    </ul>
-  </div>
-
-
-  <div class="product-container">
-    <h2>9" Seasonal Pies</h2>
-    <i>*Regular and No Sugar Added <br> Options Available*</i>
-    <br>
-    <br>
-    <ul>
-      <li>Cookies & Cream</li>
-      <li>Grasshopper</li>
-      <li>Fresh Strawberry</li>
-      <li>Boston Creme w/ Strawberries</li>
-      <li>Eggnog Cream</li>
-      <li>Mince</li>
-      <li>Sweet Potatoe</li>
-      <li>Cranberry Apple</li>
-    </ul>
-  </div>
-
+<div class="product-box3">
 
   <div class="product-container">
     <h2>4" Mini Pies </h2>
@@ -1217,6 +1230,7 @@ clear: right;
       <li>Pumpkin</li>
     </ul>
   </div>
+</div>
   
   <div class="product-bottom">
     <i>*Cakes Available in various sizes and layers*</i>
@@ -1225,75 +1239,6 @@ clear: right;
 </div>
 
 
-
-<!-- footer section -->
-
-
-
-<div class="football">
-    <div class="footsie">
-      <ul class="footer_menu">
-      <h3>Press Mentions</h3>
-          <li>National Pie Day NEWS 13</li>
-          <li>Review Journal</li>          
-          <li>In Business Las Vegas</li>
-          <li>Summerlin South View</li>
-          <li>Summerlin View</li>
-      </ul>
-    </div>
-
-    <div class="footsie">
-      <ul class="footer_menu">
-          <h3>Navigation</h3>
-          <li><%= link_to "Home", sites_piesunlimited_path %></li>
-          <li><%= link_to "Product List", sites_productlist_path %></li>
-          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
-          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
-          <li><%= link_to "Contact Us", sites_contactus_path %></li>
-      </ul>       
-    </div>
-
-
-     <div class="footsie">
-        <ul class="footer_social_icons">
-            <h3 class="social">Social</h3>
-                <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="footer-facebook" class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="footer-instagram" class="fab fa-instagram"></i></a></li>
-
-                <!--<li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><%= image_tag "facebook-icon.png", :class => "social-logo-fb" %></a></li>
-                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><%= image_tag "instagram-icon.png", :class => "social-logo-ig" %></a></li>-->
-        </ul>
-      </div>
-
-      <div class="footsie" id="hours">
-        <ul class="footer_menu">
-            <h3>Location</h3>
-            <li>2465 W Craig Rd</li>
-            <li> North Las Vegas, NV 89032</li>
-            <br>
-            <h3>Store Hours:</h3>
-            <li>Monday - Friday 10am - 5:30pm</li>
-            <li>Saturday 10am - 3:00pm</li>
-            <li>Sunday Closed</li>
-            <br>
-            <li>Telephone: 702-433-7437</li>
-            <li>Fax: 702-433-7432</li>
-            
-        </ul>
-      </div>
-
-     
-        
-    </div>
-</div>
-
-
-<div class="container" id="bottom-footer">
-
-  <br>
-
-  <h6>&copy; 2019 Pies Unlimited. All Rights Reserved.</h6>
-</div>
 
 
 <!-- end -->
