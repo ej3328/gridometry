@@ -76,16 +76,29 @@ margin-top: 0 !important;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--- footer sections ---*/
 
-.football {
+.main-footer {
   background-color: #bf1533;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 3em;
 }
 
-.footsie {
+.footer-box {
   display: inline-block;
   vertical-align: top;
   text-align: left;
@@ -95,27 +108,27 @@ margin-top: 0 !important;
   color: white;
 }
 
-.footsie ul li {
+.footer-box ul li {
   list-style-type: none;
   color: white;
 
 }
 
-.footsie ul li a {
+.footer-box ul li a {
   color: #fff;
   text-decoration: none;
 
 }
 
-.footsie ul li a:hover {
+.footer-box ul li a:hover {
   color: rgb(10, 103, 155);
 }
 
-.footsie h6 {
+.footer-box h6 {
   color: #fff;
 }
 
-.footsie p {
+.footer-box p {
   width: 350px;
   height: auto;
   padding: 10px;
@@ -145,7 +158,9 @@ background-color: #bf1533;
 
 #bottom-footer h6 {
 color: white;
-font-size: 15px;
+font-weight: 0;
+font-size: 12px;
+margin: 0;
 }
 
 
@@ -163,11 +178,6 @@ text-align: center;
 background-color: #bf1533;
 }
 
-#bottom-footer h6 {
-color: white;
-font-size: 15px;
-margin-bottom: 0;
-}
 
 .top-footer {
 text-align: center;
@@ -200,8 +210,32 @@ background-color: white;
 
 
 
+.bottom-pic {
+  position: relative;
+  margin-bottom: -4px;
+}
+
+.bottom-pie-pic {
+  width: 100%;
+  height: auto;
+}
+
 
 /*--- end ---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--- gift section ---*/
@@ -242,19 +276,19 @@ transition: all .2s linear 0s;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*--- nav section ---*/
-
-.top-facebook {
-position: absolute;
-top: 3px;
-right: 168px;
-}
-
-.top-instagram {
-position: absolute;
-top: 3px;
-right: 210px;
-}
 
 ul {
   margin: 0;
@@ -264,12 +298,13 @@ ul {
 nav {
 text-align: center;
 z-index: 999;
-position: sticky;
+position: fixed;
 top: 0;
 
 background-color: white;
 width: 100%;
 height: auto;  
+
 }
 
 ul.main-nav {
@@ -358,7 +393,54 @@ padding: 7px;
 }
 
 
+.top-facebook {
+position: absolute;
+top: 3px;
+right: 168px;
+}
+
+.top-instagram {
+position: absolute;
+top: 3px;
+right: 210px;
+}
+
+
+
 /*--- end ---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -955,6 +1037,198 @@ clear: right;
 /*--- end --*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- mobile section ---*/
+
+
+.test {
+  display: none;
+}
+
+ 
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 20px;
+  background-color: #f8f8f8;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 0;
+}
+
+li {
+  list-style-type: none;
+}
+.dropdown-content a {
+  color: rgb(10, 103, 155);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+
+.show {
+  display: none;
+}
+
+.dropbtn {
+  display: none;
+}
+
+
+@media screen and (max-width: 910px){
+  nav a {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dropbtn {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    right: 76px;
+
+    background-color: rgb(10, 103, 155);
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    width: 26px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(191, 21, 51);
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .test {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  .jumbotron {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: transparent;
+  }
+
+  .cc-slideshow li span { 
+  margin-top: 5em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-size: contain;
+  background-position: 5% 5%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 50s linear infinite 0s;
+  z-index: 0; 
+  }
+
+  .cc-slideshow, .cc-slideshow:after { 
+    height: 22vh;
+  }
+
+
+  .container p {
+    font-size: 22px;
+  }
+
+  .bar1 h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+  }
+
+  .bar2 h1 {
+    font-size: 2.5em;
+  }
+
+  h1.title {
+    font-size: 1.8em;
+  }
+
+
+  #specialty {
+    padding: 3em 0 4em 0;
+  }
+
+  .mail-box {
+    margin: 1em auto;
+    width: auto;
+  }
+
+ 
+  .main-footer {
+    padding-left: 0;
+  }
+
+  #hours {
+    padding-left: 0;
+  }
+
+  .footer-box {
+    font-size: 14px;
+  }
+  
+}
+
+
+@media screen and (max-width: 401px){
+  #history {
+    padding-top: 10em;
+    margin-top: 5em;
+  }
+}
+
+/*--- end ---*/
+
+
 </style>
 
 
@@ -995,6 +1269,10 @@ clear: right;
   padding: 1em 2em;
 }
 
+.product-list ul {
+  padding: 0;
+}
+
 .product-container i {
   font-size: 14px;
 }
@@ -1023,6 +1301,33 @@ clear: right;
 }
 
 
+.fruit-pies{
+  width: 142px;
+}
+.cream-pies{
+  width: 159px;
+}
+.seasonal-pies{
+  width: 178px;
+}
+.specialty-pies{
+  width: 182px;
+}
+.meringue-pies{
+  width: 189px;
+}
+.mini-pies{
+  width: 138px;
+}
+.cakes{
+  width: 72px;
+}
+.cheesecakes{
+  width: 170px;
+}
+
+
+
 @media screen and (max-width: 700px){
   
   .product-container {
@@ -1032,7 +1337,53 @@ clear: right;
 }
 
 
+
 </style>
+
+
+
+
+
+
+
+
+<!-- nav section -->
+
+<nav>
+  <div class="pu-nav-bar">
+        <ul class="main-nav">
+          <li><%= image_tag "pu-logo4.png", :class => "pu-logo" %></li>
+          <li><%= link_to "Home", sites_piesunlimited_path %></li>
+          <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
+          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
+          <li><%= link_to "Contact Us", sites_contactus_path %></li>
+          <li><div class="top-facebook"><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="nav-facebook" class="fab fa-facebook-f"></i></a></div></li>
+          <li><div class="top-instagram"><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="nav-instagram" class="fab fa-instagram"></i></a></div></li>
+          <li><div class="call-box"><a href="tel:+17024337437">Call Today! <br>+1-702-433-PIES</a></div></li>
+        </ul>
+
+        <div class="button" onclick="myFunction()"><%= image_tag "menu-icon.png", :class=>"dropbtn" %></div>
+        <div id="myDropdown" class="dropdown-content">
+          <li><%= link_to "Home", sites_piesunlimited_path %></li>
+          <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
+          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
+          <li><%= link_to "Contact Us", sites_contactus_path %></li>
+        </div>
+
+  </div>
+</nav>
+
+
+<!-- end -->
+
+
+
+
+
+
+
 
 
 
@@ -1042,7 +1393,7 @@ clear: right;
   <div class="product-box1">
     <h1> Product List </h1>
     <div class="product-container">
-      <h2>9" Fruit Pies</h2>
+      <h2 class="fruit-pies">9" Fruit Pies</h2>
       <i>*Regular and No Sugar Added <br> Options Available*</i>
       <br>
       <i>*Available in Double Crust, Crumb Top or Cream*</i>
@@ -1063,7 +1414,7 @@ clear: right;
     </div>
     <div class="product-container">
 
-      <h2>9" Cream Pies</h2>
+      <h2 class="cream-pies">9" Cream Pies</h2>
       <i>*Regular and No Sugar Added <br> Options Available*</i>
       <br>
       <br>
@@ -1084,7 +1435,7 @@ clear: right;
 
     <div class="product-container">
 
-      <h2>9" Seasonal Pies</h2>
+      <h2 class="seasonal-pies">9" Seasonal Pies</h2>
       <i>*Regular and No Sugar Added <br> Options Available*</i>
       <br>
       <br>
@@ -1103,7 +1454,7 @@ clear: right;
 
   <div class="product-box2">
     <div class="product-container">
-      <h2>9" Specialty Pies</h2>
+      <h2 class="specialty-pies">9" Specialty Pies</h2>
       <i>*Regular and No Sugar Added <br> Options Available*</i>
       <br>
       <br>
@@ -1119,7 +1470,7 @@ clear: right;
 
     <div class="product-container">
 
-        <h2>9" Meringue Pies</h2>
+        <h2 class="meringue-pies">9" Meringue Pies</h2>
         <i>*Regular and No Sugar Added <br> Options Available*</i>
         <br>
         <br>
@@ -1140,7 +1491,7 @@ clear: right;
 <div class="product-box3">
 
   <div class="product-container">
-    <h2>4" Mini Pies </h2>
+    <h2 class="mini-pies">4" Mini Pies </h2>
     <i>*Regular and No Sugar Added <br> Options Available*</i>
     <br>
     <br>
@@ -1175,8 +1526,9 @@ clear: right;
   </div>
 
 
+
   <div class="product-container">
-    <h2>Cakes</h2>
+    <h2 class="cakes">Cakes</h2>
     <i>*Regular and No Sugar Added <br> Options Available*</i>
     <br>
     <br>
@@ -1203,7 +1555,7 @@ clear: right;
 
 
   <div class="product-container">
-    <h2>9" Cheesecakes</h2>
+    <h2 class="cheesecakes">9" Cheesecakes</h2>
     <i>*Regular and No Sugar Added <br> Options Available*</i>
     <br>
     <br>
@@ -1245,6 +1597,108 @@ clear: right;
 
 <!-- end -->
 
+
+
+
+
+<!-- footer section -->
+
+
+
+
+
+
+
+<div class="main-footer">
+    <div class="footer-box">
+      <ul class="footer_menu">
+      <h3>Press Mentions</h3>
+          <li>National Pie Day NEWS 13</li>
+          <li>Review Journal</li>          
+          <li>In Business Las Vegas</li>
+          <li>Summerlin South View</li>
+          <li>Summerlin View</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <ul class="footer_menu">
+          <h3>Navigation</h3>
+          <li><%= link_to "Home", sites_piesunlimited_path %></li>
+          <li><%= link_to "Product List", sites_productlist_path %></li>
+          <li><%= link_to "Gift Packages", sites_giftpackages_path %></li>
+          <li><%= link_to "Fundraising", sites_fundraising_path %></li>
+          <li><%= link_to "Contact Us", sites_contactus_path %></li>
+      </ul>       
+    </div>
+
+
+     <div class="footer-box">
+        <ul class="footer_social_icons">
+            <h3 class="social">Social</h3>
+                <li><a href="https://www.facebook.com/Pies-Unlimited-Las-Vegas-577305315626423/" target="_blank"><i id="footer-facebook" class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/pies_unlimited/" target="_blank"><i id="footer-instagram" class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box" id="hours">
+        <ul class="footer_menu">
+            <h3>Location</h3>
+            <li>2465 W Craig Rd</li>
+            <li> North Las Vegas, NV 89032</li>
+            <br>
+            <h3>Store Hours:</h3>
+            <li>Monday - Friday 10am - 5:30pm</li>
+            <li>Saturday 10am - 3:00pm</li>
+            <li>Sunday Closed</li>
+            <br>
+            <li>Telephone: 702-433-7437</li>
+            <li>Fax: 702-433-7432</li>
+            
+        </ul>
+      </div>
+
+  
+        
+    </div>
+</div>
+
+
+<div class="container" id="bottom-footer">
+
+  <br>
+
+  <h6>&copy; 2019 Pies Unlimited. All Rights Reserved.</h6>
+</div>
+
+
+<!-- end -->
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
  </body>
