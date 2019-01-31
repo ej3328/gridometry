@@ -250,7 +250,7 @@ ul {
 nav {
 text-align: center;
 z-index: 999;
-position: sticky;
+position: fixed;
 top: 0;
 
 background-color: white;
@@ -906,7 +906,6 @@ right: 210px;
 <body>
 
 
-
 <nav>
   <div class="pu-nav-bar">
         <ul class="main-nav">
@@ -1098,7 +1097,8 @@ li {
   background-position: 5% 5%;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: imageAnimation 50s linear infinite 0s; 
+  animation: imageAnimation 50s linear infinite 0s;
+  z-index: 0; 
   }
 
   .cc-slideshow, .cc-slideshow:after { 
