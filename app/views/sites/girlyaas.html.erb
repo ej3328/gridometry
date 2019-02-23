@@ -15,36 +15,24 @@
   body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
     width: auto;
-    min-width: 980px;
+    /* min-width: 980px; */
   }
   
- /*--- bg1 section ---*/
+ /*--- section 1 ---*/
 
-  .bg-1 {
-  	text-align: center;
-    background-image: url('/assets/lashes2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-color: 
-    width: 100%;
+  .home {  	
+    width: auto;
     height: auto;
+    text-align: center;
 
   }
 
-  .text-box1 h1 {
-   	font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    font-size: 7em; 
-    margin: 0;
-    text-shadow: 0 6px 13px #555555;
-
+  .home h1 {
+  	color: white;
   }
 
-  .bg-1 h2 {
+  .home h2 {
   	font-family: 'Source Sans Pro', sans-serif;
   	color: white;
   	text-shadow: 0 6px 13px #050505;
@@ -52,7 +40,7 @@
   	margin-bottom: 1em;
   }
 
-  .bg-1 h4 {
+  .home h4 {
   	font-family: 'Source Sans Pro', sans-serif;
   	font-size: 2em;
   	text-shadow: 0 6px 13px #050505;
@@ -64,68 +52,79 @@
   	padding-bottom: 2em;
   	width: auto;
   	height: auto;
+  	text-align: center;
+
+  }
+
+  .text-box1 h1 {
+  	font-size: 7em;
+	text-shadow: 0 6px 13px #050505;
+	 margin-bottom: 1em;
+
+
   }
 
   a.signupbtn {	
   	text-transform: uppercase;
   	padding: 12px;
-  	font-size: 12px;
-  	background-color: #ee7988;
-  	color: white;
+  	font-size: 15px;
+  	background-color: white;
+  	color: black;
   	text-decoration: none;
-  	box-shadow: 1px 2px 24px 1px #7c7c7c;
   	border-radius: .5em;
   }
 
   a.signupbtn:hover {
-  	background-color: white;
-  	color: black;
+  	background-color: #6baad3;
+  	color: white;
   	text-decoration: none;
   }
 
 
- /*--- bg2 section ---*/
+ /*--- section 2 ---*/
 
-.bg-2 { 
-	padding-top: 3em;
-	padding-bottom: 3em;
+.courses { 
+	padding-top: 5em;
+	padding-bottom: 5em;
     background-color: white;
     color: black;
     text-align: center;
 }
 
-  .bg-2 h1 {
+  .courses h1 {
   	font-family: 'Source Sans Pro', sans-serif;
   	margin: 0;
   	margin-bottom: .2em;
   	color: black;
   }
 
-  .bg-2 h3 {
+  .courses h3 {
   	margin-top: 0;
   }
 
-/*--- bg3 section ---*/
+/*--- section 3 ---*/
 
-  .bg-3 { 
+  .section3 { 
       background-color: #ffffff; /* White */
+      padding-top: 3em;
+	  padding-bottom: 3em;
   }
 
 
-/*--- bg4 section ---*/
+/*--- section section ---*/
 
-  	.bg-4 { 
+  	.section4 { 
   	  font-weight: light;
       font-size: 14px;
   	  letter-spacing: 2px;
   	  font-family: 'Montserrat', sans-serif;
-      background-color: black;
+      background-color: #6baad3;
       color: white;
-	  padding-top: 30px;
-	  padding-bottom: 30px;
+	  padding-top: 3em;
+	  padding-bottom: 3em;
 	}
 
-	.bg-4 li {
+	.section4 li {
 	  text-align: left;
 	  list-style-type: none;
 	}
@@ -213,17 +212,15 @@
 }
 
 .navbar ul li a {
-	color: white;
-	font-size: 17px;
-	text-shadow: 0 6px 13px #555555;
+	color: black;
+	font-size: 14px;
 	letter-spacing: 1px;
-	font-family: 'Source Sans Pro', sans-serif;
 
 
 }
 
 .navbar ul li a:hover {
-	color: pink;
+	color: #6baad3;
 	text-decoration: none;
 }
 	
@@ -255,7 +252,7 @@
  	header {
 		width: auto;
 		height: auto;
-		background-color: black;
+		background-color: white;
 		font-size: 13px;
 		text-align: right;
 		padding-left: 5px;
@@ -266,7 +263,6 @@
 	}
 
 	header .box {
-		margin-right: 9em;
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
@@ -279,6 +275,7 @@
 		padding-left: 5px;
 		padding-right: 10px;
 		font-weight: normal;
+		color: black;
 	}
 
 	header #one {
@@ -311,51 +308,60 @@
 
   }
 
+  
+
+
+
  </style>
 
-  <%= link_to 'x', root_path, :class => 'home-button' %> 
 
 
 <!-- header section -->
+
+
 <header>
+	<div class="box">
+	</div>
 	<div class="box" id="one">
-		<b>Join today!</b>
+		<b>Sign Up Today!</b>
 	</div>
 	<div class="box">
-		<i class="fas fa-phone"></i><b>(555)555-5555</b>
-		<i class="fas fa-envelope"></i><b>email@myemail.com</b>
  		<a href="javascript:void()"><i class="fab fa-facebook-f"></i></a>
     	<a href="javascript:void()"><i class="fab fa-twitter"></i></a>
     	<a href="javascript:void()"><i class="fab fa-instagram"></i></a>
 	</div>
 </header>
  
-<div class="bg-1">
 
-<!-- navbar section -->
-<div class="navbar">
+ <div class="navbar">
 	<ul>
-		<li><a href="javascript:void(0)">HOME</a></li>
-		<li><a href="javascript:void(0)">SERVICES</a></li>
-		<li><a href="javascript:void(0)">TRAINING</a></li>
-		<li><a href="javascript:void(0)">PRICING</a></li>
-		<li><a href="javascript:void(0)">CONTACT</a></li>
+		<li><a href="javascript:void(0)">Home</a></li>
+		<li><a href="javascript:void(0)">Style & Fashion</a></li>
+		<li><a href="javascript:void(0)">Hot Talks</a></li>
+		<li><a href="javascript:void(0)">Contact Us</a></li>
+
 	</ul>
 </div>
 
 
+<div class="home">
 	<div class="text-box1">
-		<h4>Next class date August 5th!</h4>
-		<h1>Lash Dolls</h1>
-		<h2>Learn it. Master it. Repeat it.</h2>
-    	<a href="javascript:void(0)" class="signupbtn">Register Today!</a>
-    </div>
-    <div class="text-box2">
+		<h1>Girl YAAAS!</h1><!--Wowwwww-->
     </div>
 </div>
 
 
 <style>
+
+	.home {
+		background-image: url('/assets/girl1.jpg');
+		width: 100%;
+		height: 60vh;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
 	.box {
 		display: inline-block;
 		margin: 20px;
@@ -442,11 +448,12 @@
 	}
 
 	.image-overlay {
-		background-color: rgba(191, 154, 154, 0.8);
+		background-color: #6baad3b5;
 	  	width: 350px;
 		height: 325px;
 		transition: all .4s linear 0s;
 		border-radius: .5em;
+		text-align: center;
 	}
 
 	.image-overlay:hover {
@@ -459,20 +466,47 @@
 		visibility: visible;
 		font-size: 2em;
 		font-family: 'Source Sans Pro', sans-serif;
-		color: #fb748b;
+		color: white;
 		text-shadow: 0 6px 13px #050505;
 		position: relative;
-		top: 3.5em;
+		top: .7em;
 		margin: 0;
 		transition: all 0s linear 0s;
 
 	}
 
-	.image-overlay:hover h3 {
-		visibility: hidden;
+	
+
+
+	.image-overlay h5 {
+		visibility: visible;
+		font-size: 1.2em;
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		text-shadow: 0 6px 13px #050505;
+		position: relative;
+		top: 4em;
+		margin: 0 auto 0 auto;
 		transition: all 0s linear 0s;
+		width: 250px;
 
 	}
+
+	.image-overlay h4 {
+		visibility: visible;
+	    font-size: 2em;
+	    font-family: 'Source Sans Pro', sans-serif;
+	    color: white;
+	    position: relative;
+	    top: 4em;
+	    margin: 0;
+	    transition: all 0s linear 0s;
+
+	}
+
+
+
+
 
 	.image-overlay .popup-box {
 		font-family: 'Source Sans Pro', sans-serif;
@@ -576,13 +610,12 @@
 
 .image-overlay:hover span {
 	font-size: 30px;
-	color: white;
+	color: black;
 	visibility: visible;
 	position: relative;
-	top: 3.1em;
-	background-color: #ee7988;
+	top: 3.9em;
+	background-color: white;
 	padding: 5px;
-	box-shadow: 0 6px 13px #555555;
 	cursor: pointer;
 	border-radius: .3em;
 
@@ -591,11 +624,9 @@
 .image-overlay:hover span:hover {
 	visibility: visible;
 	position: relative;
-	top: 3.1em;
 	color: black;
 	background-color: white;
 	padding: 5px;
-	box-shadow: 0 6px 13px #555555;
 	border-radius: .3em;
 }
 
@@ -612,6 +643,7 @@
 	</ul>
   </div>
 </div>
+
 
 <div id="lashbootcamp" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeLBC()">&times;</a>
@@ -644,73 +676,141 @@ function closeLBC() {
 
 </script>
 
-<!-- test area -->
+<style>
+
+/*-- news section --*/
+
+hr {
+	border-color: #eaeaea;
+	width: 80%;
+}
+
+.news {
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.news .box{
+	width: 400px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.girl2 {
+	width: 100%;
+	height: auto;
+}
+
+</style>
+
+<div class="news">
+		<div class="news-one">
+			<div class="box">
+				<%= image_tag "girl2.jpeg", :class => "girl2" %>
+			</div>
+			<div class="box">
+				<p>bloggers are making bank. These passionate beauty aficionados and their carefully curated blogs get us and our love for all things hair, makeup, skin care and nails.
+				Beauty bloggers are not only gurus in their own right, but are constantly serving up great beauty advice, awesome pictures (see: The Beauty Look Book) and different points of view.</p>
+			</div>
+		</div>
+		
+		<hr>
+
+		<div class="news-one">
+			<div class="box">
+				<%= image_tag "girl2.jpeg", :class => "girl2" %>
+			</div>
+			<div class="box">
+				<p>bloggers are making bank. These passionate beauty aficionados and their carefully curated blogs get us and our love for all things hair, makeup, skin care and nails.
+				Beauty bloggers are not only gurus in their own right, but are constantly serving up great beauty advice, awesome pictures (see: The Beauty Look Book) and different points of view.</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="news-one">
+			<div class="box">
+				<%= image_tag "girl2.jpeg", :class => "girl2" %>
+			</div>
+			<div class="box">
+				<p>bloggers are making bank. These passionate beauty aficionados and their carefully curated blogs get us and our love for all things hair, makeup, skin care and nails.
+				Beauty bloggers are not only gurus in their own right, but are constantly serving up great beauty advice, awesome pictures (see: The Beauty Look Book) and different points of view.</p>
+			</div>
+		</div>
+
+</div>
+
+
 
 
 
 <!-- First Container -->
-<div class="bg-2">
-	<h1>Training</h1>
+<div class="courses">
+	<h1>Online Courses</h1>
 	<h3>Join one our classes today!</h3>
+	
 	<div class="training">
 		<div class="box" id="box1">
 			<div class="image-overlay">
 				<h3>Lash Basics</h3>
+				<h5>Learn all the basics and secrets tips!</h5>
+				<h4>Free</h4>
+
 				<span onclick="openLB()">Learn more?</span>
 			</div>
 		</div>
-		<div class="box" id="box2">
+		<div class="box" id="box1">
 			<div class="image-overlay">
-				<h3>Lash Boot Camp</h3>
-				<span onclick="openLBC()">Learn more?</span>
+				<h3>Beauty Boot Camp</h3>
+				<h5>Get those skills into shape!</h5>
+				<h4>Free</h4>
+
+				<span onclick="openLB()">Learn more?</span>
 			</div>
 		</div>
-		<div class="box" id="box3">
+	</div>
+
+	<div class="training">
+		<div class="box" id="box1">
 			<div class="image-overlay">
-				<h3>Lash Training</h3>
-				<span onclick="openMenu()">Learn more?</span>
+				<h3>Lash Basics</h3>
+				<h5>Learn all the basics and secrets tips!</h5>
+				<h4>Free</h4>
+
+				<span onclick="openLB()">Learn more?</span>
 			</div>
 		</div>
-		<div class="box" id="box4">
+		<div class="box" id="box1">
 			<div class="image-overlay">
-				<h3>Lash Academy</h3>
-				<span onclick="openMenu()">Learn more?</span>
-			</div>
-		</div>
-		<div class="box" id="box5">
-			<div class="image-overlay">
-				<h3>Lash Tips & Tricks</h3>
-				<span onclick="openMenu()">Learn more?</span>
-			</div>
-		</div>
-		<div class="box" id="box6">
-			<div class="image-overlay">
-				<h3>Lash School</h3>
-				<span onclick="openMenu()">Learn more?</span>
+				<h3>Beauty Boot Camp</h3>
+				<h5>Get those skills into shape!</h5>
+				<h4>Free</h4>
+
+				<span onclick="openLB()">Learn more?</span>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="page-bar">
-	<h1>Learn all the tips & tricks the industry has kept a secret!</h1>
-</div>
+
 
 <style>
 
 	.page-bar {
-		background-image: url('/assets/gold-wallpaper.png');
 		width: 100%;
 		height: auto;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
+		background-color: #6baad3;
+		padding-top: 6em;
+    	padding-bottom: 6em;
 	}
 
 	.page-bar h1 {
-		padding: 2.5em;
-		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 2.5em;
 		color: white;
 		margin: 0;
@@ -722,7 +822,7 @@ function closeLBC() {
 	}
 
 .svg-inline--fa {
-	color: white;
+	color: #6baad3;
 }
 
 .svg-inline--fa:hover {
@@ -732,7 +832,6 @@ function closeLBC() {
 #contact {
 	text-align: center;
 	width: 45%;
-	padding-bottom: 2em;
 }
 
 #contact input {
@@ -756,7 +855,6 @@ function closeLBC() {
 
 #contact h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 1em;
   color: black;
   font-weight: bold;
 }
@@ -781,6 +879,8 @@ function closeLBC() {
 
 .contact-container {
   background-color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 </style>
@@ -806,104 +906,23 @@ function closeLBC() {
 		margin-bottom: 2.5em;
 	}
 
-	.pricing .panel {
-		background-color: white;
-		color: black;
+	
+
+
+
+	.col-sm-3 {
+		width: auto;
 	}
 
-	.panel-default {
-		border-color: transparent;
+	footer .svg-inline--fa {
+		color: rgb(51, 122, 183);
 	}
 
-	.panel-body {
-		background-color: white;
-	}
-
-	.pricing .panel h3 {
-		color: white;
-	}
-
-	.pricing .panel-heading {
-		background-color: #ee7988;
-		box-shadow: 0 6px 13px #555555;
-
-	}
-
-	.pricing .panel-footer {
-		background-color: #ee7988;
-    	box-shadow: 0 6px 13px #555555;
-	}
-
-	.pricing button {
-		background-color: white;
-
-	}
 
 </style>
 
-<!-- Container (Pricing Section) -->
-<div class="pricing">
-  <div class="text-center">
-    <h1 class="title">Pricing</h1>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>1 Class</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$109</h3>
-          <button class="btn btn-lg">Register now!</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>3 Classes</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$209</h3>
-          <button class="btn btn-lg">Register now!</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>5 Classes</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$349</h3>
-          <button class="btn btn-lg">Register now!</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
+
+   
 
 <div class="page-bar">
 	<h1>Join Today and receive a 50% discount!</h1>
@@ -915,8 +934,9 @@ function closeLBC() {
 .reviews {
 	text-align: center;
 	color: black;
-	padding: 4em;
 	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 .reviews h1 {
@@ -931,15 +951,15 @@ function closeLBC() {
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #ee7988;
+    color: #6baad3;
 }
 
 .carousel-indicators li {
-    border-color: #ee7988;
+    border-color: #eaeaea;
 }
 
 .carousel-indicators li.active {
-    background-color: #ee7988;
+    background-color: #eaeaea;
 }
 
 .item h4 {
@@ -958,10 +978,15 @@ function closeLBC() {
 	footer ul li {
 		font-size: 12px;
 		padding-left: 0;
+		color: rgb(51, 122, 183);
 	}
 
 	footer b {
 		padding-left: 10px;
+	}
+
+	.glyphicon {
+		color: #6baad3;
 	}
 
 
@@ -983,7 +1008,7 @@ function closeLBC() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"I learned so much with these classes! Thanks Lash Dolls!"<span><br>-client</span></h4>
+        <h4>"I learned so much with these classes! Thanks girls!"<span><br>-client</span></h4>
       </div>
       <div class="item">
         <h4>"One word... WOW!!"<br><span>-client</span></h4>
@@ -1023,29 +1048,38 @@ function closeLBC() {
 
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <div class="col-sm-4">
+<footer class="container-fluid section4 text-center">
+  <div class="col-sm-3">
     <ul>
-    	<li>Lash Dolls</li>
-  		<li>Contact Us</li>
+    	<li>Girl Yaaas!</li>
   		<li>Terms & Conditions</li>
+  	</ul>
+  </div>
+
+  <div class="col-sm-3">
+  	<ul>	
+  		<li><a href="javascript:void(0)">Home</a></li>
+		<li><a href="javascript:void(0)">News</a></li>
+		<li><a href="javascript:void(0)">Contact Us</a></li>
+
     </ul>
   </div>
-  <div class="col-sm-4">
+
+  <div class="col-sm-3">
     <a href="javascript:void()"><i class="fab fa-facebook-f"></i></a>
     <a href="javascript:void()"><i class="fab fa-twitter"></i></a>
     <a href="javascript:void()"><i class="fab fa-instagram"></i></a>
   </div>
-  <div class="col-sm-4">
+
+  <div class="col-sm-3">
   	<ul>
-        <li>Charlotte, NC</li>
-        <li><i class="fas fa-phone"></i><b>(555)555-5555</b></li>
-		<li><i class="fas fa-envelope"></i><b>email@myemail.com</b></li>
+        <li>Los Angeles, CA</li>
+        <li>Las Vegas, NV</li>
+        <li>New York, NY</li>
     </ul>
   </div>
 </footer>
 
-<p class="powered-by-gridometry">Created with <i class="fa fa-heart"></i> by <%= link_to "Gridometry", root_path %>
 
 
 
