@@ -3747,20 +3747,145 @@ span.numscroller {
 </div>
 
 
-<div class="bar4">
-	<div class="bar_overlay4">
+
+
+
+<style>
+/* quoteshow container */
+.quoteshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.myQuotes {
+  display: none;
+  padding: 80px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+/* quoteNext & quoteprevious buttons */
+.quoteprev, .quotenext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "quotenext button" to the right */
+.quotenext {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.quoteprev:hover, .quotenext:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The quotedot/bullet/indicator container */
+.quotedot-container {
+    text-align: center;
+    background: rgba(241, 241, 241, 0.9450980392156862);
+    padding: 2em;
+}
+
+/* The quotedots/bullets/indicators */
+.quotedot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the activequote quotedot/circle */
+.activequote, .quotedot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+.quoteshow-container h2 {
+	padding-top: 1.4em;
+	text-align: center;
+	color: rgb(15, 42, 81);
+    text-shadow: 2px 0px #aba7a74d;
+    font-size: 3em;
+}
+</style>
+
+
+<div class="quoteshow-container">
 		<h2>See What Past Clients Had To Say</h2>
-		<div class="carousel">
-			<ul>
-				<li><h1>"<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i>"<br><%= image_tag "flat-design-logo.png", :class => "thumbnail" %><br>Flat Design Co.</h1></li>
-
-				<li><h1>"<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>"<br><%= image_tag "zen-space-logo.png", :class => "thumbnail" %><br>Zen Space</h1></li>
-
-				<li><h1>"<i>Absolutely Fantastic!</i>"<br><%= image_tag "macaroo-logo.png", :class => "thumbnail" %><br>Macaroo</h1></li>
-			</ul>
-		</div>
-	</div>
+<div class="myQuotes">
+  <q><i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i></q>
+  <br><br><%= image_tag "flat-design-logo.png", :class => "thumbnail" %><br><br>Flat Design Co.
 </div>
+
+<div class="myQuotes">
+  <q><i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i></q><br><br><%= image_tag "zen-space-logo.png", :class => "thumbnail" %><br><br>Zen Space
+</div>
+
+<div class="myQuotes">
+  <q><i>Fantastic Job!</i></q><br><br><%= image_tag "macaroo-logo.png", :class => "thumbnail" %><br><br>Macaroo
+</div>
+
+<a class="quoteprev" onclick="plusquotes(-1)">❮</a>
+<a class="quotenext" onclick="plusquotes(1)">❯</a>
+
+<div class="quotedot-container">
+  <span class="quotedot" onclick="quotes(1)"></span> 
+  <span class="quotedot" onclick="quotes(2)"></span> 
+  <span class="quotedot" onclick="quotes(3)"></span> 
+</div>
+
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+quoteSlides(slideIndex);
+
+function plusquotes(n) {
+  quoteSlides(slideIndex += n);
+}
+
+function quotes(n) {
+  quoteSlides(slideIndex = n);
+}
+
+function quoteSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("myQuotes");
+  var quotedots = document.getElementsByClassName("quotedot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < quotedots.length; i++) {
+      quotedots[i].className = quotedots[i].className.replace(" activequote", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  quotedots[slideIndex-1].className += " activequote";
+}
+</script>
 
 
 
