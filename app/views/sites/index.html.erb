@@ -496,7 +496,7 @@
 	/* Slideshow container */
 	.slideshow-container {
 		text-align: center;
-	  	max-width: 1000px;
+	  	max-width: auto;
 	  	position: relative;
 	  	margin: auto;
 	}
@@ -516,6 +516,16 @@
 	  transition: 0.3s ease;
 	  border: solid 1px #0f2a51;
 	}
+
+	.prev {
+		border-radius: 0px 3px 3px 0;
+	}
+
+	.next {
+  		border-radius: 3px 0 0 3px;
+	}	
+
+	
 
 	@media screen and (max-width: 430px){
 		.prev , .next {
@@ -3759,24 +3769,34 @@ span.numscroller {
 /* Slides */
 .myQuotes {
   display: none;
-  padding: 80px;
+  padding-top: 80px;
+  width: 400px;
+  height: 19em;
   padding-bottom: 0px;
   text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.myQuotes i {
+	font-size: 1.5em;
 }
 
 /* quoteNext & quoteprevious buttons */
 .quoteprev, .quotenext {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  	background-color: rgb(15, 42, 81);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border: solid 1px rgb(15, 42, 81);
 }
 
 /* Position the "quotenext button" to the right */
@@ -3786,10 +3806,15 @@ span.numscroller {
   border-radius: 3px 0 0 3px;
 }
 
+.quoteprev {
+	border-radius: 0 3px 3px 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .quoteprev:hover, .quotenext:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
+  	background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(15, 42, 81);
+    color: rgb(15, 42, 81);
 }
 
 /* The quotedot/bullet/indicator container */
@@ -3826,22 +3851,47 @@ q {font-style: italic;}
     text-shadow: 2px 0px #aba7a74d;
     font-size: 3em;
 }
+
+.svg-inline--fa.fa-quote-left.fa-w-16 {
+	font-size: 2em;
+}
 </style>
 
 
 <div class="quoteshow-container">
 		<h2>See What Past Clients Had To Say</h2>
 <div class="myQuotes">
-  <q><i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals.</i></q>
+	<i class="fas fa-quote-left"></i>
+	<br>
+	<br>
+  	<i>Thank you so much! Our new site has tripled our business and attention, and fast forwarded our goals!</i>
   <br><br><%= image_tag "flat-design-logo.png", :class => "thumbnail" %><br><br>Flat Design Co.
 </div>
 
 <div class="myQuotes">
-  <q><i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i></q><br><br><%= image_tag "zen-space-logo.png", :class => "thumbnail" %><br><br>Zen Space
+	<i class="fas fa-quote-left"></i>
+	<br>
+	<br>
+  	<i>The team at Gridometry is so helpful and knowledgable, they were able to assist with all of our business needs!</i>
+  	<br>
+  	<br>
+  	<%= image_tag "zen-space-logo.png", :class => "thumbnail" %>
+  	<br>
+  	<br>
+  	Zen Space
 </div>
 
 <div class="myQuotes">
-  <q><i>Fantastic Job!</i></q><br><br><%= image_tag "macaroo-logo.png", :class => "thumbnail" %><br><br>Macaroo
+	<i class="fas fa-quote-left"></i>
+	<br>
+	<br>
+  	<i>Fantastic Job!</i>
+  	<br>
+  	<br>
+  	<%= image_tag "macaroo-logo.png", :class => "thumbnail" %>
+  	<br>
+  	<br>
+  	Macaroo
 </div>
 
 <a class="quoteprev" onclick="plusquotes(-1)">❮</a>
