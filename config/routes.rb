@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'sites/portfolio'
   get 'sites/thoseguyspies'
   get 'sites/ruthiescakes'
+  get 'sites/newindex'
   
 
   

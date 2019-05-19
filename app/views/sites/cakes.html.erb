@@ -213,6 +213,7 @@ width: 1em;
 
 .svg-inline--fa {
 color: white;
+background-color: #60458c;
 border-radius: 22px;
 padding: 7px;
 }
@@ -220,7 +221,9 @@ padding: 7px;
 
 
 
-
+.svg-inline--fa:hover {
+background-color: #bada61;
+}
 
 
 
@@ -929,7 +932,31 @@ li {
 
 @media screen and (max-width: 500px){
 
+  .jumbotron {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: transparent;
+  }
 
+  .cc-slideshow li span { 
+  margin-top: 5em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-size: contain;
+  background-position: 5% 5%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 50s linear infinite 0s;
+  z-index: 0; 
+  }
+
+  .cc-slideshow, .cc-slideshow:after { 
+    height: 22vh;
+  }
 
 
   .container p {
@@ -985,18 +1012,146 @@ li {
 /*--- end ---*/
 
 
+
+
+
+
 </style>
+
+
+
+
+
+
+
+
+
+
 
 
 </head>
 <body>
 
+
+
+
+
+
+
+
+
+
+<!-- end -->
+
 <style>
     
     
    
+   
+   
     
+    .overlay {
+        background-color: rgba(224, 184, 141, 0.59);
+        width: 100%;
+        height: 100vh
+    }
+    
+    
+    
+    
+    
+    /*----- Jumbotron/Slideshow Section --------*/
 
+.jumbotron {
+width: 100%;
+height: 100vh;
+overflow: hidden;
+background-color: transparent;
+position: relative;
+}
+
+
+
+.cc-slideshow, .cc-slideshow:after { 
+list-style-type: none;
+position: static;
+width: 100%;
+height: 100vh;
+top: 0px;
+left: 0px;
+z-index: 0;
+margin: 0;
+}
+
+.cc-slideshow li span { 
+margin-top: 0;
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0px;
+right: 0px;
+background-size: cover;
+background-position: 5% 5%;
+background-repeat: no-repeat;
+opacity: 0;
+animation: imageAnimation 50s linear infinite 0s; 
+}
+
+
+
+@media screen and (max-width: 550px){
+.cc-slideshow li span {
+width: 150%;
+}
+}
+
+
+
+.cc-slideshow li:nth-child(1) span { 
+background-image: url("https://images.pexels.com/photos/1494113/pexels-photo-1494113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+}
+.cc-slideshow li:nth-child(2) span { 
+background-image: url("https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+animation-delay: 10s; 
+}
+.cc-slideshow li:nth-child(3) span { 
+background-image: url("https://images.pexels.com/photos/1038711/pexels-photo-1038711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+animation-delay: 20s; 
+}
+.cc-slideshow li:nth-child(4) span { 
+background-image: url("https://images.pexels.com/photos/1494144/pexels-photo-1494144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+animation-delay: 30s; 
+}
+.cc-slideshow li:nth-child(5) span { 
+background-image: url("https://images.pexels.com/photos/265801/pexels-photo-265801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+animation-delay: 40s; 
+}
+
+
+ 
+.cc-slideshow li:nth-child(2) div { 
+animation-delay: 10s; 
+}
+.cc-slideshow li:nth-child(3) div { 
+animation-delay: 20s; 
+}
+.cc-slideshow li:nth-child(4) div { 
+animation-delay: 30s; 
+}
+.cc-slideshow li:nth-child(5) div { 
+animation-delay: 40s; 
+}
+
+
+@keyframes imageAnimation { 
+0% { opacity: 0; animation-timing-function: ease-in; }
+8% { opacity: .70; animation-timing-function: ease-out; }
+17% { opacity: .90 }
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+/*-- end --*/
 
 
 .box0 li {
@@ -1007,115 +1162,92 @@ li {
   font-family: 'Great Vibes', cursive;
   font-size: 2em;
   margin-top: 13em;
+  color: purple;
 }
     
-
-
-/*--- nav bar ---*/
-
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: rgb(165, 42, 42);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  color: orange;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/*--- end ---*/
-
-
-/*--- jumbotron ---*/
-
-.jumbotron {
-  background-image: url("https://images.pexels.com/photos/784210/pexels-photo-784210.jpeg?cs=srgb&dl=bloom-blossom-cake-784210.jpg&fm=jpg");
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50vh;
-  width: 100%;
-
-}
-
-header {
-  text-align: center;
-}
-
-header h1 {
-    font-family: 'Great Vibes', cursive;
-    color: brown;
-}
-
-
-
-
 </style>
 
-<header>
-  <h1>Ruthie's Cakes</h1>
-</header>
 
+<div class="container">
 
+  <div class="jumbotron" id="home">
+        <div class="box0">
+                <li><a href="javascript:void(0)" target="_blank"><i id="footer-facebook" class="fab fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0)" target="_blank"><i id="footer-facebook" class="fab fa-facebook-f"></i></a></li>
+                <li><a href="javascript:void(0)" target="_blank"><i id="footer-instagram" class="fab fa-instagram"></i></a></li>
 
-<div class="topnav" id="myTopnav">
-    <a href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)">About</a>
-    <a href="javascript:void(0)">Cakes</a>
-    <a href="javascript:void(0)">Cake Bites</a>
-    <a href="javascript:void(0)">Testimonials</a>
-    <a href="javascript:void(0)">Blog</a>
-    <a href="javascript:void(0)">Schedule Consultation</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+        </div>
+        <div class="box1">
+            <h1>Ruthie's Cakes</h1>
+        </div>
+        <div class="box2">
+            <i id="arrow" class="fas fa-arrow-circle-down"></i>
+        </div>
+    <div class="jumbotron-box">
+
+      <!-- Slideshow Section -->
+      <ul class="cc-slideshow">
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
 </div>
 
+<style>
+
+    .jumbotron {
+        text-align: center;
+    }
+    #arrow {
+        position: relative;
+        z-index: 999;
+        font-size: 2em;
+    }
+    
+    .svg-inline--fa.fa-arrow-circle-down.fa-w-16 {
+        color: rgba(81, 44, 142, 0.6509803921568628);
+        background-color: transparent;
+    }
+
+    .lady_logo {
+        padding: 22em 0em 12em 0em;
+        width: 600px;
+        height: auto;
+        z-index: 999;
+        position: relative;
+        
+       
+    }
+    
+    header {
+        text-align: center;
+    }
+</style>
+
+
+<!--
 <div class="jumbotron">
-
+    <div class="overlay">
+        <img src="/images/ladydicakes-logo.png", class="lady_logo" />
+    </div>
 </div>
-          
+-->
 
 
 
@@ -1124,8 +1256,10 @@ header h1 {
 
 <div class="container" id="specialty">
     <div class="decor-box">
+      <h1 class="title">Our Beginnings</h1>
+      <hr>
       <div class="featured_text" id="about">
-        <p>Here at Ruthie's we believe that cakes & desserts should not only look great but should taste even better. We believe that even the smallest occasion is just as important as a wedding for 2000 people.  We understand that whether it is a birthday or a wedding day, it is a day that is very important to you. We promise to give the same attention to detail on adozen cookies or an anniversary- wedding top as we do to that very special wedding cake.</p>
+        <p>We've been serving our signature whipped, buttercream icing and exquisitely decorated cakes in Central Ohio for over 10 years!</p>
       </div>
     </div>
 </div>
@@ -1279,12 +1413,23 @@ header h1 {
 
 
 <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
 </script>
