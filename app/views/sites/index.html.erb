@@ -1722,7 +1722,7 @@
 	.solutions h2 {
 		font-size: 25px;
 		padding-bottom: .5em;
-		color: orange;
+		color: rgb(255, 141, 24);
 	}
 
 	.solutions h3 {
@@ -3142,6 +3142,9 @@ span.numscroller {
 }
 
 
+	
+
+
 
 </style>
 </head>
@@ -3228,7 +3231,8 @@ span.numscroller {
 #content-marketing {
 	width: 100%;
 	height: auto;
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;*/
+	background-color: white;
 	text-align: center;
 	padding: 8em 0;
 
@@ -3298,6 +3302,18 @@ span.numscroller {
 	}
 }
 
+
+@media screen and (max-width: 700px){
+		
+	#content-marketing .pic1 {
+		width: 100%;
+		height: auto;
+	}
+
+    	
+}
+
+
 @media screen and (max-width: 590px){
 	
 
@@ -3313,12 +3329,16 @@ span.numscroller {
 
 
 
+
+
+
 /*-- social section --*/
 
 #social {
 	width: 100%;
 	height: auto;
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;*/
+	background-color: white;
 	text-align: center;
 	padding: 8em 0;
 
@@ -3494,6 +3514,17 @@ span.numscroller {
 
 
 
+.service-solutions h3 {
+	    text-align: center;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: .3em;
+    color: rgb(15, 42, 81);
+    text-shadow: 2px 0px #aba7a74d;
+    font-size: 3em;
+}
+
 
 
 
@@ -3504,8 +3535,10 @@ span.numscroller {
 
 
 
-
+<div class="service-solutions" id="service-solutions">
 	<div class="content-marketing" id="content-marketing">
+		<h3>Solutions That Change Everything</h3>
+
 		<div class="box" id="box1">
 			<h1>Content <br> Marketing</h1>
 			<br>
@@ -3547,6 +3580,7 @@ span.numscroller {
 			<%= image_tag "social-media-pics1.png", :class => "pic1" %>
 		</div>
 	</div>
+</div>
 
 
 
@@ -3767,7 +3801,7 @@ span.numscroller {
 /* quoteshow container */
 .quoteshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #f9f9f9;
 }
 
 /* Slides */
@@ -3824,7 +3858,7 @@ span.numscroller {
 /* The quotedot/bullet/indicator container */
 .quotedot-container {
     text-align: center;
-    background: rgba(241, 241, 241, 0.9450980392156862);
+    background-color: #f9f9f9;
     padding: 2em;
 }
 
