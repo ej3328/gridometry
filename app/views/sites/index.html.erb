@@ -1681,7 +1681,7 @@
 
 /*---- solutions section ----*/
 	
-	.solutions {
+	.benefits {
 		background-attachment: initial;
 		background-repeat: repeat;		
 		text-align: center;
@@ -1690,23 +1690,23 @@
 
 		padding-top: 0;
 		padding-bottom: 1em;
-		margin-left: 5em;
-		margin-right: 5em;
+		margin-left: 2em;
+		margin-right: 2em;
 
 		margin-top: 6em;
 		margin-bottom: 2em;
 	}
 
+	
 
-
-	.solutions .box {
+	.benefits .box {
 		width: 6.5em;
 		height: auto;
 		margin-right: -1px;
 		margin-left: -1px;
 	}
 
-	.solutions h1 {
+	.benefits h1 {
 		text-align: center;
 		font-size: 2em;
 		margin-left: 1em;
@@ -1719,17 +1719,17 @@
 	}
 
 
-	.solutions h2 {
+	.benefits h2 {
 		font-size: 25px;
 		padding-bottom: .5em;
 		color: rgb(255, 141, 24);
 	}
 
-	.solutions h3 {
+	.benefits h3 {
 		margin-bottom: 3em;
 	}
 
-	.solutions p {
+	.benefits p {
 		font-family: 'Times New Roman', sans-serif;
 		font-size: 1.3em;
 		margin-left: 1em;
@@ -1738,13 +1738,11 @@
 
 	}
 
-	.solutions .container {
+	.benefits .container {
 		padding-top: 2em;
 		display: inline-block;
-		margin-right: 3.2em;
-		margin-left: 3.2em;
 		padding-bottom: 1em;
-		width: 20em;
+		width: 500px;
 		height: auto;
 		vertical-align: top;
 		text-align: center;
@@ -1757,7 +1755,7 @@
     		height: auto;
     	}
 
-    	.solutions {
+    	.benefits {
     		margin-left: 0;
 			margin-right: 0;
 
@@ -1799,7 +1797,7 @@
 
 
 @media screen and (max-width: 670px){
-	.solutions .header {
+	.benefits .header {
 		font-size: 1.2em;
 		margin-left: auto;
 		margin-right: auto;
@@ -1809,7 +1807,7 @@
 }
 
 @media screen and (max-width: 650px){
-	.solutions .container {
+	.benefits .container {
 		width: 247px;
 		height: auto;
 	}
@@ -1818,35 +1816,35 @@
 @media screen and (max-width: 630px){
 	
 
-	.solutions h1 {
+	.benefits h1 {
 		font-size: 31px;
 		margin-top: .5em;
     	padding-bottom: 0.5em;	
 	}
 
-	.solutions h2 {
+	.benefits h2 {
 		font-size: 25px;
 	}
 
-	.solutions h4 {
+	.benefits h4 {
 		display: none;
 		margin-left: 3em;
     	margin-right: 3em;
 	}
 
-	.solutions {
+	.benefits {
 		padding-bottom: 2em;
 
 	}
 
-	.solutions .container {
+	.benefits .container {
 		padding-top: 2em;
 		width: 15em;
 	}
 }
 
 @media screen and (max-width: 515px){
-	.solutions .container {
+	.benefits .container {
 		width: auto;
 		height: auto;
 	}
@@ -2459,6 +2457,12 @@ form {
 		form {
 			width: 80%;
 		}
+
+		.contact-form h1 {
+			font-size: 35px;
+			margin-top: .5em;
+			padding-bottom: 0.5em;
+		}
 	}
 
 input[type="text"], input[type="email"], textarea {
@@ -2741,7 +2745,7 @@ textarea {
 
 @media screen and (max-width: 500px){
 	.iphone8 {
-		width: 40%;
+		width: 30%;
 	}
 
 	.bar2 h2 {
@@ -3167,7 +3171,8 @@ span.numscroller {
 		<div class="fixed_nav_links">
 			<ul class="active">
 				<li><a href="#home">HOME</a></li>
-				<li><a href="#solutions">SOLUTIONS</a></li>
+				<li><a href="#service-solutions">SOLUTIONS</a></li>
+				<li><a href="#benefits">BENEFITS</a></li>
 				<li><a href="#projects">DESIGNS</a></li>
 				<!--<li><a href="#pricing">PRICING</a></li>-->
 				<li><a href="#contact">CONTACT US</a></li>
@@ -3214,7 +3219,8 @@ span.numscroller {
   <div class="overlay-content">
 	<ul class="active">
 		<li><a href="#home">HOME</a></li>
-		<li><a href="#solutions">SOLUTIONS</a></li>
+		<li><a href="#service-solutions">SOLUTIONS</a></li>
+		<li><a href="#benefits">BENEFITS</a></li>
 		<li><a href="#projects">DESIGNS</a></li>
 		<li><a href="#contact">CONTACT US</a></li>
 	</ul>
@@ -3313,6 +3319,20 @@ span.numscroller {
     	
 }
 
+@media screen and (max-width: 630px){
+	#content-marketing h1 {
+    	font-size: 25px;
+	}
+
+	#content-marketing h2 {
+    	font-family: 'Times New Roman', sans-serif;
+    	font-size: 1.3em;
+    	margin-left: 1.5em;
+    	margin-right: 1.5em;
+    	margin-top: 0;
+	}
+}
+
 
 @media screen and (max-width: 590px){
 	
@@ -3323,6 +3343,130 @@ span.numscroller {
 	}
 
 	#content-marketing #box1 {
+		width: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-- websites section --*/
+
+#websites {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	text-align: center;
+	padding: 8em 0;
+
+}
+
+#websites h1 {
+
+	text-align: left;
+    color: rgb(255, 141, 24);
+    font-size: 3em;
+}
+
+#websites h2 {
+	color: rgb(15, 42, 81);
+	font-size: 1.6em;
+	width: 300px;
+}
+
+#websites .box {
+	display: inline-block;
+}
+
+#websites #box1 {
+	text-align: left;
+	width: 300px;
+
+}
+
+#websites .box2 {
+}
+
+#websites .pic1 {
+	width: 700px;
+	height: auto;
+}
+
+#websites button {
+	margin-top: 41px;
+	width: 275px;
+	height: 50px;
+	color: white;
+	background-color: rgb(15, 42, 81);
+	border-radius: 25px;
+}
+
+#websites button:hover {
+	background-color: transparent;
+	border: solid 1px rgb(15, 42, 81);
+	color: rgb(15, 42, 81);
+}
+
+
+@media screen and (max-width: 930px){
+	#websites h1, h2 {
+		text-align: center;
+	}
+
+	#websites #box1 {
+		text-align: center;
+		padding-bottom: 3em;
+	}
+
+	#websites h2 {
+		width: auto;
+		margin: 0 1em;
+
+	}
+}
+
+
+@media screen and (max-width: 700px){
+		
+	#websites .pic1 {
+		width: 100%;
+		height: auto;
+	}
+    	
+}
+
+
+@media screen and (max-width: 630px){
+	#websites h1 {
+    	font-size: 25px;
+	}
+
+	#websites h2 {
+    	font-family: 'Times New Roman', sans-serif;
+    	font-size: 1.3em;
+    	margin-left: 1.5em;
+    	margin-right: 1.5em;
+    	margin-top: 0;
+	}
+}
+
+
+@media screen and (max-width: 590px){
+	
+
+	#websites h2 {
+		width: 100%;
+		margin: auto;
+	}
+
+	#websites #box1 {
 		width: auto;
 	}
 }
@@ -3407,6 +3551,31 @@ span.numscroller {
 	}
 }
 
+@media screen and (max-width: 700px){
+		
+	#social .pic1 {
+		width: 100%;
+		height: auto;
+	}
+    	
+}
+
+
+@media screen and (max-width: 630px){
+	#social h1 {
+    	font-size: 25px;
+	}
+
+	#social h2 {
+    	font-family: 'Times New Roman', sans-serif;
+    	font-size: 1.3em;
+    	margin-left: 1.5em;
+    	margin-right: 1.5em;
+    	margin-top: 0;
+	}
+}
+
+
 @media screen and (max-width: 590px){
 	
 
@@ -3424,105 +3593,27 @@ span.numscroller {
 
 
 
-/*-- websites section --*/
-
-#websites {
-	width: 100%;
-	height: auto;
-	background-color: #fff;
-	text-align: center;
-	padding: 8em 0;
-
-}
-
-#websites h1 {
-
-	text-align: left;
-    color: rgb(255, 141, 24);
-    font-size: 3em;
-}
-
-#websites h2 {
-	color: rgb(15, 42, 81);
-	font-size: 1.6em;
-	width: 300px;
-}
-
-#websites .box {
-	display: inline-block;
-}
-
-#websites #box1 {
-	text-align: left;
-	width: 300px;
-
-}
-
-#websites .box2 {
-}
-
-#websites .pic1 {
-	width: 700px;
-	height: auto;
-}
-
-#websites button {
-	margin-top: 41px;
-	width: 275px;
-	height: 50px;
-	color: white;
-	background-color: rgb(15, 42, 81);
-	border-radius: 25px;
-}
-
-#websites button:hover {
-	background-color: transparent;
-	border: solid 1px rgb(15, 42, 81);
-	color: rgb(15, 42, 81);
-}
-
-
-@media screen and (max-width: 930px){
-	#websites h1, h2 {
-		text-align: center;
-	}
-
-	#websites #box1 {
-		text-align: center;
-		padding-bottom: 3em;
-	}
-
-	#websites h2 {
-		width: auto;
-		margin: 0 1em;
-
-	}
-}
-
-@media screen and (max-width: 590px){
-	
-
-	#websites h2 {
-		width: 100%;
-		margin: auto;
-	}
-
-	#websites #box1 {
-		width: auto;
-	}
-}
 
 
 
 .service-solutions h3 {
-	    text-align: center;
+	text-align: center;
     font-size: 2em;
     margin-left: 1em;
     margin-right: 1em;
     margin-top: .3em;
+    margin-bottom: 2em;
     color: rgb(15, 42, 81);
     text-shadow: 2px 0px #aba7a74d;
     font-size: 3em;
+}
+
+@media screen and (max-width: 630px){
+	.service-solutions h3 {
+	    font-size: 31px;
+	    margin-top: .5em;
+	    padding-bottom: 0.5em;
+	}
 }
 
 
@@ -3553,15 +3644,16 @@ span.numscroller {
 
 
 	<div class="websites" id="websites">
+		<div class="box" id="box2">
+			<%= image_tag "websites-pic2.png", :class => "pic1" %>
+		</div>
 		<div class="box" id="box1">
 			<h1>Web <br> Development</h1>
 			<br>
 			<h2>Custom websites and applications for all types of businesses</h2>
 			<!--<button>Explore</button>-->
 		</div>
-		<div class="box" id="box2">
-			<%= image_tag "websites-pic2.png", :class => "pic1" %>
-		</div>
+		
 	</div>
 
 
@@ -3603,7 +3695,7 @@ span.numscroller {
 
 <!-- solutions section -->
 
-<div class="solutions" id="solutions">
+<div class="benefits" id="benefits">
 	<h1>Building Even More Value</h1>
 
 	<div class="container">
@@ -3808,7 +3900,7 @@ span.numscroller {
 .myQuotes {
   display: none;
   padding-top: 80px;
-  width: 400px;
+  width: 50%;
   height: 19em;
   padding-bottom: 0px;
   text-align: center;
@@ -3889,6 +3981,19 @@ q {font-style: italic;}
     text-shadow: 2px 0px #aba7a74d;
     font-size: 3em;
 }
+
+
+@media screen and (max-width: 630px){
+	.quoteshow-container h2 {
+	    font-size: 35px;
+	    padding-bottom: 0.5em;
+	}
+
+	.myQuotes i {
+    	font-size: 1.2em;
+	}
+}
+
 
 .svg-inline--fa.fa-quote-left.fa-w-16 {
 	font-size: 2em;
